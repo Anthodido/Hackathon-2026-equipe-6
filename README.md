@@ -1,1 +1,1 @@
-# Hackathon-2026--quipe-6
+# Hackathon-2026-equipe-6
