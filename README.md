@@ -2,7 +2,7 @@
 
 ----
 
-📊Diagram Mermaid
+📊Flowchart
 
 ```mermaid
 flowchart LR
