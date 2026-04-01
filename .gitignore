@@ -1,0 +1,5 @@
+
+# Données brutes trop lourdes pour GitHub
+data/raw/salles_capacites.json
+data/raw/zones_inondables.geojson
+data/raw/ilots_chaleur.geojson
