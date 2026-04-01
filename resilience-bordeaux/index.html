@@ -17,20 +17,70 @@
         <div class="layout">
             <nav class="sidebar">
                 <a href="#home">Accueil</a>
-                <a href="#map">Carte</a>
-                <a href="#about">À propos</a>
-                <a href="#contact">Contact</a>
+                <a href="map.html">Carte</a>
+                <a href="#contact.html">Contact</a>
             </nav>
     
             <main>
-                <section id="home"><h2>Accueil</h2></section>
-                <section id="about"><h2>À propos</h2></section>
-                <section id="contact"><h2>Contact</h2></section>
+                <!-- HERO -->
+                <section class="hero">
+                    <div class="hero-text">
+                        <p class="hero-label">Hackathon Holberton × Bordeaux Métropole</p>
+                        <h2>Visualisez les risques climatiques de votre commune</h2>
+                        <p class="hero-desc">Carte interactive des 28 communes de Bordeaux Métropole — inondations, canicules, incendies, retrait-gonflement des argiles et risques industriels simulés jusqu'en 2100.</p>
+                        <a href="#map" class="btn-primary">Accéder à la carte</a>
+                    </div>
+                    <div class="hero-badge">
+                        <span>2025</span>
+                        <span>→</span>
+                        <span>2100</span>
+                    </div>
+                </section>
+
+                <!-- STATS -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">28</span>
+                        <span class="stat-label">Communes analysées</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Types de risques</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">46%</span>
+                        <span class="stat-label">Habitants exposés à 3+ aléas</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Scénarios IPCC AR6</span>
+                    </div>
+                </div>
+
+                <!-- FEATURES -->
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🗺️</div>
+                        <h3>Carte interactive</h3>
+                        <p>Visualisez les niveaux de risque par commune en temps réel avec filtrage par type d'aléa.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Profil détaillé</h3>
+                        <p>Cliquez sur une commune pour accéder à son radar de risques, ses données socio-économiques et ses faits clés.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔮</div>
+                        <h3>Simulation climatique</h3>
+                        <p>Projetez l'évolution des risques de 2025 à 2100 selon les scénarios SSP1-2.6, SSP2-4.5 et SSP5-8.5.</p>
+                    </div>
+                </div>
             </main>
         </div>
     
         <footer>
-            <p>informations tirées de :</p>
+            <p>Sources : DataHub Bordeaux Métropole · IPCC AR6 (2021) · DRIAS 2020 / Météo-France · Géorisques / BRGM · INSEE</p>
+        </footer>
         </footer>
     </body>
 </html>
