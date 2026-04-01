@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BordeauxSafePlace — Refuges climatiques Bordeaux</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+<style>
+  :root {
+    --bg:        #0d0f14;
+    --surface:   #161922;
+    --border:    rgba(255,255,255,0.07);
+    --border2:   rgba(255,255,255,0.14);
+    --text:      #e8eaf0;
+    --muted:     #6b7080;
+    --accent:    #4fd1c5;
+    --accent2:   #f6ad55;
+    --danger:    #fc8181;
+    --ok:        #68d391;
+    --warn:      #f6ad55;
+    --font:      'Space Grotesk', sans-serif;
+    --mono:      'DM Mono', monospace;
+    --r:         8px;
+    --panel-w:   340px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── Header ── */
+  header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px;
+    height: 52px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+    z-index: 1000;
+    position: relative;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #4fd1c5, #667eea);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .logo-text {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+  }
+
+  .logo-text span {
+    color: var(--accent);
+    font-family: var(--mono);
+  }
+
+  .header-sep { flex: 1; }
+
+  /* Sélecteur horizon */
+  .horizon-selector {
+    display: flex;
+    gap: 4px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 3px;
+  }
+
+  .horizon-btn {
+    padding: 4px 12px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .horizon-btn.active {
+    background: var(--accent);
+    color: #0d0f14;
+    font-weight: 500;
+  }
+
+  /* Filtres statut */
+  .filters {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .filter-label { font-size: 11px; color: var(--muted); }
+
+  .filter-btn {
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    font-family: var(--font);
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .filter-btn .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+  }
+
+  .filter-btn.active-ok    { border-color: var(--ok);     color: var(--ok);     background: rgba(104,211,145,0.08); }
+  .filter-btn.active-warn  { border-color: var(--warn);   color: var(--warn);   background: rgba(246,173,85,0.08); }
+  .filter-btn.active-crit  { border-color: var(--danger); color: var(--danger); background: rgba(252,129,129,0.08); }
+
+  /* ── Layout principal ── */
+  .main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  /* ── Carte ── */
+  #map {
+    flex: 1;
+    z-index: 1;
+  }
+
+  /* Leaflet overrides */
+  .leaflet-container { background: #1a1d26; }
+  .leaflet-control-attribution { display: none; }
+  .leaflet-control-zoom a {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+  }
+
+  /* ── Panel latéral ── */
+  .panel {
+    width: var(--panel-w);
+    background: var(--surface);
+    border-left: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .panel-header {
+    padding: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .panel-title {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+  }
+
+  .panel-count {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text);
+    font-family: var(--mono);
+  }
+
+  .panel-count span { font-size: 13px; color: var(--muted); font-weight: 400; }
+
+  .stats-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .stat-chip {
+    flex: 1;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .stat-chip .val {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--mono);
+  }
+
+  .stat-chip .lbl {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 1px;
+  }
+
+  .stat-ok   .val { color: var(--ok); }
+  .stat-warn .val { color: var(--warn); }
+  .stat-crit .val { color: var(--danger); }
+
+  /* Liste refuges */
+  .refuge-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px;
+  }
+
+  .refuge-list::-webkit-scrollbar { width: 4px; }
+  .refuge-list::-webkit-scrollbar-track { background: transparent; }
+  .refuge-list::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+  .refuge-item {
+    padding: 10px 12px;
+    border-radius: var(--r);
+    border: 1px solid var(--border);
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: all 0.15s;
+    position: relative;
+  }
+
+  .refuge-item:hover { border-color: var(--border2); background: rgba(255,255,255,0.02); }
+  .refuge-item.selected { border-color: var(--accent); background: rgba(79,209,197,0.05); }
+
+  .refuge-item .ri-name {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    padding-right: 50px;
+    line-height: 1.3;
+  }
+
+  .refuge-item .ri-type {
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  .refuge-item .ri-score-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .score-bar-wrap {
+    flex: 1;
+    height: 4px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .score-bar {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+  }
+
+  .score-val {
+    font-size: 12px;
+    font-family: var(--mono);
+    font-weight: 500;
+    min-width: 28px;
+    text-align: right;
+  }
+
+  .status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 9px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .care-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 9px;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 1px 6px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  /* ── Panel détail ── */
+  .detail-panel {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    width: 320px;
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: 12px;
+    z-index: 500;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    display: none;
+  }
+
+  .detail-panel.visible { display: block; }
+
+  .detail-header {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .detail-status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .detail-name { font-size: 14px; font-weight: 600; line-height: 1.3; flex: 1; }
+  .detail-type { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  .detail-close {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0 4px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .detail-close:hover { color: var(--text); }
+
+  .detail-body { padding: 14px 16px; }
+
+  .detail-score-big {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .detail-score-big .num {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: var(--mono);
+    line-height: 1;
+  }
+
+  .detail-score-big .suffix { font-size: 14px; color: var(--muted); }
+
+  .horizon-scores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .hs-item {
+    text-align: center;
+    padding: 6px 4px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+
+  .hs-item .hs-year { font-size: 10px; color: var(--muted); margin-bottom: 3px; font-family: var(--mono); }
+  .hs-item .hs-score { font-size: 14px; font-weight: 600; font-family: var(--mono); }
+
+  .risks-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .risk-chip {
+    flex: 1;
+    padding: 7px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    font-size: 11px;
+  }
+
+  .risk-chip .rc-icon { font-size: 14px; margin-bottom: 3px; }
+  .risk-chip .rc-label { color: var(--muted); font-size: 10px; }
+  .risk-chip .rc-val { font-weight: 500; font-size: 12px; }
+
+  .detail-reco {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+    padding: 10px 12px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+    border-left: 3px solid var(--border2);
+  }
+
+  .detail-caps {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .cap-chip {
+    flex: 1;
+    padding: 6px 8px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.03);
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .cap-chip .cv { font-size: 14px; font-weight: 600; color: var(--text); font-family: var(--mono); }
+
+  /* ── Légende ── */
+  .legend {
+    position: absolute;
+    top: 16px;
+    right: calc(var(--panel-w) + 16px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 10px 12px;
+    z-index: 500;
+    font-size: 11px;
+  }
+
+  .legend-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted);
+    margin-bottom: 7px;
+    font-weight: 500;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 5px;
+    color: var(--muted);
+  }
+
+  .legend-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .legend-sep { border-top: 1px solid var(--border); margin: 8px 0; }
+
+  /* Couches overlay */
+  .layer-toggles {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .layer-btn {
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: var(--font);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .layer-btn.flood-active {
+    border-color: #60a5fa;
+    color: #93c5fd;
+    background: rgba(96,165,250,0.08);
+  }
+
+  .layer-btn.heat-active {
+    border-color: #f97316;
+    color: #fb923c;
+    background: rgba(249,115,22,0.08);
+  }
+
+  /* Loading */
+  .loading-screen {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    gap: 16px;
+    transition: opacity 0.5s;
+  }
+
+  .loading-screen.hidden { opacity: 0; pointer-events: none; }
+
+  .loading-logo {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+
+  .loading-logo span { color: var(--accent); font-family: var(--mono); }
+
+  .loading-bar-wrap {
+    width: 200px;
+    height: 3px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .loading-bar {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    animation: loading-anim 1.5s ease-in-out forwards;
+  }
+
+  @keyframes loading-anim {
+    from { width: 0; }
+    to   { width: 100%; }
+  }
+
+  .loading-msg { font-size: 12px; color: var(--muted); font-family: var(--mono); }
+
+  /* No data notice */
+  .no-data-notice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: 12px;
+    padding: 24px 28px;
+    z-index: 600;
+    text-align: center;
+    max-width: 320px;
+  }
+
+  .no-data-notice h3 { font-size: 15px; margin-bottom: 8px; }
+  .no-data-notice p  { font-size: 12px; color: var(--muted); line-height: 1.6; }
+  .no-data-notice code {
+    display: inline-block;
+    margin-top: 12px;
+    background: var(--bg);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    :root { --panel-w: 100%; }
+    .main { flex-direction: column; }
+    #map { height: 55vh; }
+    .panel { width: 100%; height: 45vh; }
+    .detail-panel { left: 8px; right: 8px; width: auto; bottom: 8px; }
+    .legend { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Loading -->
+<div class="loading-screen" id="loading">
+  <div class="loading-logo">BordeauxSafePlace</div>
+  <div class="loading-bar-wrap"><div class="loading-bar"></div></div>
+  <div class="loading-msg">Chargement des données...</div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <div class="logo-icon">🌊</div>
+    <div class="logo-text">BordeauxSafePlace</div>
+  </div>
+
+  <div class="header-sep"></div>
+
+  <!-- Filtres statut -->
+  <div class="filters">
+    <span class="filter-label">Afficher :</span>
+    <button class="filter-btn active-ok"   id="f-sur"      onclick="toggleFilter('sur')">
+      <span class="dot" style="background:var(--ok)"></span> Sûrs
+    </button>
+    <button class="filter-btn active-warn" id="f-menace"   onclick="toggleFilter('menace')">
+      <span class="dot" style="background:var(--warn)"></span> Menacés
+    </button>
+    <button class="filter-btn active-crit" id="f-critique" onclick="toggleFilter('critique')">
+      <span class="dot" style="background:var(--danger)"></span> Critiques
+    </button>
+  </div>
+
+  <!-- Horizon -->
+  <div class="horizon-selector">
+    <button class="horizon-btn active" onclick="setHorizon(2026)">2026</button>
+    <button class="horizon-btn"        onclick="setHorizon(2030)">2030</button>
+    <button class="horizon-btn"        onclick="setHorizon(2040)">2040</button>
+    <button class="horizon-btn"        onclick="setHorizon(2050)">2050</button>
+  </div>
+</header>
+
+<!-- Main -->
+<div class="main">
+  <div id="map"></div>
+
+  <!-- Panel liste -->
+  <div class="panel">
+    <div class="panel-header">
+      <div class="panel-title">Refuges analysés</div>
+      <div class="panel-count" id="panel-count">— <span>refuges</span></div>
+      <div class="stats-row">
+        <div class="stat-chip stat-ok">
+          <div class="val" id="stat-sur">—</div>
+          <div class="lbl">Sûrs</div>
+        </div>
+        <div class="stat-chip stat-warn">
+          <div class="val" id="stat-menace">—</div>
+          <div class="lbl">Menacés</div>
+        </div>
+        <div class="stat-chip stat-crit">
+          <div class="val" id="stat-critique">—</div>
+          <div class="lbl">Critiques</div>
+        </div>
+      </div>
+    </div>
+    <div class="refuge-list" id="refuge-list"></div>
+  </div>
+</div>
+
+<!-- Légende + layer toggles -->
+<div class="legend" id="legend">
+  <div class="legend-title">Score de pérennité</div>
+  <div class="legend-item"><span class="legend-dot" style="background:var(--ok)"></span> Sûr (≥ 75)</div>
+  <div class="legend-item"><span class="legend-dot" style="background:var(--warn)"></span> Menacé (60–74)</div>
+  <div class="legend-item"><span class="legend-dot" style="background:var(--danger)"></span> Critique (< 60)</div>
+  <div class="legend-item"><span class="legend-dot" style="background:var(--accent); border: 2px solid white"></span> CARE officiel</div>
+  <div class="legend-item"><span class="legend-dot" style="background:var(--ok); border-radius:3px"></span> 🌿 Parc / espace vert</div>
+  <div class="legend-sep"></div>
+  <div class="legend-title">Couches de risque</div>
+  <div class="layer-toggles">
+    <button class="layer-btn" id="btn-flood" onclick="toggleLayer('flood')">💧 Inondation</button>
+    <button class="layer-btn" id="btn-heat"  onclick="toggleLayer('heat')">🌡️ Chaleur</button>
+  </div>
+</div>
+
+<!-- Panel détail -->
+<div class="detail-panel" id="detail-panel">
+  <div class="detail-header">
+    <div class="detail-status-dot" id="detail-dot"></div>
+    <div>
+      <div class="detail-name" id="detail-name"></div>
+      <div class="detail-type" id="detail-type"></div>
+    </div>
+    <button class="detail-close" onclick="closeDetail()">×</button>
+  </div>
+  <div class="detail-body">
+    <div class="detail-score-big">
+      <div class="num" id="detail-score-num"></div>
+      <div class="suffix">/100</div>
+      <div id="detail-care-badge"></div>
+    </div>
+    <div class="detail-caps" id="detail-caps"></div>
+    <div class="horizon-scores" id="detail-horizons"></div>
+    <div class="risks-row" id="detail-risks"></div>
+    <div class="detail-reco" id="detail-reco"></div>
+  </div>
+</div>
+
+<script>
+// ── État global ───────────────────────────────────────────────────────────────
+
+let REFUGES    = [];
+let MAP        = null;
+let MARKERS    = {};
+let SELECTED   = null;
+let HORIZON    = 2026;
+let FILTERS    = { sur: true, menace: true, critique: true };
+let LAYER_FLOOD = null;
+let LAYER_HEAT  = null;
+let LAYERS_ON   = { flood: false, heat: false };
+
+// ── Couleurs ──────────────────────────────────────────────────────────────────
+
+const COLOR = { sur: '#68d391', menace: '#f6ad55', critique: '#fc8181' };
+
+function statusColor(status) { return COLOR[status] || '#6b7080'; }
+
+function scoreToStatus(score) {
+  if (score >= 75) return 'sur';
+  if (score >= 60) return 'menace';
+  return 'critique';
+}
+
+// ── Initialisation carte ──────────────────────────────────────────────────────
+
+function initMap() {
+  MAP = L.map('map', {
+    center: [44.8378, -0.5792],
+    zoom: 13,
+    zoomControl: true,
+  });
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '© CartoDB',
+    maxZoom: 19,
+  }).addTo(MAP);
+}
+
+// ── Créer un marker Leaflet ───────────────────────────────────────────────────
+
+function createMarker(refuge) {
+  const score  = getScore(refuge);
+  const status = scoreToStatus(score);
+  const color  = statusColor(status);
+  const isCare = refuge.care_officiel;
+  const isParc = refuge.type === "parc";
+
+  let iconHtml;
+
+  if (isParc) {
+    // Marqueur losange pour les parcs — forme distincte des équipements (cercles)
+    const size = 12;
+    const icon = L.divIcon({
+      className: '',
+      html: `<div style="
+        width:${size}px;height:${size}px;
+        background:${color};
+        border:1.5px solid rgba(255,255,255,0.8);
+        box-shadow:0 0 5px ${color}90;
+        transform:rotate(45deg);
+        border-radius:2px;
+      "></div>`,
+      iconSize: [size, size],
+      iconAnchor: [size/2, size/2],
+    });
+    const marker = L.marker([refuge.lat, refuge.lng], { icon });
+    marker.on('click', () => selectRefuge(refuge.id));
+    return marker;
+  }
+
+  // Marqueur cercle pour les équipements
+  const size = isCare ? 14 : 10;
+  const border = isCare ? `2px solid white` : `1.5px solid ${color}`;
+
+  const icon = L.divIcon({
+    className: '',
+    html: `<div style="
+      width:${size}px;height:${size}px;
+      border-radius:50%;
+      background:${color};
+      border:${border};
+      box-shadow:0 0 ${isCare ? 8 : 4}px ${color}60;
+      transition:transform 0.15s;
+    "></div>`,
+    iconSize: [size, size],
+    iconAnchor: [size/2, size/2],
+  });
+
+  const marker = L.marker([refuge.lat, refuge.lng], { icon });
+  marker.on('click', () => selectRefuge(refuge.id));
+  return marker;
+}
+
+// ── Rendu des markers ─────────────────────────────────────────────────────────
+
+function renderMarkers() {
+  // Supprimer anciens markers
+  Object.values(MARKERS).forEach(m => MAP.removeLayer(m));
+  MARKERS = {};
+
+  REFUGES.forEach(r => {
+    const score  = getScore(r);
+    const status = scoreToStatus(score);
+    if (!FILTERS[status]) return;
+
+    const marker = createMarker(r);
+    marker.addTo(MAP);
+    MARKERS[r.id] = marker;
+  });
+}
+
+// ── Score selon horizon ───────────────────────────────────────────────────────
+
+function getScore(refuge) {
+  const s = refuge.scores && refuge.scores[String(HORIZON)];
+  return s ? s.score : refuge.score || 0;
+}
+
+function getStatus(refuge) {
+  return scoreToStatus(getScore(refuge));
+}
+
+// ── Rendu liste panel ─────────────────────────────────────────────────────────
+
+function renderList() {
+  const list = document.getElementById('refuge-list');
+  list.innerHTML = '';
+
+  const visible = REFUGES.filter(r => FILTERS[getStatus(r)]);
+
+  visible.forEach(r => {
+    const score  = getScore(r);
+    const status = getStatus(r);
+    const color  = statusColor(status);
+
+    const div = document.createElement('div');
+    div.className = 'refuge-item' + (SELECTED === r.id ? ' selected' : '');
+    div.dataset.id = r.id;
+    div.onclick = () => selectRefuge(r.id);
+
+    const careHtml = r.care_officiel
+      ? `<div class="care-badge">★ CARE officiel</div>`
+      : '';
+
+    const statusLabel = { sur: 'Sûr', menace: 'Menacé', critique: 'Critique' }[status];
+
+    div.innerHTML = `
+      ${careHtml}
+      <div class="ri-name">${r.nom}</div>
+      <div class="ri-type">${r.type || '—'}</div>
+      <div class="ri-score-row">
+        <div class="score-bar-wrap">
+          <div class="score-bar" style="width:${score}%;background:${color}"></div>
+        </div>
+        <div class="score-val" style="color:${color}">${score}</div>
+      </div>
+      <span class="status-badge" style="background:${color}20;color:${color};border:1px solid ${color}40">
+        ${statusLabel}
+      </span>
+    `;
+
+    list.appendChild(div);
+  });
+
+  // Mise à jour compteurs
+  const total   = REFUGES.length;
+  const sur     = REFUGES.filter(r => scoreToStatus(getScore(r)) === 'sur').length;
+  const menace  = REFUGES.filter(r => scoreToStatus(getScore(r)) === 'menace').length;
+  const crit    = REFUGES.filter(r => scoreToStatus(getScore(r)) === 'critique').length;
+
+  document.getElementById('panel-count').innerHTML = `${visible.length} <span>/ ${total} refuges</span>`;
+  document.getElementById('stat-sur').textContent     = sur;
+  document.getElementById('stat-menace').textContent  = menace;
+  document.getElementById('stat-critique').textContent = crit;
+}
+
+// ── Sélection d'un refuge ─────────────────────────────────────────────────────
+
+function selectRefuge(id) {
+  SELECTED = id;
+  const refuge = REFUGES.find(r => r.id === id);
+  if (!refuge) return;
+
+  // Centrer carte
+  MAP.setView([refuge.lat, refuge.lng], 15, { animate: true });
+
+  // Mettre à jour liste
+  document.querySelectorAll('.refuge-item').forEach(el => {
+    el.classList.toggle('selected', parseInt(el.dataset.id) === id);
+  });
+
+  // Scroll vers l'item
+  const el = document.querySelector(`.refuge-item[data-id="${id}"]`);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+  // Afficher panel détail
+  showDetail(refuge);
+}
+
+// ── Panel détail ──────────────────────────────────────────────────────────────
+
+function showDetail(refuge) {
+  const score  = getScore(refuge);
+  const status = getStatus(refuge);
+  const color  = statusColor(status);
+
+  document.getElementById('detail-dot').style.background = color;
+  document.getElementById('detail-name').textContent = refuge.nom;
+  document.getElementById('detail-type').textContent =
+    (refuge.type === 'parc' ? '🌿 ' : '') + [refuge.adresse].filter(Boolean).join(' · ') || '—';
+
+  document.getElementById('detail-score-num').textContent = score;
+  document.getElementById('detail-score-num').style.color = color;
+
+  // CARE badge
+  const careBadge = document.getElementById('detail-care-badge');
+  careBadge.innerHTML = refuge.care_officiel
+    ? `<span class="care-badge" style="margin-left:8px">★ CARE officiel</span>` : '';
+
+  // Capacités
+  const caps = document.getElementById('detail-caps');
+  if (refuge.capacite || refuge.superficie) {
+    caps.innerHTML = `
+      ${refuge.capacite ? `<div class="cap-chip"><div class="cv">${refuge.capacite}</div><div style="font-size:10px">personnes</div></div>` : ''}
+      ${refuge.superficie ? `<div class="cap-chip"><div class="cv">${refuge.superficie}</div><div style="font-size:10px">m²</div></div>` : ''}
+    `;
+    caps.style.display = 'flex';
+  } else {
+    caps.style.display = 'none';
+  }
+
+  // Scores par horizon
+  const horizons = document.getElementById('detail-horizons');
+  const hData = refuge.scores || {};
+  horizons.innerHTML = [2026, 2030, 2040, 2050].map(h => {
+    const hs = hData[String(h)] || { score: score, status: status };
+    const c  = statusColor(hs.status || scoreToStatus(hs.score));
+    return `<div class="hs-item">
+      <div class="hs-year">${h}</div>
+      <div class="hs-score" style="color:${c}">${hs.score}</div>
+    </div>`;
+  }).join('');
+
+  // Risques
+  const risks = document.getElementById('detail-risks');
+  const floodLabel = { none: 'Aucun', future: 'Futur', moderate: 'Modéré', high: 'Fort' }[refuge.risks?.flood] || '—';
+  const heatLabel  = { none: 'Aucun', cool: 'Îlot frais', low: 'Faible', moderate: 'Modéré', high: 'Fort' }[refuge.risks?.heat] || '—';
+  const floodColor = { none: 'var(--muted)', future: 'var(--warn)', moderate: 'var(--warn)', high: 'var(--danger)' }[refuge.risks?.flood] || 'var(--muted)';
+  const heatColor  = { none: 'var(--muted)', cool: 'var(--ok)', low: 'var(--muted)', moderate: 'var(--warn)', high: 'var(--danger)' }[refuge.risks?.heat] || 'var(--muted)';
+
+  risks.innerHTML = `
+    <div class="risk-chip">
+      <div class="rc-icon">💧</div>
+      <div class="rc-label">Inondation</div>
+      <div class="rc-val" style="color:${floodColor}">${floodLabel}</div>
+    </div>
+    <div class="risk-chip">
+      <div class="rc-icon">🌡️</div>
+      <div class="rc-label">Chaleur</div>
+      <div class="rc-val" style="color:${heatColor}">${heatLabel}</div>
+    </div>
+  `;
+
+  document.getElementById('detail-reco').textContent = refuge.reco || '—';
+
+  document.getElementById('detail-panel').classList.add('visible');
+}
+
+function closeDetail() {
+  document.getElementById('detail-panel').classList.remove('visible');
+  SELECTED = null;
+  document.querySelectorAll('.refuge-item').forEach(el => el.classList.remove('selected'));
+}
+
+// ── Filtres ───────────────────────────────────────────────────────────────────
+
+function toggleFilter(status) {
+  FILTERS[status] = !FILTERS[status];
+  const btn = document.getElementById(`f-${status}`);
+  const activeClass = { sur: 'active-ok', menace: 'active-warn', critique: 'active-crit' }[status];
+  btn.classList.toggle(activeClass, FILTERS[status]);
+  renderMarkers();
+  renderList();
+}
+
+// ── Horizon ───────────────────────────────────────────────────────────────────
+
+function setHorizon(h) {
+  HORIZON = h;
+  document.querySelectorAll('.horizon-btn').forEach(b => {
+    b.classList.toggle('active', parseInt(b.textContent) === h);
+  });
+  renderMarkers();
+  renderList();
+  if (SELECTED !== null) {
+    const r = REFUGES.find(x => x.id === SELECTED);
+    if (r) showDetail(r);
+  }
+}
+
+// ── Couches de risque ─────────────────────────────────────────────────────────
+
+async function loadRiskLayers() {
+  // Zones inondables
+  try {
+    const r = await fetch('../data/processed/zones_inondables_clipped.geojson');
+    if (r.ok) {
+      const data = await r.json();
+      LAYER_FLOOD = L.geoJSON(data, {
+        style: () => ({
+          fillColor: '#3b82f6',
+          fillOpacity: 0.22,
+          color: '#60a5fa',
+          weight: 0.8,
+          dashArray: '4 4',
+        }),
+        onEachFeature: (feature, layer) => {
+          const niveau = feature.properties?.niveau_alea || feature.properties?.LIB_ZONE || 'Zone inondable';
+          layer.bindTooltip(`💧 ${niveau}`, { sticky: true, className: 'leaflet-tooltip-dark' });
+        }
+      });
+    }
+  } catch(e) { /* données non disponibles */ }
+
+  // Îlots de chaleur
+  try {
+    const r = await fetch('../data/raw/ilots_chaleur.geojson');
+    if (r.ok) {
+      const data = await r.json();
+      LAYER_HEAT = L.geoJSON(data, {
+        style: feature => {
+          const intensite = feature.properties?.INTENSITE || feature.properties?.intensite || 1;
+          const colors = { 1: '#fbbf24', 2: '#f97316', 3: '#ef4444' };
+          return {
+            fillColor: colors[Math.round(intensite)] || '#f97316',
+            fillOpacity: 0.28,
+            color: 'transparent',
+            weight: 0,
+          };
+        },
+        onEachFeature: (feature, layer) => {
+          const i = feature.properties?.INTENSITE || '?';
+          layer.bindTooltip(`🌡️ Intensité : ${i}/3`, { sticky: true });
+        }
+      });
+    }
+  } catch(e) { /* données non disponibles */ }
+}
+
+function toggleLayer(type) {
+  LAYERS_ON[type] = !LAYERS_ON[type];
+  const layer = type === 'flood' ? LAYER_FLOOD : LAYER_HEAT;
+  const btn = document.getElementById(`btn-${type}`);
+  const activeClass = type === 'flood' ? 'flood-active' : 'heat-active';
+
+  if (!layer) {
+    console.warn(`Couche ${type} non disponible — données non chargées`);
+    return;
+  }
+
+  if (LAYERS_ON[type]) {
+    layer.addTo(MAP);
+    btn.classList.add(activeClass);
+    // Remettre les markers au-dessus
+    Object.values(MARKERS).forEach(m => m.bringToFront && m.bringToFront());
+  } else {
+    MAP.removeLayer(layer);
+    btn.classList.remove(activeClass);
+  }
+}
+
+// ── Chargement des données ────────────────────────────────────────────────────
+
+async function loadData() {
+  try {
+    const r = await fetch('../data/processed/refuges_diagnostiques.json');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const json = await r.json();
+
+    // Support format { meta, refuges } ou tableau direct
+    REFUGES = Array.isArray(json) ? json : (json.refuges || []);
+
+    if (REFUGES.length === 0) throw new Error('Aucun refuge dans le fichier');
+
+    // Afficher méta si dispo
+    if (json.meta) {
+      console.log(`BordeauxSafePlace — ${json.meta.total_refuges} refuges chargés (${json.meta.commune})`);
+    }
+
+    return true;
+  } catch(e) {
+    console.warn('Données réelles non disponibles, chargement des données de démo...', e);
+    loadDemoData();
+    return false;
+  }
+}
+
+// ── Données de démo (fallback si pas de données processées) ───────────────────
+
+function loadDemoData() {
+  const types = ['Sport-loisir - Socio-educatif', 'Santé et action sociale', 'Sénior'];
+  const quartiers = ['Bastide', 'Bacalan', 'Saint-Michel', 'Chartrons', 'Mériadeck', 'Capucins', 'Caudéran'];
+
+  REFUGES = [];
+
+  const seeds = [
+    { nom: 'Gymnase Jean-Dauguet', lat: 44.8351, lng: -0.5521, care: true, flood: 'none',  heat: 'moderate' },
+    { nom: 'Salle Eugénie Eboué-Tell', lat: 44.8292, lng: -0.5811, care: true, flood: 'none',  heat: 'none' },
+    { nom: 'Gymnase Promis', lat: 44.8330, lng: -0.5490, care: true, flood: 'high',  heat: 'moderate' },
+    { nom: 'Gymnase Galin', lat: 44.8220, lng: -0.5640, care: false, flood: 'none',  heat: 'none' },
+    { nom: 'Salle des fêtes Saint-Pierre', lat: 44.8410, lng: -0.5730, care: false, flood: 'high',  heat: 'high' },
+    { nom: 'EHPAD Les Chartrons', lat: 44.8500, lng: -0.5790, care: false, flood: 'none',  heat: 'moderate' },
+    { nom: 'Centre sportif Caudéran', lat: 44.8445, lng: -0.6100, care: false, flood: 'none',  heat: 'none' },
+    { nom: 'Gymnase Bacalan', lat: 44.8600, lng: -0.5750, care: false, flood: 'moderate', heat: 'high' },
+    { nom: 'Salle polyvalente Bastide', lat: 44.8280, lng: -0.5450, care: false, flood: 'high',  heat: 'moderate' },
+    { nom: 'Centre social Mériadeck', lat: 44.8360, lng: -0.5820, care: false, flood: 'none',  heat: 'none' },
+    { nom: 'Gymnase Nansouty', lat: 44.8200, lng: -0.5720, care: false, flood: 'none',  heat: 'moderate' },
+    { nom: 'Salle omnisports Saint-Augustin', lat: 44.8480, lng: -0.5950, care: false, flood: 'none',  heat: 'none' },
+  ];
+
+  seeds.forEach((s, i) => {
+    const HORIZONS_COEF = {
+      2026: { f: 1.0,  h: 1.0 },
+      2030: { f: 1.1,  h: 1.15 },
+      2040: { f: 1.25, h: 1.35 },
+      2050: { f: 1.45, h: 1.6 },
+    };
+
+    function calcScore(flood, heat, coef) {
+      let sc = 100;
+      if (flood === 'high')     sc -= 45 * coef.f;
+      if (flood === 'moderate') sc -= 20 * coef.f;
+      if (heat === 'high')      sc -= 25 * coef.h;
+      if (heat === 'moderate')  sc -= 10 * coef.h;
+      return Math.max(0, Math.min(100, Math.round(sc)));
+    }
+
+    const scores = {};
+    [2026, 2030, 2040, 2050].forEach(h => {
+      const sc = calcScore(s.flood, s.heat, HORIZONS_COEF[h]);
+      scores[String(h)] = { score: sc, status: scoreToStatus(sc) };
+    });
+
+    REFUGES.push({
+      id: i,
+      nom: s.nom,
+      type: types[i % 3],
+      adresse: `${10 + i * 7} rue de la ${quartiers[i % quartiers.length]}`,
+      commune: 'Bordeaux',
+      quartier: quartiers[i % quartiers.length],
+      lat: s.lat + (Math.random() - 0.5) * 0.005,
+      lng: s.lng + (Math.random() - 0.5) * 0.005,
+      superficie: [300, 450, 600, 800, 1200][i % 5],
+      capacite: [50, 80, 120, 200, 300][i % 5],
+      care_officiel: s.care,
+      risks: {
+        flood: s.flood,
+        flood_niveau: s.flood === 'high' ? 'Fort' : null,
+        heat: s.heat,
+        heat_intensite: s.heat === 'high' ? 3 : s.heat === 'moderate' ? 2 : 0,
+      },
+      scores,
+      score: scores['2026'].score,
+      status: scores['2026'].status,
+      reco: s.flood === 'high'
+        ? 'Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue.'
+        : s.heat === 'high'
+        ? 'Situé en îlot de chaleur intense — prévoir climatisation ou ventilation renforcée.'
+        : 'Refuge fiable. Capacité d\'accueil suffisante, hors zone à risque majeur.',
+    });
+  });
+
+  console.warn('⚠️ Mode démo — lancer fetch_data.py puis stress_test.py pour les vraies données');
+
+  // Notice
+  const notice = document.createElement('div');
+  notice.className = 'no-data-notice';
+  notice.innerHTML = `
+    <h3>⚠️ Données de démonstration</h3>
+    <p>Les vraies données n'ont pas été trouvées dans <code>data/processed/</code>.</p>
+    <p style="margin-top:8px">Pour utiliser les données réelles :</p>
+    <code>python scripts/fetch_data.py<br>python scripts/stress_test.py</code>
+  `;
+  document.querySelector('.main').appendChild(notice);
+  setTimeout(() => notice.remove(), 8000);
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+
+async function init() {
+  initMap();
+  await loadData();
+  await loadRiskLayers();
+
+  renderMarkers();
+  renderList();
+
+  // Cacher loading
+  setTimeout(() => {
+    document.getElementById('loading').classList.add('hidden');
+    setTimeout(() => document.getElementById('loading').remove(), 500);
+  }, 800);
+}
+
+init();
+</script>
+</body>
+</html>

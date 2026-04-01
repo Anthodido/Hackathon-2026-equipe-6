@@ -1,0 +1,58 @@
+{
+  "source": "Open-Meteo Climate API — CMIP6",
+  "modeles": [
+    "MRI_AGCM3_2_S",
+    "EC_Earth3P_HR",
+    "CMCC_CM2_VHR4"
+  ],
+  "localisation": {
+    "lat": 44.84,
+    "lon": -0.58,
+    "commune": "Bordeaux"
+  },
+  "generated_at": "2026-04-01T11:23:46.174288",
+  "seuils": {
+    "canicule_c": 35.0,
+    "canicule2_c": 40.0,
+    "pluie_ext_mm": 20.0
+  },
+  "horizons": {
+    "2026": {
+      "jours_sup35": 4.7,
+      "jours_sup40": 0.1,
+      "jours_pluie_ext": 3.4,
+      "tmax_annuel": 37.5,
+      "annees_fenetre": "2024-2028",
+      "coeff_chaleur": 1.0,
+      "coeff_inondation": 1.0
+    },
+    "2030": {
+      "jours_sup35": 9.8,
+      "jours_sup40": 1.1,
+      "jours_pluie_ext": 3.3,
+      "tmax_annuel": 39.6,
+      "annees_fenetre": "2028-2032",
+      "coeff_chaleur": 1.25,
+      "coeff_inondation": 1.15
+    },
+    "2040": {
+      "jours_sup35": 10.1,
+      "jours_sup40": 1.1,
+      "jours_pluie_ext": 3.6,
+      "tmax_annuel": 39.6,
+      "annees_fenetre": "2038-2042",
+      "coeff_chaleur": 1.6,
+      "coeff_inondation": 1.35
+    },
+    "2050": {
+      "jours_sup35": 9.6,
+      "jours_sup40": 1.2,
+      "jours_pluie_ext": 5.0,
+      "tmax_annuel": 36.2,
+      "annees_fenetre": "2048-2050",
+      "coeff_chaleur": 2.25,
+      "coeff_inondation": 1.55
+    }
+  },
+  "note": "Les coefficients sont normalisés sur la base 2026=1.0. Ils remplacent les constantes codées en dur dans stress_test.py."
+}

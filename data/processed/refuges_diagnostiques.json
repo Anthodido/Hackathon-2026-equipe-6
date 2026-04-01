@@ -1,0 +1,4416 @@
+{
+  "meta": {
+    "generated_at": "2026-04-01T12:56:52.508322",
+    "commune": "Bordeaux",
+    "total_refuges": 110,
+    "stats": {
+      "sur": 92,
+      "menace": 2,
+      "critique": 16,
+      "care_officiels": 3
+    },
+    "methodologie": "Score calculé en croisant équipements Sport-loisir/Santé/Sénior avec PPRI (inondation) et îlots de chaleur. Pondérations aggravées par horizon temporel selon tendances IPCC."
+  },
+  "refuges": [
+    {
+      "id": 20,
+      "nom": "Centre hippique de Bordeaux Lac",
+      "type": "C",
+      "adresse": "155 avenue du Port du Roy",
+      "commune": "33056",
+      "quartier": "",
+      "lat": 44.912161,
+      "lng": -0.573773,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "none",
+        "heat_intensite": 0.0
+      },
+      "scores": {
+        "2026": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 98,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 95,
+          "status": "sur"
+        },
+        "2050": {
+          "score": 90,
+          "status": "sur"
+        }
+      },
+      "score": 100,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 30,
+      "nom": "FC Girondins de Bordeaux",
+      "type": "C",
+      "adresse": "31 rue Joliot Curie",
+      "commune": "33200",
+      "quartier": "",
+      "lat": 44.875618,
+      "lng": -0.670364,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "none",
+        "heat_intensite": 0.0
+      },
+      "scores": {
+        "2026": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 98,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 95,
+          "status": "sur"
+        },
+        "2050": {
+          "score": 90,
+          "status": "sur"
+        }
+      },
+      "score": 100,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 46,
+      "nom": "Les Girondins de Bordeaux Omnisports - Domaine de Rocquevielle",
+      "type": "C",
+      "adresse": "107 avenue Marcel Dassault",
+      "commune": "33281",
+      "quartier": "",
+      "lat": 44.848348,
+      "lng": -0.713134,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "none",
+        "heat_intensite": 0.0
+      },
+      "scores": {
+        "2026": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 98,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 95,
+          "status": "sur"
+        },
+        "2050": {
+          "score": 90,
+          "status": "sur"
+        }
+      },
+      "score": 100,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 72,
+      "nom": "Zoo de Bordeaux Pessac",
+      "type": "C",
+      "adresse": "nan",
+      "commune": "33318",
+      "quartier": "",
+      "lat": 44.80238,
+      "lng": -0.698979,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "cool",
+        "heat_intensite": -3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 98,
+          "status": "sur"
+        },
+        "2050": {
+          "score": 92,
+          "status": "sur"
+        }
+      },
+      "score": 100,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 8002,
+      "nom": "Jardin des Lumières",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.841676,
+      "lng": -0.568991,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "cool",
+        "heat_intensite": -3.9
+      },
+      "scores": {
+        "2026": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 98,
+          "status": "sur"
+        },
+        "2050": {
+          "score": 92,
+          "status": "sur"
+        }
+      },
+      "score": 100,
+      "status": "sur",
+      "reco": "Îlot de fraîcheur naturel — refuge thermique recommandé en canicule."
+    },
+    {
+      "id": 8006,
+      "nom": "Parc Céré",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.850283,
+      "lng": -0.603429,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "cool",
+        "heat_intensite": -3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 98,
+          "status": "sur"
+        },
+        "2050": {
+          "score": 92,
+          "status": "sur"
+        }
+      },
+      "score": 100,
+      "status": "sur",
+      "reco": "Îlot de fraîcheur naturel — refuge thermique recommandé en canicule."
+    },
+    {
+      "id": 8064,
+      "nom": "Parc Bordelais",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.853018,
+      "lng": -0.602399,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "cool",
+        "heat_intensite": -0.9
+      },
+      "scores": {
+        "2026": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 99,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 96,
+          "status": "sur"
+        },
+        "2050": {
+          "score": 91,
+          "status": "sur"
+        }
+      },
+      "score": 100,
+      "status": "sur",
+      "reco": "Îlot de fraîcheur naturel — refuge thermique recommandé en canicule."
+    },
+    {
+      "id": 8065,
+      "nom": "Jardin Public",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.848949,
+      "lng": -0.57838,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "cool",
+        "heat_intensite": -2.3
+      },
+      "scores": {
+        "2026": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 100,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 97,
+          "status": "sur"
+        },
+        "2050": {
+          "score": 92,
+          "status": "sur"
+        }
+      },
+      "score": 100,
+      "status": "sur",
+      "reco": "Îlot de fraîcheur naturel — refuge thermique recommandé en canicule."
+    },
+    {
+      "id": 8025,
+      "nom": "Parc Rivière",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.855118,
+      "lng": -0.586838,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "low",
+        "heat_intensite": 1.5
+      },
+      "scores": {
+        "2026": {
+          "score": 94,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 90,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2050": {
+          "score": 76,
+          "status": "sur"
+        }
+      },
+      "score": 94,
+      "status": "sur",
+      "reco": "Espace vert urbain — refuge thermique de jour en vague de chaleur."
+    },
+    {
+      "id": 1,
+      "nom": "Centre de loisirs Vieux Bordeaux",
+      "type": "C",
+      "adresse": "7 rue Dieu",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.841885,
+      "lng": -0.571207,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 34,
+      "nom": "Bordeaux Lac",
+      "type": "C",
+      "adresse": "79 cours des Aubiers",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.872576,
+      "lng": -0.572623,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 8009,
+      "nom": "Square Saint John Perse",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.837122,
+      "lng": -0.581783,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8010,
+      "nom": "Square André Lhôte",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.837833,
+      "lng": -0.582095,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8015,
+      "nom": "Square Vinet",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.839423,
+      "lng": -0.571468,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8022,
+      "nom": "Square Raymond Poincaré",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.84433,
+      "lng": -0.620532,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8031,
+      "nom": "Jardin du Clown Chocolat",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.877887,
+      "lng": -0.572529,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8032,
+      "nom": "Parc du Grand Parc",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.860734,
+      "lng": -0.581542,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8035,
+      "nom": "place des Martyrs de la Résistance",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.842661,
+      "lng": -0.585337,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8043,
+      "nom": "Jardin des Dames de la Foi",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.825001,
+      "lng": -0.582064,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8069,
+      "nom": "Square Samuel Paty",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.851248,
+      "lng": -0.614627,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8074,
+      "nom": "Esplanade Charles de Gaulle",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.837379,
+      "lng": -0.584118,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 88,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 81,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 62,
+          "status": "menace"
+        }
+      },
+      "score": 88,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8012,
+      "nom": "Square des Jasmins",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.860154,
+      "lng": -0.637166,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.2
+      },
+      "scores": {
+        "2026": {
+          "score": 87,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 72,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 61,
+          "status": "menace"
+        }
+      },
+      "score": 87,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8021,
+      "nom": "Square Emile Combes-Jean Gautier",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.836552,
+      "lng": -0.608016,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.2
+      },
+      "scores": {
+        "2026": {
+          "score": 87,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 72,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 61,
+          "status": "menace"
+        }
+      },
+      "score": 87,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8039,
+      "nom": "Jardin André Meunier",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.829257,
+      "lng": -0.562398,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.3
+      },
+      "scores": {
+        "2026": {
+          "score": 87,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 71,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 60,
+          "status": "menace"
+        }
+      },
+      "score": 87,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8045,
+      "nom": "Jardin du Moulin d'Ars",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.814291,
+      "lng": -0.572462,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.3
+      },
+      "scores": {
+        "2026": {
+          "score": 87,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 71,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 60,
+          "status": "menace"
+        }
+      },
+      "score": 87,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8057,
+      "nom": "Square Armand Faulat",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.845811,
+      "lng": -0.614604,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.3
+      },
+      "scores": {
+        "2026": {
+          "score": 87,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 71,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 60,
+          "status": "menace"
+        }
+      },
+      "score": 87,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8071,
+      "nom": "Square Georges Mandel",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.841988,
+      "lng": -0.593305,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.3
+      },
+      "scores": {
+        "2026": {
+          "score": 87,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 71,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 60,
+          "status": "menace"
+        }
+      },
+      "score": 87,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8000,
+      "nom": "Jardin des Barrières",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.813129,
+      "lng": -0.566341,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8004,
+      "nom": "Jardin de la Visitation",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.848301,
+      "lng": -0.595096,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8005,
+      "nom": "Parc Monséjour",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.854149,
+      "lng": -0.631544,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.6
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 69,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 57,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8008,
+      "nom": "place Gambetta",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.841083,
+      "lng": -0.580551,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8016,
+      "nom": "Square Alfred Smith",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.824654,
+      "lng": -0.612605,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8018,
+      "nom": "Square Gaviniès",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.833127,
+      "lng": -0.593614,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.4
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 79,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 71,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 59,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8037,
+      "nom": "Aire de jeux Amédée Saint Germain",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.821705,
+      "lng": -0.55887,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8040,
+      "nom": "Parc de la Cité des Aubiers_Aire de jeux (Bâtiment)",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.87253,
+      "lng": -0.571041,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8046,
+      "nom": "Square Hortense Schneider",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.860609,
+      "lng": -0.617049,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8049,
+      "nom": "Jardin de la Mairie",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.837805,
+      "lng": -0.580479,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8053,
+      "nom": "Parc de la Cité Carreire",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.823651,
+      "lng": -0.608604,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8060,
+      "nom": "Jardin Brascassat",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.815422,
+      "lng": -0.554304,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8061,
+      "nom": "Jardin de la Béchade",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.826452,
+      "lng": -0.598501,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8068,
+      "nom": "Square Honoré d'Estienne d'Orves",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.855112,
+      "lng": -0.614871,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.6
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 69,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 57,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8079,
+      "nom": "Jardin de Lussy",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.84024,
+      "lng": -0.606915,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8080,
+      "nom": "Parc Denis et Eugène Bühler",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.876425,
+      "lng": -0.57239,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8082,
+      "nom": "Jardin Saint Julien",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.819808,
+      "lng": -0.599094,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.4
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 79,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 71,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 59,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8087,
+      "nom": "Square Jean Bureau_Aire de jeux",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.836597,
+      "lng": -0.569567,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 86,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 58,
+          "status": "critique"
+        }
+      },
+      "score": 86,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8011,
+      "nom": "Jardin de Lili",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.833058,
+      "lng": -0.611246,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.7
+      },
+      "scores": {
+        "2026": {
+          "score": 85,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 77,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 68,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 56,
+          "status": "critique"
+        }
+      },
+      "score": 85,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8084,
+      "nom": "Square des Tilleuls",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.826308,
+      "lng": -0.592399,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.7
+      },
+      "scores": {
+        "2026": {
+          "score": 85,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 77,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 68,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 56,
+          "status": "critique"
+        }
+      },
+      "score": 85,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8088,
+      "nom": "Jardin Amédée Saint Germain",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.82077,
+      "lng": -0.559698,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.8
+      },
+      "scores": {
+        "2026": {
+          "score": 85,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 77,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 68,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 55,
+          "status": "critique"
+        }
+      },
+      "score": 85,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8092,
+      "nom": "place du Maucaillou_Aire de jeux",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.832407,
+      "lng": -0.566844,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 3.8
+      },
+      "scores": {
+        "2026": {
+          "score": 85,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 77,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 68,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 55,
+          "status": "critique"
+        }
+      },
+      "score": 85,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 2,
+      "nom": "Bordeaux Athlé",
+      "type": "C",
+      "adresse": "290 avenue du Maréchal de Lattre de Tassigny",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.854834,
+      "lng": -0.621821,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 4,
+      "nom": "Foyer Adoma Bordeaux Monnaie",
+      "type": "B",
+      "adresse": "13 rue de la Porte de la Monnaie",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.832646,
+      "lng": -0.56265,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 17,
+      "nom": "CMP Bordeaux Gare",
+      "type": "B",
+      "adresse": "116 rue Malbec",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.823897,
+      "lng": -0.565057,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 18,
+      "nom": "Le 4 de Bordeaux",
+      "type": "B",
+      "adresse": "118 rue Héron",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.830727,
+      "lng": -0.589546,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 25,
+      "nom": "CMP Bordeaux Centre",
+      "type": "B",
+      "adresse": "69 rue Commandant Arnould",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.83413,
+      "lng": -0.577273,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 33,
+      "nom": "Espace sportif La Flèche de Bordeaux",
+      "type": "C",
+      "adresse": "21 rue Ulysse Despaux",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.833929,
+      "lng": -0.567233,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 39,
+      "nom": "MDSI Bordeaux Centre",
+      "type": "B",
+      "adresse": "14 rue Poitevin",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.845677,
+      "lng": -0.583192,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 48,
+      "nom": "Dojo Bordeaux Talence Métropole",
+      "type": "C",
+      "adresse": "84 cours Aristide Briand",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.831646,
+      "lng": -0.575299,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 61,
+      "nom": "Foyer d'hébergement Le Phare de Bordeaux",
+      "type": "B",
+      "adresse": "2 place des Cèdres",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.828885,
+      "lng": -0.601325,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 68,
+      "nom": "Foyer Adoma Bordeaux Rolland",
+      "type": "B",
+      "adresse": "7 rue Rolland",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.842874,
+      "lng": -0.580018,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 79,
+      "nom": "PMI - Maison des solidarités Bordeaux Centre",
+      "type": "B",
+      "adresse": "14 rue Poitevin",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.845616,
+      "lng": -0.583234,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 83,
+      "nom": "CMP Bordeaux Nord",
+      "type": "B",
+      "adresse": "2 rue Jean Artus",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.861313,
+      "lng": -0.583324,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 90,
+      "nom": "Foyer Adoma Bordeaux Clare",
+      "type": "B",
+      "adresse": "8 rue Clare",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.831794,
+      "lng": -0.56703,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 91,
+      "nom": "Foyer Adoma Bordeaux Kyrie",
+      "type": "B",
+      "adresse": "38 rue Kyrie",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.822633,
+      "lng": -0.569909,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 8014,
+      "nom": "Jardin de la Croix du Sud",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.817826,
+      "lng": -0.573904,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8020,
+      "nom": "Square du professeur Jacques Lasserre",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.824739,
+      "lng": -0.57715,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8026,
+      "nom": "place Francis de Pressensé_Aire de jeux",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.832219,
+      "lng": -0.575374,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8048,
+      "nom": "Square Etienne Morin",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.86427,
+      "lng": -0.570387,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8050,
+      "nom": "Square Picard",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.855311,
+      "lng": -0.571416,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8054,
+      "nom": "Square Charazac",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.86433,
+      "lng": -0.576683,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8066,
+      "nom": "place d'Arlac_Aire de jeux",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.830638,
+      "lng": -0.588618,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8067,
+      "nom": "Square de l'Europe",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.859144,
+      "lng": -0.582046,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.1
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 75,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 65,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 52,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8070,
+      "nom": "Square Paul Antin",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.819482,
+      "lng": -0.570261,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8081,
+      "nom": "Square Bertrand de Goth",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.819221,
+      "lng": -0.577598,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8083,
+      "nom": "place Valmy",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.822839,
+      "lng": -0.594946,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8093,
+      "nom": "place Simiot_Aire de jeux",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.822875,
+      "lng": -0.577525,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8094,
+      "nom": "place Pierre Jacques Dormoy_Aire de jeux",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.826774,
+      "lng": -0.564476,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 53,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8052,
+      "nom": "Jardin de la Grenouillère",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.861728,
+      "lng": -0.57448,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.2
+      },
+      "scores": {
+        "2026": {
+          "score": 83,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 74,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 65,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 51,
+          "status": "critique"
+        }
+      },
+      "score": 83,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8072,
+      "nom": "Parc Stéhélin",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.856799,
+      "lng": -0.623647,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.3
+      },
+      "scores": {
+        "2026": {
+          "score": 83,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 74,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 64,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 50,
+          "status": "critique"
+        }
+      },
+      "score": 83,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8047,
+      "nom": "Square de la piscine Stéhélin",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.857589,
+      "lng": -0.622305,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.5
+      },
+      "scores": {
+        "2026": {
+          "score": 82,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 63,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 49,
+          "status": "critique"
+        }
+      },
+      "score": 82,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8056,
+      "nom": "Square Dom Bedos",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.831049,
+      "lng": -0.560222,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 4.5
+      },
+      "scores": {
+        "2026": {
+          "score": 82,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 63,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 49,
+          "status": "critique"
+        }
+      },
+      "score": 82,
+      "status": "sur",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 13,
+      "nom": "CMP ZADOS Bordeaux Saint-Jean",
+      "type": "B",
+      "adresse": "25 Rue Lajarte",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.825062,
+      "lng": -0.571136,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 59,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 44,
+          "status": "critique"
+        }
+      },
+      "score": 80,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 19,
+      "nom": "Centre des Restos du Coeur Bordeaux Leydet",
+      "type": "B",
+      "adresse": "3 rue Leydet",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.822372,
+      "lng": -0.573158,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 59,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 44,
+          "status": "critique"
+        }
+      },
+      "score": 80,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 26,
+      "nom": "Centre social et familial Bordeaux Nord",
+      "type": "B",
+      "adresse": "58 rue Joséphine",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.860125,
+      "lng": -0.562141,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 59,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 44,
+          "status": "critique"
+        }
+      },
+      "score": 80,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 27,
+      "nom": "CMS Bordeaux Sud",
+      "type": "B",
+      "adresse": "10 rue Vilaris",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.826168,
+      "lng": -0.563814,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 59,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 44,
+          "status": "critique"
+        }
+      },
+      "score": 80,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 62,
+      "nom": "CMS Bordeaux Nord",
+      "type": "B",
+      "adresse": "9 rue Gouffrand",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.855603,
+      "lng": -0.572733,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 59,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 44,
+          "status": "critique"
+        }
+      },
+      "score": 80,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 63,
+      "nom": "Foyer Adoma Bordeaux Daney",
+      "type": "B",
+      "adresse": "33 boulevard Alfred Daney",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.867372,
+      "lng": -0.574142,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 59,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 44,
+          "status": "critique"
+        }
+      },
+      "score": 80,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 64,
+      "nom": "Polyclinique Bordeaux Rive Droite",
+      "type": "B",
+      "adresse": "24 rue des Cavaillès",
+      "commune": "33249",
+      "quartier": "",
+      "lat": 44.864692,
+      "lng": -0.522029,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 59,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 44,
+          "status": "critique"
+        }
+      },
+      "score": 80,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 66,
+      "nom": "Polyclinique Bordeaux Nord",
+      "type": "B",
+      "adresse": "15 rue Claude Boucher",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.863771,
+      "lng": -0.57889,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 59,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 44,
+          "status": "critique"
+        }
+      },
+      "score": 80,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 78,
+      "nom": "PMI - Maison des solidarités Bordeaux Saint Jean",
+      "type": "B",
+      "adresse": "15 rue Belle Etoile",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.828696,
+      "lng": -0.559316,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 59,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 44,
+          "status": "critique"
+        }
+      },
+      "score": 80,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 86,
+      "nom": "Accueil de jour des Restos du Coeur Bordeaux",
+      "type": "B",
+      "adresse": "77 rue Professeur Lannelongue",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.86779,
+      "lng": -0.575504,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 59,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 44,
+          "status": "critique"
+        }
+      },
+      "score": 80,
+      "status": "sur",
+      "reco": "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
+    },
+    {
+      "id": 9002,
+      "nom": "Salle Eugénie Eboué-Tell",
+      "type": "C",
+      "adresse": "15-19 rue Marcel Pagnol",
+      "commune": "Bordeaux",
+      "quartier": "Bassins à Flot",
+      "lat": 44.8638,
+      "lng": -0.5712,
+      "superficie": 600,
+      "capacite": 250,
+      "care_officiel": true,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 80,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 59,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 44,
+          "status": "critique"
+        }
+      },
+      "score": 80,
+      "status": "sur",
+      "reco": "CARE officiel activé lors de la crise de février 2026."
+    },
+    {
+      "id": 84,
+      "nom": "CMPEA Bordeaux Gare",
+      "type": "B",
+      "adresse": "137 cours de la Marne",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.828957,
+      "lng": -0.565083,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": "None",
+        "heat": "high",
+        "heat_intensite": 6.0
+      },
+      "scores": {
+        "2026": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 64,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 52,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 35,
+          "status": "critique"
+        }
+      },
+      "score": 76,
+      "status": "sur",
+      "reco": "Situé en îlot de chaleur intense — prévoir climatisation ou ventilation renforcée."
+    },
+    {
+      "id": 89,
+      "nom": "Golf de Bordeaux Lac",
+      "type": "C",
+      "adresse": "Avenue du Golf",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.909573,
+      "lng": -0.566944,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "cool",
+        "heat_intensite": -3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 60,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 50,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 37,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 22,
+          "status": "critique"
+        }
+      },
+      "score": 60,
+      "status": "menace",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 98,
+      "nom": "Bois de Bordeaux",
+      "type": "H",
+      "adresse": "Allée du Bois",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.903952,
+      "lng": -0.574924,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "cool",
+        "heat_intensite": -4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 60,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 51,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 37,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 22,
+          "status": "critique"
+        }
+      },
+      "score": 60,
+      "status": "menace",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 3,
+      "nom": "Bordeaux Sud",
+      "type": "C",
+      "adresse": "13 rue du Professeur Devaux",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.817865,
+      "lng": -0.550471,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 43,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 29,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 13,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 43,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 14,
+      "nom": "CMS Bordeaux Maritime",
+      "type": "B",
+      "adresse": "71 boulevard Albert Stuttenberg",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.875828,
+      "lng": -0.546855,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 43,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 29,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 13,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 43,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 29,
+      "nom": "Foyer Adoma Bordeaux Lombard",
+      "type": "B",
+      "adresse": "3 rue Lombard",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.857183,
+      "lng": -0.561439,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 43,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 29,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 13,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 43,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 36,
+      "nom": "Foyer Adoma Bordeaux Fours",
+      "type": "B",
+      "adresse": "13 rue des Fours",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.833886,
+      "lng": -0.564418,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 39,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 24,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 5,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 39,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 55,
+      "nom": "CMPEA Bordeaux Bastide",
+      "type": "B",
+      "adresse": "253 avenue Thiers",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.848004,
+      "lng": -0.546617,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 39,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 24,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 5,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 39,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 67,
+      "nom": "Médecins du Monde - CASO de Bordeaux",
+      "type": "B",
+      "adresse": "2 rue Carlevoix de Villers",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.870352,
+      "lng": -0.547996,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 39,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 24,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 5,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 39,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 80,
+      "nom": "PMI - Maison des Solidarités Bordeaux Bastide",
+      "type": "B",
+      "adresse": "253 avenue Thiers",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.848041,
+      "lng": -0.54656,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 39,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 24,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 5,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 39,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 85,
+      "nom": "CMP Bordeaux Bastide",
+      "type": "B",
+      "adresse": "4 rue Reinette",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.850821,
+      "lng": -0.541603,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 39,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 24,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 5,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 39,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 9001,
+      "nom": "Gymnase Jean-Dauguet",
+      "type": "C",
+      "adresse": "15 rue Ferdinand Palau",
+      "commune": "Bordeaux",
+      "quartier": "Bastide",
+      "lat": 44.8431,
+      "lng": -0.5442,
+      "superficie": 1132,
+      "capacite": 2309,
+      "care_officiel": true,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "Bleu",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 39,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 24,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 5,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 39,
+      "status": "critique",
+      "reco": "⚠️ CARE officiel en zone inondable — à réévaluer pour les crises futures."
+    },
+    {
+      "id": 9003,
+      "nom": "Gymnase Promis",
+      "type": "C",
+      "adresse": "44 rue Promis",
+      "commune": "Bordeaux",
+      "quartier": "Bastide",
+      "lat": 44.8396,
+      "lng": -0.5543,
+      "superficie": 500,
+      "capacite": 100,
+      "care_officiel": true,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "Bleu",
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 39,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 24,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 5,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 39,
+      "status": "critique",
+      "reco": "⚠️ CARE officiel en zone inondable — à réévaluer pour les crises futures."
+    },
+    {
+      "id": 8,
+      "nom": "MDSI Bordeaux Lac",
+      "type": "B",
+      "adresse": "4 rue du Professeur André Lavignolle",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.883901,
+      "lng": -0.568343,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 35,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 18,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 0,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 35,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 28,
+      "nom": "Foyer Adoma Bordeaux Médoc",
+      "type": "B",
+      "adresse": "151 cours du Médoc",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.863382,
+      "lng": -0.571924,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 35,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 18,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 0,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 35,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 35,
+      "nom": "Jeunes Science Bordeaux",
+      "type": "C",
+      "adresse": "208 rue Carle Vernet",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.816191,
+      "lng": -0.554449,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 35,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 18,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 0,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 35,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 56,
+      "nom": "Centre des Restos du Coeur Bordeaux Daney",
+      "type": "B",
+      "adresse": "357 boulevard Alfred Daney",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.87281,
+      "lng": -0.560796,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 35,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 18,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 0,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 35,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 69,
+      "nom": "Foyer Adoma Bordeaux Poyenne",
+      "type": "B",
+      "adresse": "18 rue Poyenne",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.856065,
+      "lng": -0.56579,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "high",
+        "heat_intensite": 6.0
+      },
+      "scores": {
+        "2026": {
+          "score": 31,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 13,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 0,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 31,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 50,
+      "nom": "Stade Atlantique Bordeaux Métropole",
+      "type": "C",
+      "adresse": "Cours Charles Bricaud",
+      "commune": "33063",
+      "quartier": "",
+      "lat": 44.897522,
+      "lng": -0.56162,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "high",
+        "flood_niveau": "None",
+        "heat": "high",
+        "heat_intensite": 7.0
+      },
+      "scores": {
+        "2026": {
+          "score": 27,
+          "status": "critique"
+        },
+        "2030": {
+          "score": 7,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 0,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 27,
+      "status": "critique",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    }
+  ]
+}
