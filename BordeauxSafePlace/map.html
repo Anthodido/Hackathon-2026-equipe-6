@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Carte — BordeauxSafePlace</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #ffffff;
+            color: #111111;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER */
+        header {
+            background: #000000;
+            border-bottom: 2px solid #2DBBA4;
+            padding: 16px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: #2DBBA4;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        header h1 a { color: inherit; text-decoration: none; }
+
+        /* LAYOUT */
+        .layout {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            height: calc(100vh - 58px - 56px);
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 220px;
+            background: #000000;
+            border-right: 2px solid #2DBBA4;
+            padding: 32px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            flex-shrink: 0;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 11px 16px;
+            border-radius: 8px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.6;
+            transition: all 0.2s;
+        }
+
+        .sidebar a:hover, .sidebar a.active {
+            background: rgba(45, 187, 164, 0.12);
+            color: #2DBBA4;
+            opacity: 1;
+        }
+
+        .sidebar-divider {
+            height: 1px;
+            background: rgba(255,255,255,0.08);
+            margin: 16px 0;
+        }
+
+        .sidebar-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: rgba(255,255,255,0.3);
+            padding: 0 16px;
+            margin-bottom: 4px;
+        }
+
+        /* FILTRE RISQUES */
+        .filter-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+            color: #ffffff;
+            opacity: 0.5;
+            transition: all 0.2s;
+            border: none;
+            background: transparent;
+            width: 100%;
+            text-align: left;
+        }
+
+        .filter-btn.active {
+            opacity: 1;
+            background: rgba(255,255,255,0.06);
+        }
+
+        .filter-btn:hover { opacity: 0.9; }
+
+        .filter-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        /* MAP CONTAINER */
+        .map-wrapper {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* PANEL INFO COMMUNE */
+        .info-panel {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 280px;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-top: 3px solid #2DBBA4;
+            border-radius: 12px;
+            padding: 20px;
+            z-index: 999;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            display: none;
+        }
+
+        .info-panel.visible { display: block; }
+
+        .info-panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .info-panel h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #111111;
+        }
+
+        .info-panel .pop {
+            font-size: 11px;
+            color: #888888;
+            margin-top: 2px;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: #888888;
+            line-height: 1;
+        }
+
+        .close-btn:hover { color: #111111; }
+
+        .risk-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 13px;
+        }
+
+        .risk-row:last-child { border-bottom: none; }
+
+        .risk-name {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #444444;
+        }
+
+        .risk-bar-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .risk-bar {
+            width: 80px;
+            height: 6px;
+            background: #f0f0f0;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .risk-bar-fill {
+            height: 100%;
+            border-radius: 3px;
+        }
+
+        .risk-score {
+            font-size: 12px;
+            font-weight: 600;
+            color: #111111;
+            width: 24px;
+            text-align: right;
+        }
+
+        /* BADGE SCORE GLOBAL */
+        .global-score {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 12px 14px;
+            margin-bottom: 14px;
+        }
+
+        .global-score-label { font-size: 12px; color: #666666; }
+
+        .global-score-value {
+            font-size: 22px;
+            font-weight: 700;
+            color: #111111;
+        }
+
+        /* LEGENDE */
+        .legend {
+            position: absolute;
+            bottom: 24px;
+            left: 16px;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 14px 16px;
+            z-index: 999;
+            font-size: 12px;
+        }
+
+        .legend-title {
+            font-weight: 600;
+            color: #111111;
+            margin-bottom: 10px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .legend-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            color: #555555;
+        }
+
+        .legend-color {
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000000;
+            border-top: 2px solid #2DBBA4;
+            padding: 16px 40px;
+            color: rgba(255,255,255,0.5);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html">BordeauxSafePlace</a></h1>
+    <span id="profil">Profil</span>
+</header>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <a href="index.html">🏠 Accueil</a>
+        <a href="map.html" class="active">🗺️ Carte</a>
+        <a href="#">✉️ Contact</a>
+
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-label">Filtrer par risque</div>
+
+        <button class="filter-btn active" data-risk="composite" onclick="setRisk('composite', this)">
+            <span class="filter-dot" style="background:#2DBBA4"></span>
+            Score global
+        </button>
+        <button class="filter-btn" data-risk="inondation" onclick="setRisk('inondation', this)">
+            <span class="filter-dot" style="background:#3b82f6"></span>
+            Inondation
+        </button>
+        <button class="filter-btn" data-risk="chaleur" onclick="setRisk('chaleur', this)">
+            <span class="filter-dot" style="background:#ef4444"></span>
+            Îlots de chaleur
+        </button>
+        <button class="filter-btn" data-risk="incendie" onclick="setRisk('incendie', this)">
+            <span class="filter-dot" style="background:#f97316"></span>
+            Incendie forêt
+        </button>
+        <button class="filter-btn" data-risk="rga" onclick="setRisk('rga', this)">
+            <span class="filter-dot" style="background:#a855f7"></span>
+            Argiles RGA
+        </button>
+        <button class="filter-btn" data-risk="industriel" onclick="setRisk('industriel', this)">
+            <span class="filter-dot" style="background:#78716c"></span>
+            Industriel
+        </button>
+    </nav>
+
+    <!-- MAP -->
+    <div class="map-wrapper">
+        <div id="map"></div>
+
+        <!-- PANEL INFO -->
+        <div class="info-panel" id="infoPanel">
+            <div class="info-panel-header">
+                <div>
+                    <h3 id="panelName">—</h3>
+                    <div class="pop" id="panelPop">—</div>
+                </div>
+                <button class="close-btn" onclick="closePanel()">×</button>
+            </div>
+            <div class="global-score">
+                <span class="global-score-label">Score composite</span>
+                <span class="global-score-value" id="panelScore">—</span>
+            </div>
+            <div id="panelRisks"></div>
+        </div>
+
+        <!-- LEGENDE -->
+        <div class="legend">
+            <div class="legend-title">Niveau de risque</div>
+            <div class="legend-row"><div class="legend-color" style="background:#22c55e"></div> Faible (0–3)</div>
+            <div class="legend-row"><div class="legend-color" style="background:#eab308"></div> Modéré (3–5)</div>
+            <div class="legend-row"><div class="legend-color" style="background:#f97316"></div> Élevé (5–7)</div>
+            <div class="legend-row"><div class="legend-color" style="background:#ef4444"></div> Critique (7–10)</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Sources : DataHub Bordeaux Métropole · IPCC AR6 (2021) · DRIAS 2020 / Météo-France · Géorisques / BRGM · INSEE</p>
+</footer>
+
+<script>
+// ── DONNÉES COMMUNES ─────────────────────────────────────────────
+const communes = [
+    { name: "Bordeaux",          lat: 44.8378, lng: -0.5792, pop: 257804, inondation: 7.2, chaleur: 8.1, incendie: 3.2, rga: 6.5, industriel: 5.8 },
+    { name: "Mérignac",          lat: 44.8333, lng: -0.6440, pop: 72000,  inondation: 5.1, chaleur: 6.8, incendie: 5.4, rga: 7.2, industriel: 7.1 },
+    { name: "Pessac",            lat: 44.8061, lng: -0.6311, pop: 63000,  inondation: 4.2, chaleur: 6.5, incendie: 6.1, rga: 7.8, industriel: 3.2 },
+    { name: "Talence",           lat: 44.8083, lng: -0.5894, pop: 44000,  inondation: 3.8, chaleur: 7.2, incendie: 4.1, rga: 6.9, industriel: 2.8 },
+    { name: "Gradignan",         lat: 44.7750, lng: -0.6108, pop: 25000,  inondation: 3.5, chaleur: 5.8, incendie: 6.8, rga: 8.1, industriel: 2.1 },
+    { name: "Villenave-d'Ornon", lat: 44.7803, lng: -0.5614, pop: 35000,  inondation: 6.8, chaleur: 6.1, incendie: 4.2, rga: 7.5, industriel: 4.5 },
+    { name: "Bègles",            lat: 44.8100, lng: -0.5494, pop: 30000,  inondation: 7.8, chaleur: 7.0, incendie: 3.1, rga: 6.2, industriel: 6.8 },
+    { name: "Floirac",           lat: 44.8358, lng: -0.5261, pop: 17000,  inondation: 8.2, chaleur: 6.9, incendie: 2.8, rga: 5.8, industriel: 7.2 },
+    { name: "Cenon",             lat: 44.8528, lng: -0.5264, pop: 25000,  inondation: 8.5, chaleur: 7.2, incendie: 2.5, rga: 5.5, industriel: 6.5 },
+    { name: "Lormont",           lat: 44.8700, lng: -0.5175, pop: 22000,  inondation: 8.8, chaleur: 7.5, incendie: 2.2, rga: 5.2, industriel: 7.8 },
+    { name: "Carbon-Blanc",      lat: 44.8900, lng: -0.5058, pop: 7500,   inondation: 7.5, chaleur: 5.8, incendie: 3.5, rga: 5.8, industriel: 6.2 },
+    { name: "Ambarès-et-Lagrave",lat: 44.9200, lng: -0.4842, pop: 15000,  inondation: 8.1, chaleur: 5.2, incendie: 4.1, rga: 6.1, industriel: 5.8 },
+    { name: "Bassens",           lat: 44.8906, lng: -0.5314, pop: 7200,   inondation: 8.9, chaleur: 6.1, incendie: 2.8, rga: 5.1, industriel: 9.2 },
+    { name: "Bruges",            lat: 44.8875, lng: -0.6022, pop: 16000,  inondation: 6.2, chaleur: 6.5, incendie: 4.2, rga: 6.8, industriel: 5.1 },
+    { name: "Le Bouscat",        lat: 44.8681, lng: -0.6033, pop: 25000,  inondation: 4.5, chaleur: 7.1, incendie: 3.5, rga: 6.5, industriel: 2.8 },
+    { name: "Eysines",           lat: 44.8822, lng: -0.6456, pop: 21000,  inondation: 5.8, chaleur: 6.2, incendie: 4.8, rga: 7.1, industriel: 4.2 },
+    { name: "Le Taillan-Médoc",  lat: 44.9122, lng: -0.6578, pop: 10000,  inondation: 4.2, chaleur: 5.5, incendie: 5.5, rga: 7.5, industriel: 3.1 },
+    { name: "Saint-Médard-en-Jalles", lat: 44.8983, lng: -0.7142, pop: 29000, inondation: 5.1, chaleur: 5.2, incendie: 6.2, rga: 7.8, industriel: 5.5 },
+    { name: "Martignas-sur-Jalle",lat: 44.8431, lng: -0.7728, pop: 8000,  inondation: 3.5, chaleur: 4.8, incendie: 7.1, rga: 6.5, industriel: 4.2 },
+    { name: "Saint-Jean-d'Illac", lat: 44.8008, lng: -0.8081, pop: 9500,  inondation: 3.2, chaleur: 4.5, incendie: 7.8, rga: 5.8, industriel: 3.5 },
+    { name: "Mios",              lat: 44.6008, lng: -0.9464, pop: 9200,   inondation: 4.1, chaleur: 3.8, incendie: 8.5, rga: 5.2, industriel: 2.8 },
+    { name: "Blanquefort",       lat: 44.9122, lng: -0.6339, pop: 16000,  inondation: 6.8, chaleur: 5.8, incendie: 4.5, rga: 7.2, industriel: 5.8 },
+    { name: "Parempuyre",        lat: 44.9481, lng: -0.5828, pop: 9500,   inondation: 7.2, chaleur: 5.5, incendie: 4.1, rga: 6.8, industriel: 6.5 },
+    { name: "Le Pian-Médoc",     lat: 44.9628, lng: -0.6281, pop: 7000,   inondation: 5.5, chaleur: 4.8, incendie: 5.2, rga: 7.5, industriel: 3.8 },
+    { name: "Ludon-Médoc",       lat: 44.9878, lng: -0.5981, pop: 5500,   inondation: 6.5, chaleur: 4.5, incendie: 4.8, rga: 6.5, industriel: 4.5 },
+    { name: "Macau",             lat: 45.0028, lng: -0.6128, pop: 5800,   inondation: 7.1, chaleur: 4.2, incendie: 4.5, rga: 6.2, industriel: 4.2 },
+    { name: "Artigues-près-Bordeaux", lat: 44.8428, lng: -0.4892, pop: 8500, inondation: 6.5, chaleur: 6.5, incendie: 3.2, rga: 6.8, industriel: 5.5 },
+    { name: "Saint-Vincent-de-Paul", lat: 44.9328, lng: -0.5028, pop: 4200, inondation: 7.8, chaleur: 5.2, incendie: 3.8, rga: 6.5, industriel: 5.1 }
+];
+
+// Calcul score composite
+communes.forEach(c => {
+    c.composite = ((c.inondation + c.chaleur + c.incendie + c.rga + c.industriel) / 5).toFixed(1);
+});
+
+// ── CONFIG RISQUES ────────────────────────────────────────────────
+const RISK_CONFIG = {
+    composite:  { label: "Score global",     color: "#2DBBA4" },
+    inondation: { label: "Inondation",       color: "#3b82f6" },
+    chaleur:    { label: "Îlots de chaleur", color: "#ef4444" },
+    incendie:   { label: "Incendie forêt",   color: "#f97316" },
+    rga:        { label: "Argiles RGA",      color: "#a855f7" },
+    industriel: { label: "Industriel",       color: "#78716c" }
+};
+
+let currentRisk = "composite";
+
+// ── COULEUR PAR SCORE ─────────────────────────────────────────────
+function scoreColor(score) {
+    const s = parseFloat(score);
+    if (s >= 7)  return "#ef4444";
+    if (s >= 5)  return "#f97316";
+    if (s >= 3)  return "#eab308";
+    return "#22c55e";
+}
+
+// ── INIT MAP ──────────────────────────────────────────────────────
+const map = L.map('map', { zoomControl: true }).setView([44.85, -0.60], 11);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors',
+    maxZoom: 18
+}).addTo(map);
+
+// ── MARKERS ───────────────────────────────────────────────────────
+let markers = [];
+
+function createMarker(commune) {
+    const score = commune[currentRisk];
+    const color = scoreColor(score);
+    const size  = 12 + parseFloat(score) * 2;
+
+    const icon = L.divIcon({
+        className: '',
+        html: `<div style="
+            width:${size}px;height:${size}px;
+            background:${color};
+            border:2px solid #ffffff;
+            border-radius:50%;
+            box-shadow:0 2px 8px rgba(0,0,0,0.25);
+            transition:transform 0.2s;
+            cursor:pointer;
+        "></div>`,
+        iconSize: [size, size],
+        iconAnchor: [size/2, size/2]
+    });
+
+    const marker = L.marker([commune.lat, commune.lng], { icon })
+        .addTo(map)
+        .on('click', () => showPanel(commune));
+
+    marker.bindTooltip(`<strong>${commune.name}</strong><br>Score : ${score}/10`, {
+        direction: 'top',
+        offset: [0, -8],
+        className: 'leaflet-tooltip-custom'
+    });
+
+    return marker;
+}
+
+function renderMarkers() {
+    markers.forEach(m => map.removeLayer(m));
+    markers = communes.map(c => createMarker(c));
+}
+
+renderMarkers();
+
+// ── FILTRE ────────────────────────────────────────────────────────
+function setRisk(risk, btn) {
+    currentRisk = risk;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderMarkers();
+}
+
+// ── PANEL INFO ────────────────────────────────────────────────────
+function showPanel(c) {
+    document.getElementById('panelName').textContent = c.name;
+    document.getElementById('panelPop').textContent  = `${c.pop.toLocaleString('fr-FR')} habitants`;
+    document.getElementById('panelScore').textContent = `${c.composite} / 10`;
+
+    const risks = [
+        { key: 'inondation', label: '🌊 Inondation',        color: '#3b82f6' },
+        { key: 'chaleur',    label: '🌡️ Îlots de chaleur',  color: '#ef4444' },
+        { key: 'incendie',   label: '🔥 Incendie forêt',    color: '#f97316' },
+        { key: 'rga',        label: '⛰️ Argiles RGA',       color: '#a855f7' },
+        { key: 'industriel', label: '🏭 Industriel',         color: '#78716c' }
+    ];
+
+    document.getElementById('panelRisks').innerHTML = risks.map(r => `
+        <div class="risk-row">
+            <span class="risk-name">${r.label}</span>
+            <div class="risk-bar-wrap">
+                <div class="risk-bar">
+                    <div class="risk-bar-fill" style="width:${c[r.key]*10}%;background:${r.color}"></div>
+                </div>
+                <span class="risk-score">${c[r.key]}</span>
+            </div>
+        </div>
+    `).join('');
+
+    document.getElementById('infoPanel').classList.add('visible');
+}
+
+function closePanel() {
+    document.getElementById('infoPanel').classList.remove('visible');
+}
+</script>
+
+</body>
+</html>
