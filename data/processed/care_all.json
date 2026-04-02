@@ -1,0 +1,1733 @@
+{
+  "total": 216,
+  "cares": [
+    {
+      "nom": "Complexe sportif Philippe Madrelle - Plaine Gaston Lacoste",
+      "adresse": "26 rue Pasteur",
+      "commune": "Carbon-Blanc",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.891496,
+      "lng": -0.510697
+    },
+    {
+      "nom": "Salle foyer municipal",
+      "adresse": "Place Gustave Viallole",
+      "commune": "Carbon Blanc",
+      "categorie": "Salle polyvalente",
+      "lat": 44.89231,
+      "lng": -0.503396
+    },
+    {
+      "nom": "Salle Jacques Brel",
+      "adresse": "Avenue André Vignau Anglade",
+      "commune": "Carbon-Blanc",
+      "categorie": "Salle polyvalente",
+      "lat": 44.895209,
+      "lng": -0.5083
+    },
+    {
+      "nom": "Foyer Restaurant Saint-Géry",
+      "adresse": "7 rue du Pailley",
+      "commune": "Gradignan",
+      "categorie": "Résidence et établissement d'hébergement pour personnes âgées",
+      "lat": 44.779921,
+      "lng": -0.603556
+    },
+    {
+      "nom": "Complexe sportif Saint-Géry",
+      "adresse": null,
+      "commune": "Gradignan",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.777679,
+      "lng": -0.603178
+    },
+    {
+      "nom": "Salle municipale Charles Vanel",
+      "adresse": "7 rue Louis Pasteur",
+      "commune": "Martignas-sur-Jalle",
+      "categorie": "Salle polyvalente",
+      "lat": 44.838622,
+      "lng": -0.777203
+    },
+    {
+      "nom": "Salle municipale du Pays des Graves",
+      "adresse": "Avenue de la Libération",
+      "commune": "Martignas-sur-Jalle",
+      "categorie": "Salle polyvalente",
+      "lat": 44.839685,
+      "lng": -0.776517
+    },
+    {
+      "nom": "Ecole Elémentaire Marcelin Berthelot",
+      "adresse": "115 avenue Aristide Briand",
+      "commune": "Mérignac",
+      "categorie": "Enseignement primaire",
+      "lat": 44.825427,
+      "lng": -0.624922
+    },
+    {
+      "nom": "Micro-crèche Les Jardins d'Olympe",
+      "adresse": null,
+      "commune": "Le Haillan",
+      "categorie": "Crèche, micro-crèche, MAM",
+      "lat": 44.868318,
+      "lng": -0.670156
+    },
+    {
+      "nom": "Forum des associations",
+      "adresse": "120 avenue Pasteur",
+      "commune": "Le Haillan",
+      "categorie": "Etablissement social, médico-social, ou associatif",
+      "lat": 44.870613,
+      "lng": -0.676156
+    },
+    {
+      "nom": "Plaine des sports de Saige",
+      "adresse": null,
+      "commune": "Pessac",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.793329,
+      "lng": -0.625583
+    },
+    {
+      "nom": "Complexe sportif Robert Brettes",
+      "adresse": "Allée Fernand Sampiéri",
+      "commune": "Mérignac",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.845967,
+      "lng": -0.652151
+    },
+    {
+      "nom": "Complexe sportif Daniel Colombier",
+      "adresse": "12 allée des Acacias",
+      "commune": "Mérignac",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.838188,
+      "lng": -0.683721
+    },
+    {
+      "nom": "Gymnase Edouard Herriot",
+      "adresse": "28 rue d'Eysines",
+      "commune": "Mérignac",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.859462,
+      "lng": -0.653694
+    },
+    {
+      "nom": "Salle des fêtes de Capeyron",
+      "adresse": "7 place Jean Jaurès",
+      "commune": "Mérignac",
+      "categorie": "Salle polyvalente",
+      "lat": 44.852244,
+      "lng": -0.644839
+    },
+    {
+      "nom": "Pôle municipal Simone Veil",
+      "adresse": "Rue Aurel Chazeau",
+      "commune": "Saint-Médard-en-Jalles",
+      "categorie": "Services municipaux",
+      "lat": 44.899069,
+      "lng": -0.744745
+    },
+    {
+      "nom": "Salle omnisports Ariane",
+      "adresse": "26 allée du Preuilha",
+      "commune": "Saint-Médard-en-Jalles",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.894455,
+      "lng": -0.705349
+    },
+    {
+      "nom": "Salle omnisports Olympie",
+      "adresse": "Rue Henri Rol-Tanguy",
+      "commune": "Saint-Médard-en-Jalles",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.895266,
+      "lng": -0.759998
+    },
+    {
+      "nom": "Stade Monplaisir",
+      "adresse": "12 avenue Paul Berniard",
+      "commune": "Saint-Médard-en-Jalles",
+      "categorie": "Terrain de sport",
+      "lat": 44.883654,
+      "lng": -0.705983
+    },
+    {
+      "nom": "Salle omnisports Magudas",
+      "adresse": "1 rue Condorcet",
+      "commune": "Saint-Médard-en-Jalles",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.863397,
+      "lng": -0.724472
+    },
+    {
+      "nom": "Salle omnisports",
+      "adresse": "4 rue Alfred de Musset",
+      "commune": "Talence",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.789135,
+      "lng": -0.588655
+    },
+    {
+      "nom": "Espace François Mauriac",
+      "adresse": "Rue du Professeur Arnozan",
+      "commune": "Talence",
+      "categorie": "Services municipaux",
+      "lat": 44.807808,
+      "lng": -0.588861
+    },
+    {
+      "nom": "Salle omnisports",
+      "adresse": "148 avenue de la Salle de Breillan",
+      "commune": "Le Taillan-Médoc",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.918282,
+      "lng": -0.655708
+    },
+    {
+      "nom": "Pôle culturel et artistique - POLCA",
+      "adresse": "8 rue de Calavet",
+      "commune": "Le Taillan-Médoc",
+      "categorie": "Musée et autre lieu culturel",
+      "lat": 44.912559,
+      "lng": -0.679673
+    },
+    {
+      "nom": "Salle du 11 Novembre",
+      "adresse": "3 rue du 11 novembre 1918",
+      "commune": "Le Taillan-Médoc",
+      "categorie": "Salle polyvalente",
+      "lat": 44.904725,
+      "lng": -0.670978
+    },
+    {
+      "nom": "Gymnase du Sabatey",
+      "adresse": "238 cours du Général de Gaulle",
+      "commune": "Gradignan",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.761405,
+      "lng": -0.620883
+    },
+    {
+      "nom": "Salle omnisports Nelson Paillou",
+      "adresse": "Allée des Sports",
+      "commune": "Artigues-près-Bordeaux",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.866503,
+      "lng": -0.494583
+    },
+    {
+      "nom": "Gymnase Bordeaux Sciences Agro",
+      "adresse": null,
+      "commune": "Gradignan",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.793123,
+      "lng": -0.612719
+    },
+    {
+      "nom": "Salle municipale Le Solarium",
+      "adresse": "24 chemin du Solarium",
+      "commune": "Gradignan",
+      "categorie": "Salle polyvalente",
+      "lat": 44.780131,
+      "lng": -0.632563
+    },
+    {
+      "nom": "Etablissement Public pour l'Animation des Jeunes à Gradignan Bourg (EPAJG) - tROCKé",
+      "adresse": null,
+      "commune": "Gradignan",
+      "categorie": "Etablissement social, médico-social, ou associatif",
+      "lat": 44.773454,
+      "lng": -0.616718
+    },
+    {
+      "nom": "Dojo de la Tannerie",
+      "adresse": "141 rue de la Croix de Monjous",
+      "commune": "Gradignan",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.77806,
+      "lng": -0.588462
+    },
+    {
+      "nom": "Salle Philippe Mandrelle",
+      "adresse": "Avenue André Vignau Anglade",
+      "commune": "Carbon-Blanc",
+      "categorie": "Salle polyvalente",
+      "lat": 44.894823,
+      "lng": -0.501886
+    },
+    {
+      "nom": "Maison des Habitants du Burck",
+      "adresse": "12 avenue Robert Schuman",
+      "commune": "Mérignac",
+      "categorie": "Hôtel de Ville ou annexe",
+      "lat": 44.816901,
+      "lng": -0.637631
+    },
+    {
+      "nom": "Complexe sportif COSEC",
+      "adresse": "12 avenue Paul Berniard",
+      "commune": "Saint-Médard-en-Jalles",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.883816,
+      "lng": -0.707617
+    },
+    {
+      "nom": "Espace Georges Brassens",
+      "adresse": "Avenue Anatole France",
+      "commune": "Saint-Médard-en-Jalles",
+      "categorie": "Etablissement social, médico-social, ou associatif",
+      "lat": 44.893433,
+      "lng": -0.749305
+    },
+    {
+      "nom": "Château Brignon",
+      "adresse": "Rue San Martin de Valdeiglesias",
+      "commune": "Carbon-Blanc",
+      "categorie": "Musée et autre lieu culturel",
+      "lat": 44.905253,
+      "lng": -0.502205
+    },
+    {
+      "nom": "Parc de Vialle",
+      "adresse": null,
+      "commune": "Bouliac",
+      "categorie": "Parc",
+      "lat": 44.817025,
+      "lng": -0.505146
+    },
+    {
+      "nom": "Théâtre des 4 saisons",
+      "adresse": "32 route de Léognan",
+      "commune": "Gradignan",
+      "categorie": "Salle de spectacle, théâtre",
+      "lat": 44.767954,
+      "lng": -0.608885
+    },
+    {
+      "nom": "Salle omnisports Bernard Ceret",
+      "adresse": "7 allée André Dolange",
+      "commune": "Martignas-sur-Jalle",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.844481,
+      "lng": -0.779682
+    },
+    {
+      "nom": "Maison des associations Thierry Grolleau",
+      "adresse": "16 rue des Palus",
+      "commune": "Parempuyre",
+      "categorie": "Etablissement social, médico-social, ou associatif",
+      "lat": 44.947557,
+      "lng": -0.597352
+    },
+    {
+      "nom": "Salle omnisports Robert Brettes",
+      "adresse": "60 avenue du Truc",
+      "commune": "Mérignac",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.848188,
+      "lng": -0.652966
+    },
+    {
+      "nom": "Roller stadium",
+      "adresse": "Allée Fernand Sampiéri",
+      "commune": "Mérignac",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.846587,
+      "lng": -0.653786
+    },
+    {
+      "nom": "Centre social et culturel Le Puzzle - Centre principal",
+      "adresse": "Rue Jean Giono",
+      "commune": "Mérignac",
+      "categorie": "Musée et autre lieu culturel",
+      "lat": 44.851318,
+      "lng": -0.651333
+    },
+    {
+      "nom": "Salle des fêtes La Glacière",
+      "adresse": "56 rue Armand Gayral",
+      "commune": "Mérignac",
+      "categorie": "Salle polyvalente",
+      "lat": 44.836024,
+      "lng": -0.61988
+    },
+    {
+      "nom": "Maison municipale Monbalon",
+      "adresse": "2 bis rue des Anciens de l'Afn",
+      "commune": "Pessac",
+      "categorie": "Hôtel de Ville ou annexe",
+      "lat": 44.803424,
+      "lng": -0.66568
+    },
+    {
+      "nom": "Bibliothèque Laurent Cousty",
+      "adresse": "5 rue Louis Monteau",
+      "commune": "Saint-Louis-de-Montferrand",
+      "categorie": "Bibliothèque, Médiathèque, Ludothèque",
+      "lat": 44.951519,
+      "lng": -0.533903
+    },
+    {
+      "nom": "Complexe sportif Léo Lagrange",
+      "adresse": "48 chemin de Linas",
+      "commune": "Saint-Médard-en-Jalles",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.891778,
+      "lng": -0.746681
+    },
+    {
+      "nom": "Complexe sportif d'Herakles",
+      "adresse": null,
+      "commune": "Saint-Médard-en-Jalles",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.887266,
+      "lng": -0.734669
+    },
+    {
+      "nom": "Salle Léo Lagrange",
+      "adresse": null,
+      "commune": "Talence",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.809461,
+      "lng": -0.587991
+    },
+    {
+      "nom": "Salle Jean Bouin",
+      "adresse": null,
+      "commune": "Talence",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.797097,
+      "lng": -0.591167
+    },
+    {
+      "nom": "Complexe sportif Pierre de Coubertin",
+      "adresse": "4 rue Alfred de Musset",
+      "commune": "Talence",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.789133,
+      "lng": -0.588934
+    },
+    {
+      "nom": "Salle polyvalente La Boétie",
+      "adresse": "9 avenue Bossuet",
+      "commune": "Le Taillan-Médoc",
+      "categorie": "Salle polyvalente",
+      "lat": 44.902775,
+      "lng": -0.699827
+    },
+    {
+      "nom": "Eglise et presbytère Saint-Hilaire",
+      "adresse": "Rue René Cassin",
+      "commune": "Le Taillan-Médoc",
+      "categorie": "Lieu de culte",
+      "lat": 44.903656,
+      "lng": -0.670067
+    },
+    {
+      "nom": "Lycée professionnel Emile Combes",
+      "adresse": null,
+      "commune": "Bègles",
+      "categorie": "Enseignement secondaire",
+      "lat": 44.805731,
+      "lng": -0.546342
+    },
+    {
+      "nom": "Dojo de Pinsan",
+      "adresse": "55 avenue du Pinsan",
+      "commune": "Artigues-près-Bordeaux",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.859852,
+      "lng": -0.483621
+    },
+    {
+      "nom": "Lycée Vaclav Havel",
+      "adresse": "5 avenue Danielle Mitterrand",
+      "commune": "Bègles",
+      "categorie": "Enseignement secondaire",
+      "lat": 44.78664,
+      "lng": -0.564065
+    },
+    {
+      "nom": "Ecole Elémentaire Jacques Brel",
+      "adresse": "1 rue Nungesser et Coli",
+      "commune": "Ambès",
+      "categorie": "Enseignement primaire",
+      "lat": 45.012321,
+      "lng": -0.533609
+    },
+    {
+      "nom": "Salle omnisports Hélène Boucher",
+      "adresse": null,
+      "commune": "Martignas-sur-Jalle",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.845936,
+      "lng": -0.782892
+    },
+    {
+      "nom": "Salle Gérard Philippe",
+      "adresse": "5 allée André Dolange",
+      "commune": "Martignas-sur-Jalle",
+      "categorie": "Salle de spectacle, théâtre",
+      "lat": 44.844201,
+      "lng": -0.779373
+    },
+    {
+      "nom": "Espace Henri Arnoud",
+      "adresse": "1A rue Jules Massenet",
+      "commune": "Le Haillan",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.875148,
+      "lng": -0.673458
+    },
+    {
+      "nom": "Espace social et culturel La Source",
+      "adresse": "58 rue Edmond Rostand",
+      "commune": "Le Haillan",
+      "categorie": "Musée et autre lieu culturel",
+      "lat": 44.864136,
+      "lng": -0.672013
+    },
+    {
+      "nom": "Complexe sportif Haut Livrac",
+      "adresse": "29 avenue Saint-Exupéry",
+      "commune": "Pessac",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.796577,
+      "lng": -0.674326
+    },
+    {
+      "nom": "Domaine de Fantaisie - Centre d'animation des Eyquems",
+      "adresse": "8 rue de la Tour de Veyrines",
+      "commune": "Mérignac",
+      "categorie": "Etablissement social, médico-social, ou associatif",
+      "lat": 44.825912,
+      "lng": -0.644956
+    },
+    {
+      "nom": "Salle omnisports Pierre de Coubertin",
+      "adresse": "Rue Robert Schuman",
+      "commune": "Mérignac",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.816636,
+      "lng": -0.63818
+    },
+    {
+      "nom": "Gymnase Jean Macé",
+      "adresse": "Rue Georges Courteline",
+      "commune": "Mérignac",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.841111,
+      "lng": -0.662532
+    },
+    {
+      "nom": "Gymnase Paul Langevin",
+      "adresse": "25 rue Paul Langevin",
+      "commune": "Mérignac",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.850995,
+      "lng": -0.661626
+    },
+    {
+      "nom": "Salle municipale de l'Orangerie",
+      "adresse": "21 avenue de Beutre",
+      "commune": "Pessac",
+      "categorie": "Salle polyvalente",
+      "lat": 44.798274,
+      "lng": -0.66825
+    },
+    {
+      "nom": "Espace Jacques Brel",
+      "adresse": "Avenue Descartes",
+      "commune": "Saint-Médard-en-Jalles",
+      "categorie": "Salle polyvalente",
+      "lat": 44.885767,
+      "lng": -0.699603
+    },
+    {
+      "nom": "Salle Bellegrave",
+      "adresse": "30 avenue du Colonel Robert Jacqui",
+      "commune": "Pessac",
+      "categorie": "Salle de spectacle, théâtre",
+      "lat": 44.811493,
+      "lng": -0.627894
+    },
+    {
+      "nom": "Salle Boris Diaw",
+      "adresse": "11 rue de la Renaissance",
+      "commune": "Talence",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.81835,
+      "lng": -0.594159
+    },
+    {
+      "nom": "Accueil de loisirs sans hébergement (ALSH) La Cabane",
+      "adresse": "Allée de Peydeblanc",
+      "commune": "Le Taillan-Médoc",
+      "categorie": "Accueil et centre de loisirs",
+      "lat": 44.90827,
+      "lng": -0.676596
+    },
+    {
+      "nom": "Police municipale",
+      "adresse": "74 avenue de Soulac",
+      "commune": "Le Taillan-Médoc",
+      "categorie": "Services municipaux",
+      "lat": 44.9065,
+      "lng": -0.66882
+    },
+    {
+      "nom": "Ecole Maternelle Jacques Prévert",
+      "adresse": "41 rue de la Lande",
+      "commune": "Carbon-Blanc",
+      "categorie": "Enseignement primaire",
+      "lat": 44.908059,
+      "lng": -0.501793
+    },
+    {
+      "nom": "Salle Caldentey",
+      "adresse": "29 rue des Futaies",
+      "commune": "Carbon-Blanc",
+      "categorie": "Salle polyvalente",
+      "lat": 44.910787,
+      "lng": -0.501331
+    },
+    {
+      "nom": "Foyer d'Accueil Médicalisé Les Fontaines de Monjous (FAM)",
+      "adresse": "11 rue des Fontaines de Monjous",
+      "commune": "Gradignan",
+      "categorie": "Etablissement social, médico-social, ou associatif",
+      "lat": 44.775736,
+      "lng": -0.604989
+    },
+    {
+      "nom": "Gymnase Jehan Buhan",
+      "adresse": null,
+      "commune": "Gradignan",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.772686,
+      "lng": -0.598732
+    },
+    {
+      "nom": "Gymnase Pierre Toupiac",
+      "adresse": null,
+      "commune": "Gradignan",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.774292,
+      "lng": -0.61678
+    },
+    {
+      "nom": "Centre de loisirs Le Clos du Vivier",
+      "adresse": "200 route de Canéjan",
+      "commune": "Gradignan",
+      "categorie": "Accueil et centre de loisirs",
+      "lat": 44.766785,
+      "lng": -0.630921
+    },
+    {
+      "nom": "Salle Saint-Géry",
+      "adresse": null,
+      "commune": "Gradignan",
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "lat": 44.777676,
+      "lng": -0.60393
+    },
+    {
+      "nom": "Le Carré",
+      "adresse": "Place de la République",
+      "commune": "Saint-Médard-en-Jalles",
+      "categorie": "Salle de spectacle, théâtre",
+      "lat": 44.893508,
+      "lng": -0.715176
+    },
+    {
+      "nom": "Maison des Habitants d'Arlac",
+      "adresse": "6 avenue de la Chapelle Sainte-Bernadette",
+      "commune": "Mérignac",
+      "categorie": "Hôtel de Ville ou annexe",
+      "lat": 44.822368,
+      "lng": -0.623102
+    },
+    {
+      "nom": "Maison des Habitants de Beutre",
+      "adresse": "21 avenue de l'Argonne",
+      "commune": "Mérignac",
+      "categorie": "Hôtel de Ville ou annexe",
+      "lat": 44.817844,
+      "lng": -0.700596
+    },
+    {
+      "nom": "Gymnase Ginko",
+      "adresse": "6 Cours de Québec",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.875153,
+      "lng": -0.571308
+    },
+    {
+      "nom": "Gymnase Dupaty",
+      "adresse": "62 Rue Chantecrit",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.860471,
+      "lng": -0.560873
+    },
+    {
+      "nom": "Salle du Point du Jour - Pierre Tachou",
+      "adresse": "63 Rue Joseph Brunet",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.876329,
+      "lng": -0.544447
+    },
+    {
+      "nom": "Gymnase des Chartrons",
+      "adresse": "17 Rue André Darbon",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.855948,
+      "lng": -0.566475
+    },
+    {
+      "nom": "Gymnase GP 2",
+      "adresse": "6 Rue Jean Artus",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.861845,
+      "lng": -0.582334
+    },
+    {
+      "nom": "Stadium vélodrome de Bordeaux Lac",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.899193,
+      "lng": -0.565815
+    },
+    {
+      "nom": "Gymnase GP3",
+      "adresse": "35 Rue Pierre Trebod",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.857227,
+      "lng": -0.583132
+    },
+    {
+      "nom": "Gymnase GP1",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.858509,
+      "lng": -0.578932
+    },
+    {
+      "nom": "Mairie de quartier",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.858797,
+      "lng": -0.581717
+    },
+    {
+      "nom": "Salle Gouffrand",
+      "adresse": "23 Rue Gouffrand",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.855703,
+      "lng": -0.57229
+    },
+    {
+      "nom": "Salle Simone Noailles",
+      "adresse": "47 Rue Pierre Trébod",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.858521,
+      "lng": -0.58477
+    },
+    {
+      "nom": "Palais des Sports",
+      "adresse": "1 Place de la Ferme de Richemont",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.836229,
+      "lng": -0.572563
+    },
+    {
+      "nom": "Espace sportif Chauffour",
+      "adresse": "15 Rue Chauffour",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.839966,
+      "lng": -0.590832
+    },
+    {
+      "nom": "Gymnase Malleret",
+      "adresse": "9 Rue Luflade",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.849131,
+      "lng": -0.585762
+    },
+    {
+      "nom": "Gymnase Wustenberg",
+      "adresse": "15 Rue Wustenberg",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.84749,
+      "lng": -0.59098
+    },
+    {
+      "nom": "Athénée municipale",
+      "adresse": "8 Place Saint-Christoly",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.839771,
+      "lng": -0.577215
+    },
+    {
+      "nom": "Espace Sportif Maître Jean",
+      "adresse": "1 Rue de Maître Jean",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.82954,
+      "lng": -0.612996
+    },
+    {
+      "nom": "Salle les Peupliers",
+      "adresse": "10 Allée des Peupliers",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.831749,
+      "lng": -0.610879
+    },
+    {
+      "nom": "Gymnase Albert Thomas",
+      "adresse": "40 Rue Albert Thomas",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.827823,
+      "lng": -0.59829
+    },
+    {
+      "nom": "Gymnase Johnston",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.828028,
+      "lng": -0.600045
+    },
+    {
+      "nom": "Salle Amédée Larrieu",
+      "adresse": "1 Place Amédée Larrieu",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.830427,
+      "lng": -0.58155
+    },
+    {
+      "nom": "Salle Quintin Loucheur",
+      "adresse": "96 Rue de la Bechade",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.823697,
+      "lng": -0.599859
+    },
+    {
+      "nom": "Salle Saint Augustin",
+      "adresse": "10 Place de l'Eglise Saint Augustin",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.832849,
+      "lng": -0.611557
+    },
+    {
+      "nom": "Gymnase Nelson Paillou",
+      "adresse": "53 Rue Pauline Kergomard",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.823022,
+      "lng": -0.573513
+    },
+    {
+      "nom": "Gymnase Brun",
+      "adresse": "63 Rue Brun",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.817408,
+      "lng": -0.575336
+    },
+    {
+      "nom": "Espace Malbec",
+      "adresse": "250 Rue Malbec",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.820534,
+      "lng": -0.571564
+    },
+    {
+      "nom": "Salle Saumenude",
+      "adresse": "16 Rue Saumenude",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.831772,
+      "lng": -0.566486
+    },
+    {
+      "nom": "Marché des Douves",
+      "adresse": "4BIS Rue des Douves",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.830687,
+      "lng": -0.566241
+    },
+    {
+      "nom": "Salle Son Tay",
+      "adresse": "47 Rue de Son Tay",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.824835,
+      "lng": -0.551751
+    },
+    {
+      "nom": "Gymnase Alice Milliat",
+      "adresse": "117BIS Cours Victor Hugo",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.835092,
+      "lng": -0.572318
+    },
+    {
+      "nom": "Gymnase Barbey",
+      "adresse": "16 Cours Barbey",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.827179,
+      "lng": -0.563072
+    },
+    {
+      "nom": "Gymnase Thiers",
+      "adresse": "177 Avenue Thiers",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.846211,
+      "lng": -0.550912
+    },
+    {
+      "nom": "Maison cantonale",
+      "adresse": "50 Rue de Nuits",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.841551,
+      "lng": -0.55291
+    },
+    {
+      "nom": "Salle de tennis de table André Maginot",
+      "adresse": "6 Rue André Maginot",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.843328,
+      "lng": -0.625702
+    },
+    {
+      "nom": "Gymnase Jules Ferry",
+      "adresse": "101 Rue Jules Ferry",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.842565,
+      "lng": -0.606491
+    },
+    {
+      "nom": "Gymnase Stéhélin",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.856502,
+      "lng": -0.622556
+    },
+    {
+      "nom": "Gymnase la Pergola",
+      "adresse": "7 Rue Fernand Cazeres",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.851261,
+      "lng": -0.61574
+    },
+    {
+      "nom": "Gymnase Virginia",
+      "adresse": "30 Rue Gondalma",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.85001,
+      "lng": -0.625359
+    },
+    {
+      "nom": "Chartreuse Saint André",
+      "adresse": "194 Avenue du Maréchal de Lattre de Tassigny",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.855193,
+      "lng": -0.615173
+    },
+    {
+      "nom": "Cour Mably",
+      "adresse": "1 Place des Grands Hommes",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.842868,
+      "lng": -0.576792
+    },
+    {
+      "nom": "Marché de Lerme",
+      "adresse": "10 Place de Lerme",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.847374,
+      "lng": -0.585607
+    },
+    {
+      "nom": "Halle des Chartrons",
+      "adresse": "1 Place du Marche des Chartrons",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.852289,
+      "lng": -0.572507
+    },
+    {
+      "nom": "Gymnase Jean Zay",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.855967,
+      "lng": -0.512522
+    },
+    {
+      "nom": "Espace de la Sablière",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.885886,
+      "lng": -0.674428
+    },
+    {
+      "nom": "Espace Sportif La Flèche",
+      "adresse": "21 Rue Ulysse Despaux",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.833879,
+      "lng": -0.567226
+    },
+    {
+      "nom": "Gymnase Robert Geneste",
+      "adresse": "19 Rue Beck",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.822038,
+      "lng": -0.55077
+    },
+    {
+      "nom": "Salle omnisports Le Palio",
+      "adresse": "93 Avenue du Stade",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.915916,
+      "lng": -0.684237
+    },
+    {
+      "nom": "Gymnase Georges Ricart",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.864958,
+      "lng": -0.67191
+    },
+    {
+      "nom": "Complexe sportif Bel-Air",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.873577,
+      "lng": -0.672705
+    },
+    {
+      "nom": "Salle Henri Sellier",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.845039,
+      "lng": -0.538156
+    },
+    {
+      "nom": "Médiathèque",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.952443,
+      "lng": -0.534698
+    },
+    {
+      "nom": "Salle de danse",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 45.012294,
+      "lng": -0.532668
+    },
+    {
+      "nom": "Salle Jacques Majau",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.883901,
+      "lng": -0.618314
+    },
+    {
+      "nom": "Complexe sportif de l'Espace Arc-en-Ciel",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.873764,
+      "lng": -0.584607
+    },
+    {
+      "nom": "Domaine du Grand Darnal",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.884991,
+      "lng": -0.604724
+    },
+    {
+      "nom": "Complexe sportif Daugère",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.887666,
+      "lng": -0.589829
+    },
+    {
+      "nom": "Salle du Tasta",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.878621,
+      "lng": -0.590315
+    },
+    {
+      "nom": "Complexe sportif Paul Langevin",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.809223,
+      "lng": -0.567961
+    },
+    {
+      "nom": "Complexe sportif Serge Duhourquet",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.814355,
+      "lng": -0.547962
+    },
+    {
+      "nom": "Centre de loisirs de la SNCF",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.798399,
+      "lng": -0.546918
+    },
+    {
+      "nom": "Centre social et culturel L'Estey",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.809052,
+      "lng": -0.554957
+    },
+    {
+      "nom": "Salle Albert Delteil",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.806684,
+      "lng": -0.550647
+    },
+    {
+      "nom": "Salle Saint-Maurice",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.816205,
+      "lng": -0.547962
+    },
+    {
+      "nom": "Stade André Moga",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.805338,
+      "lng": -0.55315
+    },
+    {
+      "nom": "Salle des fêtes",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.899949,
+      "lng": -0.517074
+    },
+    {
+      "nom": "Gymnase Séguinaud",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.890154,
+      "lng": -0.520861
+    },
+    {
+      "nom": "Centre culturel François Mauriac",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.813662,
+      "lng": -0.504002
+    },
+    {
+      "nom": "Gymnase Rambaud",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.813693,
+      "lng": -0.503724
+    },
+    {
+      "nom": "Salle Serge Breuil",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.813285,
+      "lng": -0.50132
+    },
+    {
+      "nom": "Salle des fêtes",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.817115,
+      "lng": -0.504143
+    },
+    {
+      "nom": "Gymnase du Bourg",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.769013,
+      "lng": -0.544126
+    },
+    {
+      "nom": "Gymnase Nelson Paillou",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.780005,
+      "lng": -0.566951
+    },
+    {
+      "nom": "Complexe sportif Pierre Brossolette",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.761257,
+      "lng": -0.584877
+    },
+    {
+      "nom": "Complexe sportif de la Junca",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.764106,
+      "lng": -0.541524
+    },
+    {
+      "nom": "Complexe sportif Elisabeth Riffiod",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.797071,
+      "lng": -0.577246
+    },
+    {
+      "nom": "Complexe sportif du Bocage",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.775718,
+      "lng": -0.53066
+    },
+    {
+      "nom": "Complexe sportif Espace d'Ornon",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.754645,
+      "lng": -0.587086
+    },
+    {
+      "nom": "Centre social et culturel Les Etoiles",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.776791,
+      "lng": -0.53281
+    },
+    {
+      "nom": "Gymnase",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 45.011313,
+      "lng": -0.531549
+    },
+    {
+      "nom": "Espace des Deux Rives",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 45.011179,
+      "lng": -0.531125
+    },
+    {
+      "nom": "Stade Léo Lagrange",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.847422,
+      "lng": -0.537003
+    },
+    {
+      "nom": "Salle Château du Diable",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.852155,
+      "lng": -0.531592
+    },
+    {
+      "nom": "Le Rocher de Palmer",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.86234,
+      "lng": -0.524303
+    },
+    {
+      "nom": "Centre de loisirs La Ré d'Eau",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.849256,
+      "lng": -0.521396
+    },
+    {
+      "nom": "Gymnase Marègue",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.851564,
+      "lng": -0.505909
+    },
+    {
+      "nom": "Boulodrome couvert",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.851514,
+      "lng": -0.51777
+    },
+    {
+      "nom": "Espace Simone Signoret",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.857689,
+      "lng": -0.529964
+    },
+    {
+      "nom": "Gymnase Gilbert Lalanne",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.858072,
+      "lng": -0.515924
+    },
+    {
+      "nom": "Gymnase Jean Jaurès",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.862861,
+      "lng": -0.514696
+    },
+    {
+      "nom": "Maison des sports",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.860649,
+      "lng": -0.523866
+    },
+    {
+      "nom": "Complexe sportif Bernard de la Filolie",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.864887,
+      "lng": -0.613573
+    },
+    {
+      "nom": "Auditorium",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.865642,
+      "lng": -0.610751
+    },
+    {
+      "nom": "Complexe sportif Jean Martial",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.865987,
+      "lng": -0.597155
+    },
+    {
+      "nom": "Espace culturel L'Ermitage Compostelle",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.865328,
+      "lng": -0.597359
+    },
+    {
+      "nom": "Complexe sportif Les Ecus",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.871757,
+      "lng": -0.60307
+    },
+    {
+      "nom": "Salle Sainte-Barbe",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.95269,
+      "lng": -0.533826
+    },
+    {
+      "nom": "Foyer intergénérationnel",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.951388,
+      "lng": -0.531919
+    },
+    {
+      "nom": "Espace l'Art Y Show",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.946704,
+      "lng": -0.606947
+    },
+    {
+      "nom": "Salle municipale Le Hangar",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.961613,
+      "lng": -0.627033
+    },
+    {
+      "nom": "Complexe sportif Léo Lagrange",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.944731,
+      "lng": -0.597948
+    },
+    {
+      "nom": "Gymnase Yves du Manoir",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.841428,
+      "lng": -0.53155
+    },
+    {
+      "nom": "Gymnase Robert Ralite",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.843996,
+      "lng": -0.514686
+    },
+    {
+      "nom": "Espace Lucie Aubrac",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.832282,
+      "lng": -0.53111
+    },
+    {
+      "nom": "Dojo Claude Lozana",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.883816,
+      "lng": -0.644552
+    },
+    {
+      "nom": "Salle de réception du Pinsan",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.868859,
+      "lng": -0.654005
+    },
+    {
+      "nom": "Salle omnisports du Pinsan",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.86834,
+      "lng": -0.652857
+    },
+    {
+      "nom": "Dojo de Migron",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.868606,
+      "lng": -0.633564
+    },
+    {
+      "nom": "Salle de gymnastique",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.87172,
+      "lng": -0.636097
+    },
+    {
+      "nom": "Maison Guy Queyroi",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.860957,
+      "lng": -0.655898
+    },
+    {
+      "nom": "Salle municipale Marcel Lachièze",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.88223,
+      "lng": -0.63214
+    },
+    {
+      "nom": "Tennis",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.872395,
+      "lng": -0.653864
+    },
+    {
+      "nom": "Gymnase Port du Roy",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.910888,
+      "lng": -0.615075
+    },
+    {
+      "nom": "Complexe sportif de Fongravey",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.917133,
+      "lng": -0.628346
+    },
+    {
+      "nom": "Gymnase Bechon",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.91602,
+      "lng": -0.636951
+    },
+    {
+      "nom": "Salle polyvalente de Fongravey",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.914895,
+      "lng": -0.630924
+    },
+    {
+      "nom": "Gymnase Dupaty",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.907978,
+      "lng": -0.627593
+    },
+    {
+      "nom": "Complexe sportif Lachaze",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.94108,
+      "lng": -0.496082
+    },
+    {
+      "nom": "Gymnase Rosa Bonheur",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.926077,
+      "lng": -0.491733
+    },
+    {
+      "nom": "Salle Gilbert Rance",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.929167,
+      "lng": -0.472401
+    },
+    {
+      "nom": "Gymnase Claude Masse",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.9278,
+      "lng": -0.484097
+    },
+    {
+      "nom": "Salle municipale Saint-Laurent",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.947634,
+      "lng": -0.488072
+    },
+    {
+      "nom": "Maison des sports Les Iris",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.866285,
+      "lng": -0.524774
+    },
+    {
+      "nom": "Salle Léo Lagrange",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.876514,
+      "lng": -0.523209
+    },
+    {
+      "nom": "Espace citoyen Colmet",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.885213,
+      "lng": -0.527229
+    },
+    {
+      "nom": "Espace citoyen Génicart",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.873508,
+      "lng": -0.518019
+    },
+    {
+      "nom": "Pôle Brassens - Camus",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.872066,
+      "lng": -0.517497
+    },
+    {
+      "nom": "Salle de Lissandre",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.863591,
+      "lng": -0.531092
+    },
+    {
+      "nom": "Groupe Scolaire Saint Vincent de Paul",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.95667,
+      "lng": -0.469663
+    },
+    {
+      "nom": "Salle de spectacle Evasion",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.927025,
+      "lng": -0.48768
+    },
+    {
+      "nom": "Gymnase Jean Dauguet",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.842637,
+      "lng": -0.545124
+    },
+    {
+      "nom": "Espace Saint-Rémi",
+      "adresse": "4 Rue Jouannet",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.841778,
+      "lng": -0.571939
+    },
+    {
+      "nom": "Plaine des sports Colette Besson (S2)",
+      "adresse": null,
+      "commune": null,
+      "categorie": null,
+      "lat": 44.899094,
+      "lng": -0.567452
+    },
+    {
+      "nom": "Gymnase Promis",
+      "adresse": "35 Rue de Cénac",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.838838,
+      "lng": -0.551364
+    },
+    {
+      "nom": "Gymnase Haku Michigami",
+      "adresse": "47 Rue Achard",
+      "commune": null,
+      "categorie": null,
+      "lat": 44.866389,
+      "lng": -0.549162
+    }
+  ]
+}

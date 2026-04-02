@@ -190,6 +190,112 @@
         }
 
         footer { height: 42px; display: flex; align-items: center; justify-content: center; }
+
+        /* Boutons zones inondables futures */
+        .hz-flood-btn { transition: all 0.15s; }
+        #btn-hydro-2030.active { background: rgba(96,165,250,0.25); color: #60a5fa; border-color: #60a5fa !important; }
+        #btn-hydro-2040.active { background: rgba(249,115,22,0.25); color: #f97316; border-color: #f97316 !important; }
+        #btn-hydro-2050.active { background: rgba(239,68,68,0.25); color: #ef4444; border-color: #ef4444 !important; }
+
+        /* Panel liste refuges */
+        .refuges-panel {
+            width: 300px;
+            flex-shrink: 0;
+            background: var(--card);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .refuges-panel-header {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+
+        .refuges-stats {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .rs-chip {
+            flex: 1;
+            text-align: center;
+            padding: 6px 4px;
+            border-radius: var(--radius-sm);
+            font-size: 11px;
+        }
+
+        .rs-num {
+            font-size: 18px;
+            font-weight: 700;
+            display: block;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .refuges-list {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .refuge-item {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+            transition: background 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .refuge-item:hover { background: var(--secondary); }
+        .refuge-item.selected { background: var(--primary-bg); }
+
+        .refuge-item-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .refuge-item-dot.parc {
+            border-radius: 2px;
+            transform: rotate(45deg);
+        }
+
+        .refuge-item-info { flex: 1; min-width: 0; }
+
+        .refuge-item-name {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--foreground);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .refuge-item-type {
+            font-size: 10px;
+            color: var(--muted-fg);
+            margin-top: 1px;
+        }
+
+        .refuge-item-score {
+            font-size: 13px;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            flex-shrink: 0;
+        }
+
+        .refuge-item-badge {
+            font-size: 9px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: var(--radius-full);
+            flex-shrink: 0;
+        }
     </style>
 </head>
 <body>
@@ -204,8 +310,8 @@
     </a>
     <div class="header-actions">
         <div class="badges-group">
-            <span class="badge badge-critical">83 refuges critiques en 2050</span>
-            <span class="badge badge-neutral">110 refuges analysés</span>
+            <span class="badge badge-critical">136 refuges critiques en 2050</span>
+            <span class="badge badge-neutral">323 refuges analysés</span>
             <span class="badge badge-primary">28 communes</span>
         </div>
         <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Basculer le thème">
@@ -225,16 +331,6 @@
                 <input type="text" class="search-input" id="searchInput" placeholder="Rechercher commune ou refuge…" oninput="filterMap(this.value)">
             </div>
         </div>
-
-        <!-- Vue -->
-        <span class="sidebar-section-label">Vue</span>
-        <div class="filter-pills">
-            <button class="filter-pill active" onclick="setView('all', this)">🗺️ Tout</button>
-            <button class="filter-pill" onclick="setView('communes', this)">🏙️ Communes</button>
-            <button class="filter-pill" onclick="setView('refuges', this)">🏠 Refuges</button>
-        </div>
-
-        <div class="sidebar-divider"></div>
 
         <!-- Filtres communes -->
         <span class="sidebar-section-label">Risque communes</span>
@@ -289,9 +385,16 @@
         <!-- Couches -->
         <span class="sidebar-section-label">Couches de risque</span>
         <div class="filter-pills">
-            <button class="filter-pill" onclick="toggleLayer('flood', this)">💧 Inondation</button>
+            <button class="filter-pill" onclick="toggleLayer('flood', this)">💧 PPRI actuel</button>
             <button class="filter-pill" onclick="toggleLayer('heat', this)">🌡️ Chaleur</button>
             <button class="filter-pill" onclick="toggleLayer('fontaines', this)">🚰 Fontaines</button>
+            <button class="filter-pill" onclick="toggleLayer('care', this)">⭐ CARE officiels</button>
+        </div>
+        <span class="sidebar-section-label">Zones inondables futures</span>
+        <div class="filter-pills">
+            <button class="filter-pill hz-flood-btn" id="btn-hydro-2030" onclick="toggleHydroLayer(2030, this)" style="border-color:#60a5fa44">🌊 2030</button>
+            <button class="filter-pill hz-flood-btn" id="btn-hydro-2040" onclick="toggleHydroLayer(2040, this)" style="border-color:#f9731644">🌊 2040</button>
+            <button class="filter-pill hz-flood-btn" id="btn-hydro-2050" onclick="toggleHydroLayer(2050, this)" style="border-color:#ef444444">🌊 2050</button>
         </div>
 
         <div class="sidebar-divider"></div>
@@ -319,6 +422,22 @@
                 <span class="legend-diamond" style="background:#22c55e"></span>
                 Parc / espace vert
             </div>
+            <div class="legend-row">
+                <span style="width:10px;height:10px;background:#f59e0b;border-radius:50%;border:1.5px solid white;flex-shrink:0;display:inline-block;"></span>
+                CARE officiel métropole
+            </div>
+            <div class="legend-row">
+                <span style="width:10px;height:10px;background:#60a5fa;border-radius:2px;opacity:0.7;flex-shrink:0;display:inline-block;"></span>
+                Zone inondable 2030
+            </div>
+            <div class="legend-row">
+                <span style="width:10px;height:10px;background:#f97316;border-radius:2px;opacity:0.7;flex-shrink:0;display:inline-block;"></span>
+                Zone inondable 2040
+            </div>
+            <div class="legend-row">
+                <span style="width:10px;height:10px;background:#ef4444;border-radius:2px;opacity:0.7;flex-shrink:0;display:inline-block;"></span>
+                Zone inondable 2050
+            </div>
         </div>
 
         <div class="sidebar-divider"></div>
@@ -339,6 +458,31 @@
 
     <div class="map-wrapper">
         <div id="map"></div>
+    </div>
+
+    <!-- Panel liste refuges -->
+    <div class="refuges-panel" id="refugesPanel">
+        <div class="refuges-panel-header">
+            <div style="font-size:13px;font-weight:700;color:var(--foreground);margin-bottom:6px;">
+                Refuges analysés
+                <span id="refugesCount" style="font-size:11px;color:var(--muted-fg);font-weight:400;margin-left:4px;"></span>
+            </div>
+            <div class="refuges-stats">
+                <div class="rs-chip" style="background:rgba(34,197,94,0.12);">
+                    <span class="rs-num" style="color:#22c55e" id="statSurs">—</span>
+                    <span style="color:var(--muted-fg)">Sûrs</span>
+                </div>
+                <div class="rs-chip" style="background:rgba(249,115,22,0.12);">
+                    <span class="rs-num" style="color:#f97316" id="statMenaces">—</span>
+                    <span style="color:var(--muted-fg)">Menacés</span>
+                </div>
+                <div class="rs-chip" style="background:rgba(239,68,68,0.12);">
+                    <span class="rs-num" style="color:#ef4444" id="statCritiques">—</span>
+                    <span style="color:var(--muted-fg)">Critiques</span>
+                </div>
+            </div>
+        </div>
+        <div class="refuges-list" id="refugesList"></div>
     </div>
 </div>
 
@@ -450,7 +594,9 @@ function updateTiles() {
 updateTiles();
 
 // ── COUCHES DE RISQUE ─────────────────────────────────────────
-let LAYER_FLOOD = null, LAYER_HEAT = null, LAYER_FONTAINES = null;
+let LAYER_FLOOD = null, LAYER_HEAT = null, LAYER_FONTAINES = null, LAYER_CARE = null;
+let LAYERS_HYDRO = { 2026: null, 2030: null, 2040: null, 2050: null };
+let layersHydroOn = { 2026: false, 2030: false, 2040: false, 2050: false };
 let LAYER_COMMUNES = null;
 let REFUGE_MARKERS = {};
 
@@ -499,29 +645,25 @@ async function loadCommunes() {
         });
 
         LAYER_COMMUNES = L.geoJSON(geojson, {
-            style: f => {
-                const score = f.properties[currentRisk] || 5;
-                const color = communeColor(score);
-                return {
-                    fillColor: color,
-                    fillOpacity: 0.18,
-                    color: color,
-                    weight: 1.5,
-                    dashArray: null,
-                };
-            },
+            style: () => ({
+                fillColor: 'transparent',
+                fillOpacity: 0,
+                color: 'var(--primary, #2DBBA4)',
+                weight: 1.5,
+                dashArray: null,
+                opacity: 0.5,
+            }),
             onEachFeature: (feature, layer) => {
                 const p = feature.properties;
-                const score = p[currentRisk] || '—';
                 layer.bindTooltip(
-                    `<strong>${p.nom}</strong><br>Score ${currentRisk} : ${score}/10`,
+                    `<strong>${p.nom}</strong>`,
                     { sticky: true, className: 'leaflet-tooltip-custom' }
                 );
                 layer.on('click', () => showCommunePanel(p));
             }
         });
 
-        if (currentView !== 'refuges') LAYER_COMMUNES.addTo(MAP);
+        LAYER_COMMUNES.addTo(MAP);
     } catch(e) {
         console.warn('Communes GeoJSON non disponible, fallback markers', e);
         renderCommuneMarkers();
@@ -578,11 +720,66 @@ function getRefugeScore(r) {
     return s ? s.score : (r.score || 0);
 }
 
+function renderList() {
+    if (!REFUGES.length) return;
+    const query = searchQuery.toLowerCase();
+    const filtered = REFUGES.filter(r => {
+        const score  = getRefugeScore(r);
+        const status = scoreToStatus(score);
+        if (!statusFilters[status]) return false;
+        if (query && !r.nom.toLowerCase().includes(query)) return false;
+        return true;
+    }).sort((a,b) => getRefugeScore(b) - getRefugeScore(a));
+
+    const surs     = filtered.filter(r => scoreToStatus(getRefugeScore(r)) === 'sur').length;
+    const menaces  = filtered.filter(r => scoreToStatus(getRefugeScore(r)) === 'menace').length;
+    const critiques= filtered.filter(r => scoreToStatus(getRefugeScore(r)) === 'critique').length;
+
+    document.getElementById('statSurs').textContent     = surs;
+    document.getElementById('statMenaces').textContent  = menaces;
+    document.getElementById('statCritiques').textContent= critiques;
+    document.getElementById('refugesCount').textContent = `${filtered.length} / ${REFUGES.length}`;
+
+    const statusLabel = { sur: 'Sûr', menace: 'Menacé', critique: 'Critique' };
+    const statusBg    = { sur: 'rgba(34,197,94,0.12)', menace: 'rgba(249,115,22,0.12)', critique: 'rgba(239,68,68,0.12)' };
+
+    document.getElementById('refugesList').innerHTML = filtered.map(r => {
+        const score  = getRefugeScore(r);
+        const status = scoreToStatus(score);
+        const color  = refugeColor(status);
+        const isParc = r.type === 'parc';
+        return `<div class="refuge-item" onclick="selectRefuge(${r.id})">
+            <div class="refuge-item-dot ${isParc ? 'parc' : ''}" style="background:${color}"></div>
+            <div class="refuge-item-info">
+                <div class="refuge-item-name">${r.nom}</div>
+                <div class="refuge-item-type">${isParc ? '🌿 Parc' : (r.adresse || r.type || '')}</div>
+            </div>
+            <span class="refuge-item-score" style="color:${color}">${score}</span>
+            <span class="refuge-item-badge" style="background:${statusBg[status]};color:${color}">${statusLabel[status]}</span>
+        </div>`;
+    }).join('');
+}
+
+let SELECTED_REFUGE = null;
+
+function selectRefuge(id) {
+    const r = REFUGES.find(x => x.id === id);
+    if (!r) return;
+    SELECTED_REFUGE = id;
+    // Highlight dans la liste
+    document.querySelectorAll('.refuge-item').forEach(el => el.classList.remove('selected'));
+    const items = document.querySelectorAll('.refuge-item');
+    items.forEach(el => { if (el.onclick?.toString().includes(id)) el.classList.add('selected'); });
+    // Centrer la carte
+    MAP.setView([r.lat, r.lng], Math.max(MAP.getZoom(), 14));
+    // Afficher le panel détail
+    showRefugePanel(r);
+}
+
 function renderRefuges() {
     Object.values(REFUGE_MARKERS).forEach(m => MAP.removeLayer(m));
     REFUGE_MARKERS = {};
 
-    if (currentView === 'communes') return;
 
     const query = searchQuery.toLowerCase();
     REFUGES.forEach(r => {
@@ -615,10 +812,11 @@ function renderRefuges() {
             `<strong>${r.nom}</strong><br>${r.type === 'parc' ? '🌿 Parc' : r.adresse || ''}<br>Score ${currentHorizon} : ${score}/100`,
             { sticky: true, className: 'leaflet-tooltip-custom' }
         );
-        marker.on('click', () => showRefugePanel(r));
+        marker.on('click', () => { SELECTED_REFUGE = r.id; showRefugePanel(r); });
         marker.addTo(MAP);
         REFUGE_MARKERS[r.id] = marker;
     });
+    renderList();
 }
 
 // ── COUCHES RISQUE ────────────────────────────────────────────
@@ -666,6 +864,88 @@ async function loadRiskLayers() {
             });
         }
     } catch(e) {}
+
+    // CARE officiels métropole
+    try {
+        const r = await fetch('../data/processed/care_all.json');
+        if (r.ok) {
+            const data = await r.json();
+            const careIcon = L.divIcon({
+                className: '',
+                html: `<div style="
+                    width:14px;height:14px;
+                    background:#f59e0b;
+                    border:2px solid white;
+                    border-radius:50%;
+                    box-shadow:0 0 8px rgba(245,158,11,0.8);
+                    display:flex;align-items:center;justify-content:center;
+                    font-size:8px;line-height:1;
+                ">★</div>`,
+                iconSize: [14, 14],
+                iconAnchor: [7, 7],
+            });
+
+            const markers = data.cares.map(c => {
+                const m = L.marker([c.lat, c.lng], { icon: careIcon });
+                m.bindTooltip(
+                    `<strong>⭐ ${c.nom}</strong><br>${c.adresse}<br>${c.commune}<br><em>${c.categorie}</em>`,
+                    { sticky: true, className: 'leaflet-tooltip-custom' }
+                );
+                m.on('click', () => {
+                    document.getElementById('panelName').textContent = c.nom;
+                    document.getElementById('panelSub').textContent  = `⭐ CARE officiel — ${c.commune}`;
+                    document.getElementById('panelScoreBadge').innerHTML = `
+                        <span style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:9999px;background:rgba(245,158,11,0.15);">
+                            <span style="color:#f59e0b;font-size:12px;font-weight:600;">Centre d'Accueil et de Regroupement des Évacués</span>
+                        </span>`;
+                    document.getElementById('panelBody').innerHTML = `
+                        <p class="panel-section-title">📋 Informations</p>
+                        <div class="detail-reco">
+                            <strong>Adresse :</strong> ${c.adresse}<br>
+                            <strong>Commune :</strong> ${c.commune}<br>
+                            <strong>Catégorie :</strong> ${c.categorie}
+                        </div>`;
+                    document.getElementById('detailPanel').classList.add('visible');
+                });
+                return m;
+            });
+
+            LAYER_CARE = L.layerGroup(markers);
+            console.log('CARE : ' + data.total + ' centres chargés');
+        }
+    } catch(e) { console.warn('CARE non disponibles', e); }
+
+    // Zones inondables futures par horizon
+    const hydroColors = {
+        2030: { fill: '#60a5fa', border: '#3b82f6', opacity: 0.20 },
+        2040: { fill: '#f97316', border: '#ea580c', opacity: 0.22 },
+        2050: { fill: '#ef4444', border: '#dc2626', opacity: 0.25 },
+    };
+    for (const h of [2030, 2040, 2050]) {
+        try {
+            const r = await fetch(`../data/processed/zone_inondable_${h}.geojson`);
+            if (r.ok) {
+                const data = await r.json();
+                const c = hydroColors[h];
+                LAYERS_HYDRO[h] = L.geoJSON(data, {
+                    style: () => ({
+                        fillColor: c.fill,
+                        fillOpacity: c.opacity,
+                        color: c.border,
+                        weight: 1,
+                        dashArray: '4 4',
+                    }),
+                    onEachFeature: (f, l) => {
+                        l.bindTooltip(
+                            `🌊 Zone inondable projetée ${h}<br><small>Simulation GIEC AR6 + hydrographie BM</small>`,
+                            { sticky: true, className: 'leaflet-tooltip-custom' }
+                        );
+                    }
+                });
+                console.log(`Zone hydro ${h} chargée`);
+            }
+        } catch(e) { console.warn(`Zone hydro ${h} non disponible`, e); }
+    }
 }
 
 // ── PANELS ────────────────────────────────────────────────────
@@ -727,13 +1007,30 @@ function showRefugePanel(r) {
         </div>`;
     }).join('');
 
-    const floodLabel = { none: 'Aucun', future: 'Futur', high: 'Fort' }[r.risks?.flood] || '—';
-    const heatLabel  = { none: 'Aucun', cool: 'Îlot frais', low: 'Faible', moderate: 'Modéré', high: 'Fort' }[r.risks?.heat] || '—';
-    const floodColor = { none: 'var(--muted-fg)', future: '#f97316', high: '#ef4444' }[r.risks?.flood] || 'var(--muted-fg)';
+    // Utiliser flood_by_horizon si disponible pour afficher le risque selon l'horizon actif
+    const floodByHorizon = r.risks?.flood_by_horizon || {};
+    const horizonKey = String(currentHorizon);
+
+    // Priorité : données hydro > PPRI > none
+    let floodAtHorizon = 'none';
+    if (floodByHorizon && Object.keys(floodByHorizon).length > 0) {
+        floodAtHorizon = floodByHorizon[horizonKey] || 'sur';
+    } else if (r.risks?.flood && r.risks.flood !== 'none') {
+        floodAtHorizon = r.risks.flood;
+    }
+
+    const floodLabel = {
+        none: 'Aucun', sur: 'Aucun',
+        future: 'Futur', menace: 'Menacé ⚠️',
+        high: 'Fort ❌', critique: 'Critique ❌'
+    }[floodAtHorizon] || '—';
+
+    const heatLabel  = { none: 'Aucun', cool: 'Îlot frais ✅', low: 'Faible', moderate: 'Modéré ⚠️', high: 'Fort ❌' }[r.risks?.heat] || '—';
+    const floodColor = { none: 'var(--muted-fg)', sur: 'var(--muted-fg)', future: '#f97316', menace: '#f97316', high: '#ef4444', critique: '#ef4444' }[floodAtHorizon] || 'var(--muted-fg)';
     const heatColor  = { none: 'var(--muted-fg)', cool: '#22c55e', low: 'var(--muted-fg)', moderate: '#f97316', high: '#ef4444' }[r.risks?.heat] || 'var(--muted-fg)';
 
     let catnatHtml = '';
-    if (r.risks?.flood !== 'none' && CATNAT) {
+    if (floodAtHorizon !== 'none' && floodAtHorizon !== 'sur' && CATNAT) {
         const annees = [...new Set(CATNAT.evenements.map(e => e.date_debut?.slice(-4)).filter(Boolean))].sort().slice(-5);
         catnatHtml = `<div style="margin-top:10px;padding:10px;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.2);border-radius:6px;font-size:11px;color:var(--muted-fg);">
             <span style="color:#ef4444;font-weight:600;">⚠️ Historique inondations</span><br>
@@ -758,7 +1055,24 @@ function showRefugePanel(r) {
                 <div class="rc-val" style="color:${heatColor}">${heatLabel}</div>
             </div>
         </div>
-        ${r.reco ? `<div class="detail-reco">${r.reco}</div>` : ''}
+        ${(() => {
+            // Recommandation dynamique selon l'horizon et le statut flood/heat
+            let reco = '';
+            if (floodAtHorizon === 'critique') {
+                reco = `⚠️ En ${currentHorizon}, ce refuge sera dans la zone inondable — inaccessible en cas de crue.`;
+            } else if (floodAtHorizon === 'menace') {
+                reco = `⚠️ En ${currentHorizon}, ce refuge sera à proximité de la zone inondable — accessibilité à risque.`;
+            } else if (r.risks?.heat === 'high') {
+                reco = `🌡️ Situé en îlot de chaleur intense — prévoir climatisation ou ventilation renforcée.`;
+            } else if (r.risks?.heat === 'cool') {
+                reco = `✅ Îlot de fraîcheur — refuge thermique recommandé en vague de chaleur.`;
+            } else if (floodAtHorizon === 'sur' || floodAtHorizon === 'none') {
+                reco = `✅ En ${currentHorizon}, ce refuge est hors zone à risque majeur.`;
+            } else {
+                reco = r.reco || '';
+            }
+            return reco ? `<div class="detail-reco">${reco}</div>` : '';
+        })()}
         ${catnatHtml}`;
 
     document.getElementById('detailPanel').classList.add('visible');
@@ -771,16 +1085,6 @@ function closePanel() {
 // ── CONTRÔLES ─────────────────────────────────────────────────
 function setView(view, btn) {
     currentView = view;
-    document.querySelectorAll('.filter-pill').forEach(b => {
-        if (['all','communes','refuges'].includes(b.textContent.trim().replace(/[^a-zA-Z]/g,''))) return;
-    });
-    btn.closest('.filter-pills').querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    if (LAYER_COMMUNES) {
-        if (view === 'refuges') MAP.removeLayer(LAYER_COMMUNES);
-        else LAYER_COMMUNES.addTo(MAP);
-    }
     renderRefuges();
 }
 
@@ -796,6 +1100,11 @@ function setHorizon(h, btn) {
     document.querySelectorAll('.hz-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     renderRefuges();
+    // Mettre à jour le panel détail si un refuge est sélectionné
+    if (SELECTED_REFUGE !== null) {
+        const r = REFUGES.find(x => x.id === SELECTED_REFUGE);
+        if (r) showRefugePanel(r);
+    }
 }
 
 function toggleStatus(status, btn) {
@@ -804,10 +1113,35 @@ function toggleStatus(status, btn) {
     renderRefuges();
 }
 
+function toggleHydroLayer(horizon, btn) {
+    const wasOn = layersHydroOn[horizon];
+
+    // Désactiver toutes les couches hydro actives
+    [2030, 2040, 2050].forEach(h => {
+        if (layersHydroOn[h] && LAYERS_HYDRO[h]) {
+            MAP.removeLayer(LAYERS_HYDRO[h]);
+            layersHydroOn[h] = false;
+        }
+    });
+    // Désactiver tous les boutons hydro
+    document.querySelectorAll('.hz-flood-btn').forEach(b => b.classList.remove('active'));
+
+    // Si la couche était déjà active → on l'a juste désactivée (toggle off)
+    if (wasOn) return;
+
+    // Sinon activer la nouvelle couche
+    layersHydroOn[horizon] = true;
+    btn.classList.add('active');
+    const layer = LAYERS_HYDRO[horizon];
+    if (!layer) { console.warn(`Zone hydro ${horizon} non chargée`); return; }
+    layer.addTo(MAP);
+    Object.values(REFUGE_MARKERS).forEach(m => m.bringToFront && m.bringToFront());
+}
+
 function toggleLayer(type, btn) {
     layersOn[type] = !layersOn[type];
     btn.classList.toggle('active', layersOn[type]);
-    const layer = { flood: LAYER_FLOOD, heat: LAYER_HEAT, fontaines: LAYER_FONTAINES }[type];
+    const layer = { flood: LAYER_FLOOD, heat: LAYER_HEAT, fontaines: LAYER_FONTAINES, care: LAYER_CARE }[type];
     if (!layer) return;
     if (layersOn[type]) layer.addTo(MAP);
     else MAP.removeLayer(layer);

@@ -41,50 +41,57 @@ CARE_OFFICIELS = [
 ]
 
 # CARE manuels à injecter dans le JSON final (hors dataset)
-CARE_MANUELS = [
-    {
-        "id": 9001,
-        "nom": "Gymnase Jean-Dauguet",
-        "type": "C",
-        "adresse": "15 rue Ferdinand Palau",
-        "commune": "Bordeaux",
-        "quartier": "Bastide",
-        "lat": 44.8431,   # coordonnées OSM exactes
-        "lng": -0.5442,
-        "superficie": 1132,
-        "capacite": 2309,
-        "care_officiel": True,
-        "note": "CARE officiel activé lors de la crise de février 2026 — rive droite",
-    },
-    {
-        "id": 9002,
-        "nom": "Salle Eugénie Eboué-Tell",
-        "type": "C",
-        "adresse": "15-19 rue Marcel Pagnol",
-        "commune": "Bordeaux",
-        "quartier": "Bassins à Flot",
-        "lat": 44.8638,   # Bassins à Flot, inauguré janvier 2026
-        "lng": -0.5712,
-        "superficie": 600,
-        "capacite": 250,
-        "care_officiel": True,
-        "note": "CARE officiel activé lors de la crise de février 2026 — Bassins à Flot",
-    },
-    {
-        "id": 9003,
-        "nom": "Gymnase Promis",
-        "type": "C",
-        "adresse": "44 rue Promis",
-        "commune": "Bordeaux",
-        "quartier": "Bastide",
-        "lat": 44.8396,   # coordonnées OSM exactes
-        "lng": -0.5543,
-        "superficie": 500,
-        "capacite": 100,
-        "care_officiel": True,
-        "note": "CARE officiel — personnes sans abri — rive droite",
-    },
-]
+def load_care_manuels():
+    """
+    Charge les CARE officiels depuis care_all.json (converti depuis GPKG officiel).
+    Fallback sur les 3 CARE manuels si le fichier n'existe pas.
+    """
+    care_path = PROC_DIR / "care_all.json"
+    if care_path.exists():
+        with open(care_path, encoding="utf-8") as f:
+            data = json.load(f)
+        cares = []
+        for i, c in enumerate(data.get("cares", [])):
+            cares.append({
+                "id": 9000 + i,
+                "nom": c.get("nom", "CARE"),
+                "type": "C",
+                "adresse": c.get("adresse", ""),
+                "commune": c.get("commune", ""),
+                "quartier": "",
+                "lat": c.get("lat"),
+                "lng": c.get("lng"),
+                "superficie": None,
+                "capacite": None,
+                "care_officiel": True,
+                "categorie": c.get("categorie", ""),
+            })
+        print(f"  ✅ {len(cares)} CARE officiels chargés depuis care_all.json")
+        return cares
+    else:
+        print("  ℹ️  care_all.json non trouvé — utilisation des 3 CARE manuels")
+        return [
+            {
+                "id": 9001, "nom": "Gymnase Jean-Dauguet", "type": "C",
+                "adresse": "15 rue Ferdinand Palau", "commune": "Bordeaux",
+                "quartier": "Bastide", "lat": 44.8431, "lng": -0.5442,
+                "superficie": 1132, "capacite": 2309, "care_officiel": True,
+            },
+            {
+                "id": 9002, "nom": "Salle Eugénie Eboué-Tell", "type": "C",
+                "adresse": "15-19 rue Marcel Pagnol", "commune": "Bordeaux",
+                "quartier": "Bassins à Flot", "lat": 44.8638, "lng": -0.5712,
+                "superficie": 600, "capacite": 250, "care_officiel": True,
+            },
+            {
+                "id": 9003, "nom": "Gymnase Promis", "type": "C",
+                "adresse": "44 rue Promis", "commune": "Bordeaux",
+                "quartier": "Bastide", "lat": 44.8396, "lng": -0.5543,
+                "superficie": 500, "capacite": 100, "care_officiel": True,
+            },
+        ]
+
+CARE_MANUELS = load_care_manuels()
 
 # ── Pondérations du score par horizon ────────────────────────────────────────
 # Score de pérennité : 0 (critique) → 100 (sûr)
@@ -391,9 +398,32 @@ def stress_test(refuges, ppri, chaleur):
 
     return refuges
 
+# ── Données hydro par horizon ─────────────────────────────────────────────────
+
+def load_flood_hydro():
+    """
+    Charge les données d'inondation par horizon calculées depuis
+    les zones hydrographiques (to_hydro_s) + buffers GIEC AR6.
+    Retourne un dict {refuge_id: {2026: bool, 2030: bool, 2040: bool, 2050: bool}}
+    """
+    path = PROC_DIR / "refuges_flood_hydro.json"
+    if not path.exists():
+        print("  ℹ️  refuges_flood_hydro.json non trouvé — risque inondation basé sur PPRI uniquement")
+        return {}
+    with open(path, encoding="utf-8") as f:
+        raw = json.load(f)
+    # Convertir les clés en int et horizons en int
+    result = {}
+    for rid, horizons in raw.items():
+        result[int(rid)] = {int(h): v for h, v in horizons.items()}
+    print(f"  ✅ Données hydro par horizon chargées ({len(result)} refuges)")
+    return result
+
+FLOOD_HYDRO = load_flood_hydro()
+
 # ── Étape 4 : Calcul du score de pérennité ────────────────────────────────────
 
-def compute_score(flood_risk, heat_risk, heat_intensite, horizon):
+def compute_score(flood_risk, heat_risk, heat_intensite, horizon, refuge_id=None):
     """
     Score de 0 (critique) à 100 (sûr).
     Pénalités de base aggravées par les coefficients horizon GIEC AR6 :
@@ -401,20 +431,35 @@ def compute_score(flood_risk, heat_risk, heat_intensite, horizon):
       - Inondation future (bleu clair)  : pénalité progressive à partir de 2040
       - Chaleur haute    : -20 pts × coeff chaleur
       - Chaleur modérée  : -15 pts × coeff chaleur
+    Si refuge_id est fourni et que FLOOD_HYDRO contient des données pour ce refuge,
+    le risque d'inondation par horizon est calculé depuis les zones hydrographiques réelles.
     """
     weights = HORIZONS.get(horizon, HORIZONS[2026])
     score = 100.0
-    base_warming = {2026: 0, 2030: 2, 2040: 5, 2050: 10}
-    score -= base_warming.get(horizon, 0)
 
-    if flood_risk == "high":
-        # Zone inondable dès maintenant — pénalité pleine
-        score -= 45 * weights["flood_weight"]
-    elif flood_risk == "future":
-        # Zone bleu clair — devient inondable progressivement
-        # Pas de pénalité en 2026/2030, pénalité progressive en 2040/2050
-        future_penalties = {2026: 0, 2030: 5, 2040: 20, 2050: 35}
-        score -= future_penalties.get(horizon, 0) * weights["flood_weight"]
+    # Utiliser les données hydro réelles si disponibles (critique/menace/sur par horizon)
+    flood_hydro_status = None
+    if refuge_id is not None and refuge_id in FLOOD_HYDRO:
+        flood_hydro_status = FLOOD_HYDRO[refuge_id].get(horizon)
+
+    if flood_hydro_status == "critique":
+        # Dans la zone inondable à cet horizon — score plafonné à 40 (critique)
+        # La pénalité augmente avec l'horizon car les crues seront plus fréquentes
+        hydro_penalties = {2026: 50, 2030: 55, 2040: 65, 2050: 75}
+        score -= hydro_penalties.get(horizon, 50) * weights["flood_weight"]
+    elif flood_hydro_status == "menace":
+        # Proche de la zone inondable — score plafonné à 74 (menacé)
+        # Pénalité modérée, croissante avec l'horizon
+        hydro_penalties = {2026: 15, 2030: 20, 2040: 28, 2050: 38}
+        score -= hydro_penalties.get(horizon, 20) * weights["flood_weight"]
+    elif flood_hydro_status is None:
+        # Pas de données hydro — fallback PPRI
+        if flood_risk == "high":
+            score -= 45 * weights["flood_weight"]
+        elif flood_risk == "future":
+            future_penalties = {2026: 0, 2030: 5, 2040: 20, 2050: 35}
+            score -= future_penalties.get(horizon, 0) * weights["flood_weight"]
+    # flood_hydro_status == "sur" → pas de pénalité inondation
 
     # Pénalité chaleur basée sur le delta réel (°C au-dessus de la moyenne)
     # Chaque degré de delta compte : pénalité = delta × 2.5 pts × coeff_horizon
@@ -433,8 +478,7 @@ def compute_score(flood_risk, heat_risk, heat_intensite, horizon):
         score -= delta * 4.0 * weights["heat_weight"]
     elif delta < 0:
         # Bonus fraîcheur : 1 pt par degré de fraîcheur (plafonné à +5)
-        bonus_decay = {2026: 1.0, 2030: 0.85, 2040: 0.65, 2050: 0.45}
-        score += min(abs(delta) * 1.5, 5) * bonus_decay.get(horizon, 1.0)
+        score += min(abs(delta) * 1.5, 5)
 
     return max(0, min(100, round(score)))
 
@@ -487,15 +531,15 @@ def export_json(refuges, capacites, ppri_ref=None, chaleur_ref=None):
 
             scores = {
                 str(h): {
-                    "score": compute_score(flood_risk, heat_risk, heat_intensite, h),
-                    "status": score_to_status(compute_score(flood_risk, heat_risk, heat_intensite, h))
+                    "score": compute_score(flood_risk, heat_risk, heat_intensite, h, refuge_id=idx),
+                    "status": score_to_status(compute_score(flood_risk, heat_risk, heat_intensite, h, refuge_id=idx))
                 }
                 for h in HORIZONS.keys()
             }
 
             # Recommandation automatique
             score_2026 = scores["2026"]["score"]
-            if flood_risk == "high":
+            if flood_risk == "high" or (idx in FLOOD_HYDRO and FLOOD_HYDRO[idx].get(2026, False)):
                 reco = "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
             elif heat_risk == "high":
                 reco = "Situé en îlot de chaleur intense — prévoir climatisation ou ventilation renforcée."
@@ -503,6 +547,21 @@ def export_json(refuges, capacites, ppri_ref=None, chaleur_ref=None):
                 reco = "Refuge fiable. Capacité d'accueil suffisante, hors zone à risque majeur."
             else:
                 reco = "Risque modéré. Vérifier l'accessibilité en cas d'événement climatique extrême."
+
+            # Mettre à jour flood_risk depuis les données hydro si disponibles
+            hydro_2026 = FLOOD_HYDRO.get(idx, {}).get(2026)
+            if hydro_2026 == "critique":
+                flood_risk_display = "high"
+            elif hydro_2026 == "menace":
+                flood_risk_display = "future"
+            else:
+                flood_risk_display = flood_risk  # fallback PPRI
+
+            # Scores de risque flood par horizon pour le panneau détail
+            flood_by_horizon = {
+                str(h): FLOOD_HYDRO.get(idx, {}).get(h, flood_risk_display)
+                for h in HORIZONS.keys()
+            }
 
             result.append({
                 "id":    idx,
@@ -517,10 +576,11 @@ def export_json(refuges, capacites, ppri_ref=None, chaleur_ref=None):
                 "capacite":   capacite,
                 "care_officiel": is_care_officiel(nom),
                 "risks": {
-                    "flood":          flood_risk,
-                    "flood_niveau":   str(row.get("flood_niveau", "")) or None,
-                    "heat":           heat_risk,
-                    "heat_intensite": heat_intensite,
+                    "flood":            flood_risk_display,
+                    "flood_niveau":     str(row.get("flood_niveau", "")) or None,
+                    "flood_by_horizon": flood_by_horizon,
+                    "heat":             heat_risk,
+                    "heat_intensite":   heat_intensite,
                 },
                 "scores":    scores,
                 "score":     score_2026,
@@ -579,8 +639,8 @@ def export_json(refuges, capacites, ppri_ref=None, chaleur_ref=None):
 
         scores_care = {
             str(h): {
-                "score": compute_score(flood, heat, heat_intensite, h),
-                "status": score_to_status(compute_score(flood, heat, heat_intensite, h))
+                "score": compute_score(flood, heat, heat_intensite, h, refuge_id=care.get("id")),
+                "status": score_to_status(compute_score(flood, heat, heat_intensite, h, refuge_id=care.get("id")))
             }
             for h in HORIZONS.keys()
         }
@@ -710,24 +770,30 @@ def inject_parcs(result, ppri, chaleur):
                     elif delta >= 2: heat = "moderate"
                     elif delta >= 0: heat = "low"
                     else:            heat = "cool"
-                else:
-                    # Fallback : delta moyen de Bordeaux si pas de données ICU
-                    # Source : dataset ri_icu_ifu_s, moyenne = 3.5°C
-                    heat_intensite = 3.5
-                    heat = "moderate"
 
-            scores = {
-                str(h): {
-                    "score": compute_score(flood, heat, heat_intensite, h),
-                    "status": score_to_status(compute_score(flood, heat, heat_intensite, h))
+            parc_id = 8000 + idx
+
+            # Utiliser les données hydro si disponibles pour ce parc
+            hydro_data = FLOOD_HYDRO.get(parc_id, {})
+            flood_by_horizon = {str(h): hydro_data.get(h, 'sur') for h in HORIZONS.keys()}
+
+            scores = {}
+            for h in HORIZONS.keys():
+                hydro_status = hydro_data.get(h)
+                sc_h = compute_score(flood, heat, heat_intensite, h, refuge_id=parc_id)
+                scores[str(h)] = {
+                    "score": sc_h,
+                    "status": score_to_status(sc_h)
                 }
-                for h in HORIZONS.keys()
-            }
             sc = scores["2026"]["score"]
 
-            # Exclure les parcs en zone inondable — inaccessibles en crise
+            # Exclure les parcs en zone inondable PPRI — inaccessibles en crise
             if flood != "none":
                 continue
+
+            # Flood display : utiliser hydro 2026 si disponible
+            hydro_2026 = hydro_data.get(2026, 'sur')
+            flood_display = "high" if hydro_2026 == "critique" else ("future" if hydro_2026 == "menace" else flood)
 
             if heat == "cool":
                 reco = "Îlot de fraîcheur naturel — refuge thermique recommandé en canicule."
@@ -737,7 +803,7 @@ def inject_parcs(result, ppri, chaleur):
                 reco = "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
 
             result.append({
-                "id": 8000 + idx,
+                "id": parc_id,
                 "nom": nom,
                 "type": "parc",
                 "adresse": typo,
@@ -749,8 +815,9 @@ def inject_parcs(result, ppri, chaleur):
                 "capacite": None,
                 "care_officiel": False,
                 "risks": {
-                    "flood": flood,
+                    "flood": flood_display,
                     "flood_niveau": flood_niveau,
+                    "flood_by_horizon": flood_by_horizon,
                     "heat": heat,
                     "heat_intensite": heat_intensite,
                 },
