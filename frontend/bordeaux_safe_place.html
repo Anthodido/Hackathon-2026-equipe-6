@@ -18,7 +18,7 @@
     --border2:   rgba(255,255,255,0.14);
     --text:      #e8eaf0;
     --muted:     #6b7080;
-    --accent:    #4fd1c5;
+    --accent:    #2DBBA4;
     --accent2:   #f6ad55;
     --danger:    #fc8181;
     --ok:        #68d391;
@@ -64,7 +64,7 @@
   .logo-icon {
     width: 28px;
     height: 28px;
-    background: linear-gradient(135deg, #4fd1c5, #667eea);
+    background: linear-gradient(135deg, #2DBBA4, #667eea);
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -689,8 +689,9 @@
   <div class="legend-sep"></div>
   <div class="legend-title">Couches de risque</div>
   <div class="layer-toggles">
-    <button class="layer-btn" id="btn-flood" onclick="toggleLayer('flood')">💧 Inondation</button>
-    <button class="layer-btn" id="btn-heat"  onclick="toggleLayer('heat')">🌡️ Chaleur</button>
+    <button class="layer-btn" id="btn-flood"     onclick="toggleLayer('flood')">💧 Inondation</button>
+    <button class="layer-btn" id="btn-heat"      onclick="toggleLayer('heat')">🌡️ Chaleur</button>
+    <button class="layer-btn" id="btn-fontaines" onclick="toggleLayer('fontaines')">🚰 Fontaines</button>
   </div>
 </div>
 
@@ -714,6 +715,7 @@
     <div class="horizon-scores" id="detail-horizons"></div>
     <div class="risks-row" id="detail-risks"></div>
     <div class="detail-reco" id="detail-reco"></div>
+  <div id="detail-catnat" style="display:none"></div>
   </div>
 </div>
 
@@ -721,6 +723,7 @@
 // ── État global ───────────────────────────────────────────────────────────────
 
 let REFUGES    = [];
+let CATNAT     = null;  // Historique inondations Bordeaux
 let MAP        = null;
 let MARKERS    = {};
 let SELECTED   = null;
@@ -728,7 +731,8 @@ let HORIZON    = 2026;
 let FILTERS    = { sur: true, menace: true, critique: true };
 let LAYER_FLOOD = null;
 let LAYER_HEAT  = null;
-let LAYERS_ON   = { flood: false, heat: false };
+let LAYERS_ON   = { flood: false, heat: false, fontaines: false };
+let LAYER_FONTAINES = null;
 
 // ── Couleurs ──────────────────────────────────────────────────────────────────
 
@@ -1066,13 +1070,48 @@ async function loadRiskLayers() {
       });
     }
   } catch(e) { /* données non disponibles */ }
+
+  // Fontaines eau potable
+  try {
+    const r = await fetch('../data/raw/fontaines.geojson');
+    if (r.ok) {
+      const data = await r.json();
+      const fontaineIcon = L.divIcon({
+        className: '',
+        html: `<div style="
+          width:10px;height:14px;
+          background:#3b82f6;
+          border:1.5px solid white;
+          box-shadow:0 0 6px rgba(59,130,246,0.8);
+          border-radius:50% 50% 50% 0;
+          transform:rotate(-45deg);
+        "></div>`,
+        iconSize: [10, 14],
+        iconAnchor: [5, 14],
+      });
+      LAYER_FONTAINES = L.geoJSON(data, {
+        pointToLayer: (feature, latlng) => L.marker(latlng, { icon: fontaineIcon }),
+        onEachFeature: (feature, layer) => {
+          const p = feature.properties;
+          const nom = p.nom_fontaine || 'Fontaine';
+          const robinets = p.nombre_robinets || 1;
+          const adresse = p.adresse || '';
+          layer.bindTooltip(
+            `🚰 <strong>${nom}</strong><br>${adresse}<br>${robinets} robinet${robinets > 1 ? 's' : ''}`,
+            { sticky: true, className: 'leaflet-tooltip-dark' }
+          );
+        }
+      });
+      console.log(`Fontaines : ${data.features.length} points d'eau chargés`);
+    }
+  } catch(e) { console.warn('Fontaines non disponibles', e); }
 }
 
 function toggleLayer(type) {
   LAYERS_ON[type] = !LAYERS_ON[type];
-  const layer = type === 'flood' ? LAYER_FLOOD : LAYER_HEAT;
+  const layer = type === 'flood' ? LAYER_FLOOD : type === 'heat' ? LAYER_HEAT : LAYER_FONTAINES;
   const btn = document.getElementById(`btn-${type}`);
-  const activeClass = type === 'flood' ? 'flood-active' : 'heat-active';
+  const activeClass = type === 'flood' ? 'flood-active' : type === 'heat' ? 'heat-active' : 'fontaines-active';
 
   if (!layer) {
     console.warn(`Couche ${type} non disponible — données non chargées`);
@@ -1093,6 +1132,15 @@ function toggleLayer(type) {
 // ── Chargement des données ────────────────────────────────────────────────────
 
 async function loadData() {
+  // Charger l'historique CATNAT en parallèle
+  try {
+    const rc = await fetch('../data/raw/catnat_bordeaux.json');
+    if (rc.ok) {
+      CATNAT = await rc.json();
+      console.log(`CATNAT : ${CATNAT.total} inondations chargées`);
+    }
+  } catch(e) { console.warn('CATNAT non disponible', e); }
+
   try {
     const r = await fetch('../data/processed/refuges_diagnostiques.json');
     if (!r.ok) throw new Error('HTTP ' + r.status);

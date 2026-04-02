@@ -1,0 +1,6365 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5467953283336258,
+          44.841715270940824
+        ]
+      },
+      "properties": {
+        "id": 7.0,
+        "nom_fontaine": "Place Bernadas (la Bastide)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "BAYARD",
+        "x": 1419689.909643,
+        "y": 4188547.3142863,
+        "adresse": "angle boulevard Jules Simon / rue de la Benauge, 33100 Bordeaux",
+        "date_dernier_controle": "2026-03-16",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5766111866630947,
+          44.83772632927857
+        ]
+      },
+      "properties": {
+        "id": 8.0,
+        "nom_fontaine": "Place Pey Berland",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417315.4696716,
+        "y": 4188208.0777652,
+        "adresse": "Place Pey Berland, 33000 Bordeaux (proche arret tram ligne B)",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5742817383341714,
+          44.85180274927379
+        ]
+      },
+      "properties": {
+        "id": 9.0,
+        "nom_fontaine": "Place Paul Doumer",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417568.4400171,
+        "y": 4189762.5989256,
+        "adresse": "Place Paul Doumer, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5775591483311432,
+          44.83852476261346
+        ]
+      },
+      "properties": {
+        "id": 10.0,
+        "nom_fontaine": "Place Jean Moulin",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417244.5104015,
+        "y": 4188300.020565,
+        "adresse": "12 place Jean Moulin, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5754079766705447,
+          44.87388927261227
+        ]
+      },
+      "properties": {
+        "id": 20.0,
+        "nom_fontaine": "Terminus des Aubiers",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417587.76772,
+        "y": 4192218.3892446,
+        "adresse": "Terminus Les Aubiers, avenue Laroque, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5697570366713133,
+          44.84376226594728
+        ]
+      },
+      "properties": {
+        "id": 26.0,
+        "nom_fontaine": "Quai Rive Gauche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417886.3899359,
+        "y": 4188854.2479783,
+        "adresse": "Quai Louis XVIII, 33000 Bordeaux (proche Bat-CUB)",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5693227166733527,
+          44.842709217613766
+        ]
+      },
+      "properties": {
+        "id": 27.0,
+        "nom_fontaine": "Quai Rive Gauche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417915.5385254,
+        "y": 4188735.8350284,
+        "adresse": "Quai du Maréchal Lyautey, 33000 Bordeaux (Nord du miroir d'eau)",
+        "date_dernier_controle": "2026-03-25",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5657115783327016,
+          44.85362025927699
+        ]
+      },
+      "properties": {
+        "id": 35.0,
+        "nom_fontaine": "Quai Rive Gauche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418254.0815344,
+        "y": 4189934.5276265,
+        "adresse": "Quai des Chartrons, 33000 Bordeaux (proche Skate Park-béton)",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5595891866719985,
+          44.840526652609825
+        ]
+      },
+      "properties": {
+        "id": 38.0,
+        "nom_fontaine": "Place Stalingrad la Bastide",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "WALLACE",
+        "x": 1418673.6351428,
+        "y": 4188459.7030678,
+        "adresse": "place stalingrad, Bastide, 33100 Bordeaux",
+        "date_dernier_controle": "2026-03-16",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5729408816603729,
+          44.84911779760867
+        ]
+      },
+      "properties": {
+        "id": 41.0,
+        "nom_fontaine": "Cours Xavier Arnozan",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "WALLACE",
+        "x": 1417661.1708694,
+        "y": 4189459.8648561,
+        "adresse": "29-50 cours Xavier Arnozan, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5776230984187274,
+          44.84852001099839
+        ]
+      },
+      "properties": {
+        "id": 46.0,
+        "nom_fontaine": "Jardin Public (guignol)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417288.4838013,
+        "y": 4189409.8297697,
+        "adresse": "Jardin Public, cours de verdun, 33000 Bordeaux (centre du parc, proche étang n°1)",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5776269252454433,
+          44.84851470676639
+        ]
+      },
+      "properties": {
+        "id": 47.0,
+        "nom_fontaine": "Jardin Public",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417288.1555776,
+        "y": 4189409.2542917,
+        "adresse": "Jardin Public, cours de verdun, 33000 Bordeaux (centre du parc, proche étang n°2)",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6045929499943546,
+          44.851398230946
+        ]
+      },
+      "properties": {
+        "id": 50.0,
+        "nom_fontaine": "Parc Bordelais (proche étang)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1415172.8920459,
+        "y": 4189823.7964625,
+        "adresse": "Parc Bordelais, 71 avenue Charles de Gaulle, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5970184603052685,
+          44.835516549771
+        ]
+      },
+      "properties": {
+        "id": 61.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°9",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415692.7,
+        "y": 4188034.17,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5966882516748957,
+          44.83488127946967
+        ]
+      },
+      "properties": {
+        "id": 62.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°10",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415715.65,
+        "y": 4187962.49,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5951446222959843,
+          44.83358090065618
+        ]
+      },
+      "properties": {
+        "id": 66.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°14",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415831.17,
+        "y": 4187812.72,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5947580668063529,
+          44.83406703290025
+        ]
+      },
+      "properties": {
+        "id": 74.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°22",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415864.1,
+        "y": 4187865.33,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5943503014186745,
+          44.835414655186625
+        ]
+      },
+      "properties": {
+        "id": 75.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°23",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415902.95,
+        "y": 4188013.5,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5908386877949768,
+          44.83584413326507
+        ]
+      },
+      "properties": {
+        "id": 87.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°35",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416182.44,
+        "y": 4188048.87,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5895986962256635,
+          44.83620502412064
+        ]
+      },
+      "properties": {
+        "id": 91.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°39",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416282.16,
+        "y": 4188084.59,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5905043008588882,
+          44.83735102921913
+        ]
+      },
+      "properties": {
+        "id": 93.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°41",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416216.27,
+        "y": 4188214.98,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6202026883381441,
+          44.85939849594245
+        ]
+      },
+      "properties": {
+        "id": 95.0,
+        "nom_fontaine": "Cimetière Pins Francs n°1",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "ROBINET PAPILLON",
+        "x": 1413979.969796,
+        "y": 4190766.8881925,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6200730900028517,
+          44.85977730594029
+        ]
+      },
+      "properties": {
+        "id": 99.0,
+        "nom_fontaine": "Cimetière Pins Francs n°5",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1413992.0821241,
+        "y": 4190808.4820409,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6196608133283021,
+          44.859287734276755
+        ]
+      },
+      "properties": {
+        "id": 100.0,
+        "nom_fontaine": "Cimetière Pins Francs n°6",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1414022.2033901,
+        "y": 4190752.6799873,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6218554216620877,
+          44.85866843093885
+        ]
+      },
+      "properties": {
+        "id": 104.0,
+        "nom_fontaine": "Cimetière Pins Francs n°10",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1413845.854802,
+        "y": 4190691.6799275,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5906403749942004,
+          44.87439537094372
+        ]
+      },
+      "properties": {
+        "id": 110.0,
+        "nom_fontaine": "Cimetière Nord n°1",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416387.8773116,
+        "y": 4192327.7764655,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.594812213338697,
+          44.8750962809439
+        ]
+      },
+      "properties": {
+        "id": 115.0,
+        "nom_fontaine": "Cimetière Nord n°6",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416062.0288282,
+        "y": 4192420.1960004,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.59458907000059,
+          44.87442687761207
+        ]
+      },
+      "properties": {
+        "id": 117.0,
+        "nom_fontaine": "Cimetière Nord n°8",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416076.3434998,
+        "y": 4192345.103081,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5935338049982845,
+          44.87473834260787
+        ]
+      },
+      "properties": {
+        "id": 118.0,
+        "nom_fontaine": "Cimetière Nord n°9",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416161.1748828,
+        "y": 4192375.9818611,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5919463800023665,
+          44.87816462094085
+        ]
+      },
+      "properties": {
+        "id": 127.0,
+        "nom_fontaine": "Cimetière Nord n°18",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416303.349495,
+        "y": 4192750.7767317,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5928207649960893,
+          44.877444452610966
+        ]
+      },
+      "properties": {
+        "id": 129.0,
+        "nom_fontaine": "Cimetière Nord n°20",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416230.7874031,
+        "y": 4192673.8920263,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5952341933290025,
+          44.876479694278345
+        ]
+      },
+      "properties": {
+        "id": 133.0,
+        "nom_fontaine": "Cimetière Nord n°24",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "Borne Béton",
+        "x": 1416035.5391537,
+        "y": 4192575.2485859,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5934392466624175,
+          44.87774345761253
+        ]
+      },
+      "properties": {
+        "id": 136.0,
+        "nom_fontaine": "Cimetière Nord n°27",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416183.443371,
+        "y": 4192709.2510685,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5941846883291667,
+          44.876646529275284
+        ]
+      },
+      "properties": {
+        "id": 141.0,
+        "nom_fontaine": "Cimetière Nord n°32",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416119.2005075,
+        "y": 4192590.0915154,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6011355350028714,
+          44.85391818297133
+        ]
+      },
+      "properties": {
+        "id": 146.0,
+        "nom_fontaine": "Parc Bordelais (aire de jeux du parc Cerey  milieu parc)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1415458.3504745,
+        "y": 4190091.3886212,
+        "adresse": "Parc Bordelais, 71 avenue Charles de Gaulle, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5611054033322284,
+          44.83391059427859
+        ]
+      },
+      "properties": {
+        "id": 151.0,
+        "nom_fontaine": "Quai des Salinières",
+        "nombre_robinets": 3.0,
+        "modele_fontaine": "FONTAINE EN RANGEE",
+        "x": 1418521.5800239,
+        "y": 4187730.5049689,
+        "adresse": "Quai de la Monnaie, 33800 Bordeaux (rangée côté ring-hockey)",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5610479966700842,
+          44.83387548927728
+        ]
+      },
+      "properties": {
+        "id": 153.0,
+        "nom_fontaine": "Quai des salinieres",
+        "nombre_robinets": 3.0,
+        "modele_fontaine": "FONTAINE EN RANGEE",
+        "x": 1418525.9432792,
+        "y": 4187726.4084602,
+        "adresse": "Quai de la Monnaie, 33800 Bordeaux (rangée côté ring-hockey)",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5610202933302056,
+          44.83385733260818
+        ]
+      },
+      "properties": {
+        "id": 154.0,
+        "nom_fontaine": "Quai des salinieres (terrain de basket)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418528.0429685,
+        "y": 4187724.2966107,
+        "adresse": "174 Quai Sainte Croix, 33800 Bordeaux (parc des Sports Saint Michel)",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5857698583296662,
+          44.855097044275716
+        ]
+      },
+      "properties": {
+        "id": 157.0,
+        "nom_fontaine": "Parc Rivière n°2 (Jardin)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416677.4613833,
+        "y": 4190168.4101917,
+        "adresse": "Parc Rivière, 33 rue du Parc Rivière, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5823274133391385,
+          44.84011257927439
+        ]
+      },
+      "properties": {
+        "id": 158.0,
+        "nom_fontaine": "Ilôt Bonnac",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1416875.6899788,
+        "y": 4188492.9365077,
+        "adresse": "Square des Commandos de France, 32 rue Edmond Michelet, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5821548371091394,
+          44.8395712908337
+        ]
+      },
+      "properties": {
+        "id": 159.0,
+        "nom_fontaine": "Ilôt Bonnac",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1416886.6621572,
+        "y": 4188432.2445155,
+        "adresse": "18 rue Saint Sernin, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-02",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5726569649974093,
+          44.87608371427446
+        ]
+      },
+      "properties": {
+        "id": 168.0,
+        "nom_fontaine": "AUBIERS GINKO",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417815.6704892,
+        "y": 4192452.4140382,
+        "adresse": "rue des genêts, 33300 Bordeaux (proche city stade - espace sportif de Lauzun)",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5979326683363279,
+          44.82650366261077
+        ]
+      },
+      "properties": {
+        "id": 172.0,
+        "nom_fontaine": "Jardin Béchade (n°2, milieu parc)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1415576.0318348,
+        "y": 4187036.8581127,
+        "adresse": "Jardin de la Béchade, 100 rue Léo Saignat, 33000 Bordeaux (milieu parc)",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5685368827676256,
+          44.83657719278425
+        ]
+      },
+      "properties": {
+        "id": 175.0,
+        "nom_fontaine": "Rue du muguet/angle puits descazeaux",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "BAYARD",
+        "x": 1417947.6031463,
+        "y": 4188052.3721273,
+        "adresse": "13 rue du Puits Descazeaux, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-02",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5643945899983296,
+          44.83446959428003
+        ]
+      },
+      "properties": {
+        "id": 178.0,
+        "nom_fontaine": "Place duburg",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418264.4940075,
+        "y": 4187803.9923393,
+        "adresse": "6 place Dubour, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5612666009065836,
+          44.84542206821729
+        ]
+      },
+      "properties": {
+        "id": 179.0,
+        "nom_fontaine": "Jardin botanique bastide1",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418565.05,
+        "y": 4189008.98,
+        "adresse": "30 avenue Abadie, 33100 Bordeaux (proche entrée personnel)",
+        "date_dernier_controle": "2026-03-16",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5668763266654059,
+          44.83226191927255
+        ]
+      },
+      "properties": {
+        "id": 181.0,
+        "nom_fontaine": "Place maucaillou",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418057.6645819,
+        "y": 4187567.5464683,
+        "adresse": "place du Maucaillou, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6082663189887014,
+          44.82384033350401
+        ]
+      },
+      "properties": {
+        "id": 186.0,
+        "nom_fontaine": "Parc Carreire, aire de jeux",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "DELABIE",
+        "x": 1414746.5,
+        "y": 4186777.53,
+        "adresse": "rue Jean Baldé, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5547632519652383,
+          44.82294153937313
+        ]
+      },
+      "properties": {
+        "id": 189.0,
+        "nom_fontaine": "142 rue des Terres de Borde",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418969.1,
+        "y": 4186490.79,
+        "adresse": "142 rue des Terres de Borde, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5531719150228619,
+          44.83504176818657
+        ]
+      },
+      "properties": {
+        "id": 190.0,
+        "nom_fontaine": "Parc des Berges, quai dechamps",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "DELABIE",
+        "x": 1419153.77,
+        "y": 4187828.55,
+        "adresse": "52 quai deschamps, 33100 Bordeaux (proche café du port)",
+        "date_dernier_controle": "2026-03-16",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5702209029855192,
+          44.81944073251538
+        ]
+      },
+      "properties": {
+        "id": 191.0,
+        "nom_fontaine": "Square Paul Antin",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "BAYARD",
+        "x": 1417730.71,
+        "y": 4186155.89,
+        "adresse": "278 rue Pelleport, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5741726504064412,
+          44.83848568242219
+        ]
+      },
+      "properties": {
+        "id": 194.0,
+        "nom_fontaine": "Place Saint Projet",
+        "nombre_robinets": 3.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417511.8,
+        "y": 4188283.87,
+        "adresse": "place saint projet, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5723256557271309,
+          44.82008972519315
+        ]
+      },
+      "properties": {
+        "id": 195.0,
+        "nom_fontaine": "Place Nansouty",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417567.59,
+        "y": 4186235.27,
+        "adresse": "Place Nansouty, 163 cours de la somme, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5935366111012937,
+          44.83315714010348
+        ]
+      },
+      "properties": {
+        "id": 212.0,
+        "nom_fontaine": "Place Gaviniès (square de jeu gavinies)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "BAYARD",
+        "x": 1415956.1,
+        "y": 4187760.04,
+        "adresse": "place Gaviniès, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5833546049647186,
+          44.86056795419671
+        ]
+      },
+      "properties": {
+        "id": 216.0,
+        "nom_fontaine": "Grand Parc (square) n°1",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1416895.05,
+        "y": 4190767.3,
+        "adresse": "80 rue Pierre Trebod, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5441717734779304,
+          44.87900888238058
+        ]
+      },
+      "properties": {
+        "id": 227.0,
+        "nom_fontaine": "Square Docteur Roger Hypousteguy",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1420078.33,
+        "y": 4192678.34,
+        "adresse": "20 rue Léon Blum, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5934118114975201,
+          44.83781407352449
+        ]
+      },
+      "properties": {
+        "id": 228.0,
+        "nom_fontaine": "1 rue Lacanau, Bordeaux",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415988.9,
+        "y": 4188276.57,
+        "adresse": "1 rue Lacanau, Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5494362116564037,
+          44.873672860990595
+        ]
+      },
+      "properties": {
+        "id": 229.0,
+        "nom_fontaine": "Place Marjolaine Bamboche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1419636.84,
+        "y": 4192104.17,
+        "adresse": "63 rue Charles Martin, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5541309902546113,
+          44.82965810318917
+        ]
+      },
+      "properties": {
+        "id": 233.0,
+        "nom_fontaine": "Nouvelle Gare Routière",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1419051.78,
+        "y": 4187234.22,
+        "adresse": "35 quai de paludate, Bordeaux",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5546195530513094,
+          44.86190453518164
+        ]
+      },
+      "properties": {
+        "id": 235.0,
+        "nom_fontaine": "Place Alice Girou",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1419170.33,
+        "y": 4190815.68,
+        "adresse": "Place Alice Girou, Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5508432030345474,
+          44.83900517287617
+        ]
+      },
+      "properties": {
+        "id": 237.0,
+        "nom_fontaine": "Stade Promis n2 (côté rue Joseph Fauré)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1419357.01,
+        "y": 4188260.47,
+        "adresse": "50 rue Joseph Fauré, Bordeaux",
+        "date_dernier_controle": "2026-03-16",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6147476111158188,
+          44.84564228377359
+        ]
+      },
+      "properties": {
+        "id": 238.0,
+        "nom_fontaine": "Square Armand Faulat",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1414342.5,
+        "y": 4189220.58,
+        "adresse": "226 rue Pasteur, Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5511596021815374,
+          44.876443745550496
+        ]
+      },
+      "properties": {
+        "id": 239.0,
+        "nom_fontaine": "Place Mareilhac",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1419514.29,
+        "y": 4192417.74,
+        "adresse": "Place Mareilhac, Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5642104097313205,
+          44.86341674487912
+        ]
+      },
+      "properties": {
+        "id": 240.0,
+        "nom_fontaine": "Parc Chantecrit - Aire de jeux",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418420.49,
+        "y": 4191016.84,
+        "adresse": "12 Cité Chantecrit, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5838476560910382,
+          44.85175890416004
+        ]
+      },
+      "properties": {
+        "id": 244.0,
+        "nom_fontaine": "Place rue du Lavoir",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416812.84,
+        "y": 4189791.12,
+        "adresse": "Face au 2 rue du Lavoir, Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6026299540890759,
+          44.84806530437052
+        ]
+      },
+      "properties": {
+        "id": 251.0,
+        "nom_fontaine": "Place du 14 juillet, Bordeaux",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415311.44,
+        "y": 4189446.91,
+        "adresse": "Place du 14 juillet, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5542893807358921,
+          44.819294952573976
+        ]
+      },
+      "properties": {
+        "id": 255.0,
+        "nom_fontaine": "place d'armagnac",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418988.77,
+        "y": 4186084.33,
+        "adresse": "place Armagnac, Bordeaux (rue Paul Peyrat)",
+        "date_dernier_controle": "2026-03-26",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5570698522628431,
+          44.84083041178901
+        ]
+      },
+      "properties": {
+        "id": 259.0,
+        "nom_fontaine": "Placette Murielle Franco",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418874.1,
+        "y": 4188484.68,
+        "adresse": "rue montméjan / rue Paul Camelle ; Bordeaux",
+        "date_dernier_controle": "2026-03-17",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5614077910919264,
+          44.859703614310106
+        ]
+      },
+      "properties": {
+        "id": 264.0,
+        "nom_fontaine": "jardin de ta sœur",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418623.63,
+        "y": 4190594.9,
+        "adresse": "78 rue Dupaty, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5408300316626596,
+          44.857175939864135
+        ]
+      },
+      "properties": {
+        "id": 269.0,
+        "nom_fontaine": "GS Elsa Triolet",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1420236.11,
+        "y": 4190243.04,
+        "adresse": "4 place nina simone, 33100 Bordeaux",
+        "date_dernier_controle": "2026-03-26",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5681393044595456,
+          44.879122557608696
+        ]
+      },
+      "properties": {
+        "id": 270.0,
+        "nom_fontaine": "Avenue des 40 journeaux bordeaux lac",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418187.13,
+        "y": 4192774.04,
+        "adresse": "46 avenue des 40 journaux, Bordeaux",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5888622914009186,
+          44.83837435154579
+        ]
+      },
+      "properties": {
+        "id": 273.0,
+        "nom_fontaine": "Square Jacques Nancy (placette henri labit)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416351.0,
+        "y": 4188322.83,
+        "adresse": "1 rue Henri Labit, Bordeaux",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5503865544584905,
+          44.824351024651875
+        ]
+      },
+      "properties": {
+        "id": 277.0,
+        "nom_fontaine": "Eglise Belcier",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1419321.75,
+        "y": 4186632.09,
+        "adresse": "19 rue de Seigliere, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5847329198668914,
+          44.85965708405375
+        ]
+      },
+      "properties": {
+        "id": 281.0,
+        "nom_fontaine": "Square du Grand Parc n°5 - Aire Musculation",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416781.75,
+        "y": 4190671.0,
+        "adresse": "80 rue Pierre Trebod, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6039544809024793,
+          44.855318761848075
+        ]
+      },
+      "properties": {
+        "id": 283.0,
+        "nom_fontaine": "Parc Bordelais - aire de jeux n°2 (nouvelle aire)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415242.68,
+        "y": 4190256.77,
+        "adresse": "Parc Bordelais, 71 avenue Charles de Gaulle, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5608207350033559,
+          44.863239439273954
+        ]
+      },
+      "properties": {
+        "id": 1.0,
+        "nom_fontaine": "J. Lewis Brown",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "BAYARD",
+        "x": 1418687.2427895,
+        "y": 4190985.3827378,
+        "adresse": "place John Lewis Brown, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5665452083357112,
+          44.8343402809431
+        ]
+      },
+      "properties": {
+        "id": 4.0,
+        "nom_fontaine": "Place Saint Michel",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418093.9831366,
+        "y": 4187797.1171791,
+        "adresse": "Place Meynard, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5664590333341131,
+          44.83344486927675
+        ]
+      },
+      "properties": {
+        "id": 5.0,
+        "nom_fontaine": "Place Saint Michel",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418096.4120676,
+        "y": 4187697.41602,
+        "adresse": "rue gaspard philippe, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6150448649982171,
+          44.85215358761391
+        ]
+      },
+      "properties": {
+        "id": 11.0,
+        "nom_fontaine": "Place de l’Eglise St Amand",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1414351.2952797,
+        "y": 4189944.4423268,
+        "adresse": "Place de l'église Saint Amand, 33200 Bordeaux Caudéran",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5852529883395016,
+          44.84311295594552
+        ]
+      },
+      "properties": {
+        "id": 16.0,
+        "nom_fontaine": "Place des Martyrs de la Résistance (proche basilique Saint Seurin)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1416659.3695889,
+        "y": 4188836.2377277,
+        "adresse": "Place des Martyrs de la Résistance, 60 rue Rodriguès-Peirere, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5454759250060712,
+          44.850809104275605
+        ]
+      },
+      "properties": {
+        "id": 22.0,
+        "nom_fontaine": "Cité Dasvin de Bois Marin",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "DELABIE",
+        "x": 1419838.3207761,
+        "y": 4189552.2873607,
+        "adresse": "Square des Copains, 27 rue Dasvin de Boismarin, 33100 Bordeaux",
+        "date_dernier_controle": "2026-03-16",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5716323133331113,
+          44.827006779279984
+        ]
+      },
+      "properties": {
+        "id": 23.0,
+        "nom_fontaine": "Rue Lafonfaine",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "BAYARD",
+        "x": 1417656.2407312,
+        "y": 4187000.7255706,
+        "adresse": "15 rue Lafontaine, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.560039213337174,
+          44.8516311492775
+        ]
+      },
+      "properties": {
+        "id": 24.0,
+        "nom_fontaine": "Quai de Queyries (en face des pontons) chantier naval",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418692.2884804,
+        "y": 4189694.0030636,
+        "adresse": "Parc d'activités de Queyries, au niveau du 104 quai de Queyries, 33100 Bordeaux",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5640046149993223,
+          44.848330185947034
+        ]
+      },
+      "properties": {
+        "id": 25.0,
+        "nom_fontaine": "Quai de Queyries",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418363.0228575,
+        "y": 4189341.3304441,
+        "adresse": "Parc d'activités de Queyries, au niveau du 69 quai de Queyries, 33100 Bordeaux (proche city stade)",
+        "date_dernier_controle": "2026-03-17",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5685126633339288,
+          44.84081593427506
+        ]
+      },
+      "properties": {
+        "id": 28.0,
+        "nom_fontaine": "Quai Rive Gauche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417970.2533419,
+        "y": 4188522.8382888,
+        "adresse": "Quai de la Douanne, 33000 Bordeaux (Sud du miroir d'eau)",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5661280116692158,
+          44.8532904992722
+        ]
+      },
+      "properties": {
+        "id": 34.0,
+        "nom_fontaine": "Quai Rive Gauche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418219.5859517,
+        "y": 4189899.3683626,
+        "adresse": "Quai des Chartrons, 33000 Bordeaux (proche Skate Park-rampe)",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5800773566656642,
+          44.83814670760827
+        ]
+      },
+      "properties": {
+        "id": 37.0,
+        "nom_fontaine": "Jardin de l’hôtel de ville",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "WALLACE",
+        "x": 1417043.7555656,
+        "y": 4188266.8430914,
+        "adresse": "Jardin Hôtel de Ville, 20 cours d'Albret, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5789283099945084,
+          44.84836193427335
+        ]
+      },
+      "properties": {
+        "id": 39.0,
+        "nom_fontaine": "Jardin Public",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "WALLACE",
+        "x": 1417184.634617,
+        "y": 4189396.8363567,
+        "adresse": "Jardin Public, place Bardineau, 33000 Bordeaux (proche place Bardineau)",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5510932277570527,
+          44.82399172273586
+        ]
+      },
+      "properties": {
+        "id": 45.0,
+        "nom_fontaine": "Place Ferdinand Buisson",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METLACO",
+        "x": 1419264.1699947,
+        "y": 4186594.6511227,
+        "adresse": "Place Ferdinand Buisson, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6026108366651411,
+          44.850475180947484
+        ]
+      },
+      "properties": {
+        "id": 48.0,
+        "nom_fontaine": "Parc Bordelais (proche entrée rue Carnot)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1415324.8521272,
+        "y": 4189714.3630272,
+        "adresse": "Parc Bordelais, 71 avenue Charles de Gaulle, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5655219016661207,
+          44.90517136094263
+        ]
+      },
+      "properties": {
+        "id": 51.0,
+        "nom_fontaine": "Parc Floral Bordeaux-Lac (proche roseraie)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418521.0524094,
+        "y": 4195656.6908468,
+        "adresse": "Réserve Ecologique des Barrails, avenue du Golf, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-18",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5632202374007221,
+          44.90122072870514
+        ]
+      },
+      "properties": {
+        "id": 52.0,
+        "nom_fontaine": "Parc Floral Bordeaux-Lac (milieu Parc floralies)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418683.3401775,
+        "y": 4195210.1255623,
+        "adresse": "Réserve Ecologique des Barrails, parking stade jules Ladoumègue, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-18",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5984966196130732,
+          44.83569015865735
+        ]
+      },
+      "properties": {
+        "id": 53.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°1",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415576.8,
+        "y": 4188058.63,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5984804737537431,
+          44.835316108265296
+        ]
+      },
+      "properties": {
+        "id": 54.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°2",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415576.23,
+        "y": 4188017.05,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5983036692934472,
+          44.83351492422684
+        ]
+      },
+      "properties": {
+        "id": 56.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°4",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415581.31,
+        "y": 4187816.48,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5979924668013633,
+          44.83505525717814
+        ]
+      },
+      "properties": {
+        "id": 58.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°6",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415613.49,
+        "y": 4187986.38,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5977961451126628,
+          44.8343888220462
+        ]
+      },
+      "properties": {
+        "id": 59.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°7",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415625.71,
+        "y": 4187911.71,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.597418325078146,
+          44.83615817516931
+        ]
+      },
+      "properties": {
+        "id": 60.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°8",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415664.28,
+        "y": 4188106.8,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5966020978983444,
+          44.83441782848584
+        ]
+      },
+      "properties": {
+        "id": 63.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°11",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415720.17,
+        "y": 4187910.74,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.59629455504665,
+          44.83412523315884
+        ]
+      },
+      "properties": {
+        "id": 64.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°12",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415743.02,
+        "y": 4187877.18,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.594887450020425,
+          44.834499212034885
+        ]
+      },
+      "properties": {
+        "id": 68.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°16",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415856.01,
+        "y": 4187913.76,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5954819996898914,
+          44.83681255754392
+        ]
+      },
+      "properties": {
+        "id": 72.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°20",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415820.45,
+        "y": 4188172.65,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5929764462067079,
+          44.8350800569355
+        ]
+      },
+      "properties": {
+        "id": 78.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°26",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416009.82,
+        "y": 4187971.54,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5925327847013763,
+          44.834687344844234
+        ]
+      },
+      "properties": {
+        "id": 79.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°27",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416042.93,
+        "y": 4187926.39,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5915896897278187,
+          44.83495862266523
+        ]
+      },
+      "properties": {
+        "id": 80.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°28",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416118.76,
+        "y": 4187953.2,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.592304593755046,
+          44.83597578036013
+        ]
+      },
+      "properties": {
+        "id": 81.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°29",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416067.3,
+        "y": 4188068.62,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5917412879687968,
+          44.83712237375244
+        ]
+      },
+      "properties": {
+        "id": 85.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°33",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416117.44,
+        "y": 4188193.93,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5903357903522765,
+          44.83743840990227
+        ]
+      },
+      "properties": {
+        "id": 94.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°42",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416230.01,
+        "y": 4188224.09,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6216203316659779,
+          44.85985369094694
+        ]
+      },
+      "properties": {
+        "id": 97.0,
+        "nom_fontaine": "Cimetière Pins Francs n°3",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1413870.3012238,
+        "y": 4190822.4241135,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6208831766613115,
+          44.859997724275665
+        ]
+      },
+      "properties": {
+        "id": 98.0,
+        "nom_fontaine": "Cimetière Pins Francs n°4",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1413929.2170967,
+        "y": 4190835.8102325,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6198679649944455,
+          44.85860687094346
+        ]
+      },
+      "properties": {
+        "id": 101.0,
+        "nom_fontaine": "Cimetière Pins Francs n°7",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1414002.4689942,
+        "y": 4190677.8291805,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5919453450025831,
+          44.87488994927513
+        ]
+      },
+      "properties": {
+        "id": 112.0,
+        "nom_fontaine": "Cimetière Nord n°3",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416287.3053249,
+        "y": 4192387.2486294,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5943505900017984,
+          44.875246630944275
+        ]
+      },
+      "properties": {
+        "id": 114.0,
+        "nom_fontaine": "Cimetière Nord n°5",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416099.2073299,
+        "y": 4192435.2689225,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.595547993330933,
+          44.87496896427596
+        ]
+      },
+      "properties": {
+        "id": 116.0,
+        "nom_fontaine": "Cimetière Nord n°7",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416003.3234501,
+        "y": 4192408.6411249,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.591569459994691,
+          44.873876619277546
+        ]
+      },
+      "properties": {
+        "id": 120.0,
+        "nom_fontaine": "Cimetière Nord n°11",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "Borne Béton",
+        "x": 1416311.9859163,
+        "y": 4192273.4418021,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5912810683333283,
+          44.87269396094529
+        ]
+      },
+      "properties": {
+        "id": 121.0,
+        "nom_fontaine": "Cimetière Nord n°12",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "Borne Béton",
+        "x": 1416328.9274183,
+        "y": 4192141.14409,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5923383216700485,
+          44.87624659927879
+        ]
+      },
+      "properties": {
+        "id": 125.0,
+        "nom_fontaine": "Cimetière Nord n°16",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416262.967531,
+        "y": 4192539.2276918,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5917553483301122,
+          44.876913199279926
+        ]
+      },
+      "properties": {
+        "id": 126.0,
+        "nom_fontaine": "Cimetière Nord n°17",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416312.2653413,
+        "y": 4192611.1863241,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5939308216673793,
+          44.87612857594502
+        ]
+      },
+      "properties": {
+        "id": 131.0,
+        "nom_fontaine": "Cimetière Nord n°22",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "Borne Béton",
+        "x": 1416136.6865697,
+        "y": 4192531.7036688,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5950530800036439,
+          44.87585749927331
+        ]
+      },
+      "properties": {
+        "id": 132.0,
+        "nom_fontaine": "Cimetière Nord n°23",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416046.7681445,
+        "y": 4192505.5435213,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5910103333280968,
+          44.8762118742726
+        ]
+      },
+      "properties": {
+        "id": 135.0,
+        "nom_fontaine": "Cimetière Nord n°26",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416367.6176296,
+        "y": 4192530.7233468,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5941846883327909,
+          44.87664652927246
+        ]
+      },
+      "properties": {
+        "id": 138.0,
+        "nom_fontaine": "Cimetière Nord n°29",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "robinet mural",
+        "x": 1416119.2005072,
+        "y": 4192590.0915151,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.594184688331584,
+          44.87664652927341
+        ]
+      },
+      "properties": {
+        "id": 139.0,
+        "nom_fontaine": "Cimetière Nord n°30",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416119.2005073,
+        "y": 4192590.0915152,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6037505900050445,
+          44.850522434271625
+        ]
+      },
+      "properties": {
+        "id": 144.0,
+        "nom_fontaine": "Parc Bordelais (proche animaux)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1415235.0826609,
+        "y": 4189723.6136261,
+        "adresse": "Parc Bordelais, 71 avenue Charles de Gaulle, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6045929499943546,
+          44.851398230946
+        ]
+      },
+      "properties": {
+        "id": 145.0,
+        "nom_fontaine": "Parc Bordelais (aire de jeux du parc Cerey  entrée)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1415172.8920459,
+        "y": 4189823.7964625,
+        "adresse": "Parc Bordelais, 71 avenue Charles de Gaulle, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5621183816728135,
+          44.834504599275334
+        ]
+      },
+      "properties": {
+        "id": 148.0,
+        "nom_fontaine": "Quai des Salinières (Grave)",
+        "nombre_robinets": 3.0,
+        "modele_fontaine": "FONTAINE MONUMENT PIERRE",
+        "x": 1418444.4641783,
+        "y": 4187799.966253,
+        "adresse": "Quai de la Monnaie, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5611345900001954,
+          44.833927489272675
+        ]
+      },
+      "properties": {
+        "id": 150.0,
+        "nom_fontaine": "Quai des salinieres",
+        "nombre_robinets": 3.0,
+        "modele_fontaine": "FONTAINE EN RANGEE",
+        "x": 1418519.3570088,
+        "y": 4187732.4819122,
+        "adresse": "Quai de la Monnaie, 33800 Bordeaux (rangée côté ring-hockey)",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.571834595933436,
+          44.837102114452605
+        ]
+      },
+      "properties": {
+        "id": 155.0,
+        "nom_fontaine": "Place lafargue",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417689.6955329,
+        "y": 4188122.1291847,
+        "adresse": "Place Fernand Lafargue, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.585794953331456,
+          44.85548036427987
+        ]
+      },
+      "properties": {
+        "id": 156.0,
+        "nom_fontaine": "Parc Rivière n°1 (maison)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1416677.3642395,
+        "y": 4190211.0506882,
+        "adresse": "Parc Rivière, 33 rue du Parc Rivière, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5762384626274856,
+          44.841125208606016
+        ]
+      },
+      "properties": {
+        "id": 160.0,
+        "nom_fontaine": "Place Puy Paulin",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417361.5738082,
+        "y": 4188584.0917478,
+        "adresse": "Place Puy Paulin, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-02",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5700018000014346,
+          44.87189741427395
+        ]
+      },
+      "properties": {
+        "id": 166.0,
+        "nom_fontaine": "AUBIERS CITY STADE",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418004.7622114,
+        "y": 4191978.4398761,
+        "adresse": "City Stade Aubiers, rue Gabriel Frizeau, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5709798583304904,
+          44.87925251260626
+        ]
+      },
+      "properties": {
+        "id": 173.0,
+        "nom_fontaine": "Cours du quebec face station des berges du lac",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417963.5635125,
+        "y": 4192798.3501178,
+        "adresse": "35 cours du québec, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5790851948510053,
+          44.87783144643056
+        ]
+      },
+      "properties": {
+        "id": 174.0,
+        "nom_fontaine": "Plage du lac/Bld jacques chaban delmas",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417316.846062,
+        "y": 4192668.8401545,
+        "adresse": "Plage du Lac, boulevard Jacques Chaban Delmas, 33520 Bruges",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5722971922394011,
+          44.84189131636925
+        ]
+      },
+      "properties": {
+        "id": 176.0,
+        "nom_fontaine": "Place georges porto riche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "WALLACE",
+        "x": 1417676.6115935,
+        "y": 4188655.3981117,
+        "adresse": "Place Georges Porto Riche, 22 rue du pont de la Mousque, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-02",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5788637883330857,
+          44.83489267594735
+        ]
+      },
+      "properties": {
+        "id": 177.0,
+        "nom_fontaine": "Place de la republique",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417123.6433655,
+        "y": 4187901.371945,
+        "adresse": "Place de la République, 33000 Bordeaux (proche terminus bus)",
+        "date_dernier_controle": "2026-03-02",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5819768783334576,
+          44.838685814276204
+        ]
+      },
+      "properties": {
+        "id": 183.0,
+        "nom_fontaine": "Face galerie des beaux arts (en pierre)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1416896.3695079,
+        "y": 4188333.325064,
+        "adresse": "12 cours d'Albret, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5457294187296334,
+          44.84521721864546
+        ]
+      },
+      "properties": {
+        "id": 185.0,
+        "nom_fontaine": "Parc Pincon, aire de jeux",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1419791.12,
+        "y": 4188932.39,
+        "adresse": "9 rue Edouard Branly, 33100 Bordeaux",
+        "date_dernier_controle": "2026-03-16",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5662146804892807,
+          44.81265305462075
+        ]
+      },
+      "properties": {
+        "id": 187.0,
+        "nom_fontaine": "Jardins des Barrières, aire de jeux",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "DELABIE",
+        "x": 1418014.06,
+        "y": 4185388.43,
+        "adresse": "13 impasse de la Fontaine de Guillot, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5774987759455112,
+          44.819336872346874
+        ]
+      },
+      "properties": {
+        "id": 193.0,
+        "nom_fontaine": "Square Bertrand de Goth, dans le parc",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417155.17,
+        "y": 4186169.74,
+        "adresse": "107 rue Bertrand de Goth, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.563045490933623,
+          44.84962880684647
+        ]
+      },
+      "properties": {
+        "id": 199.0,
+        "nom_fontaine": "Quai de Queyries (proche terrain basket)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418445.11,
+        "y": 4189482.16,
+        "adresse": "Parc d'activités de Queyries, au niveau du 104 quai de Queyries, 33100 Bordeaux",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5431246144392422,
+          44.87498981083507
+        ]
+      },
+      "properties": {
+        "id": 202.0,
+        "nom_fontaine": "Bd Brandenburg , local Boulistes",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1420141.46,
+        "y": 4192228.55,
+        "adresse": "Boulevard Albert Brandenburg, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5628527566347333,
+          44.82937301029958
+        ]
+      },
+      "properties": {
+        "id": 203.0,
+        "nom_fontaine": "Place André Meunier 1",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418361.39,
+        "y": 4187232.85,
+        "adresse": "Place André Meunier, 33800 Bordeaux (proche cabane)",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5605346061657143,
+          44.833556559258035
+        ]
+      },
+      "properties": {
+        "id": 206.0,
+        "nom_fontaine": "Quai Sainte Croix - aire de jeux",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418564.94,
+        "y": 4187689.22,
+        "adresse": "Quai Sainte Croix, 33800 Bordeaux (dans aire de jeux)",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6011355350028714,
+          44.85391818297133
+        ]
+      },
+      "properties": {
+        "id": 208.0,
+        "nom_fontaine": "Parc Bordelais (proche Manège)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1415458.3504745,
+        "y": 4190091.3886212,
+        "adresse": "Parc Bordelais, 71 avenue Charles de Gaulle, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6061585405781746,
+          44.84020171697899
+        ]
+      },
+      "properties": {
+        "id": 213.0,
+        "nom_fontaine": "Parc de lussy (aire de jeux)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1414993.91,
+        "y": 4188586.38,
+        "adresse": "Parc de Lussy, Avenue de Bel Air, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5791974061881144,
+          44.848230725576364
+        ]
+      },
+      "properties": {
+        "id": 215.0,
+        "nom_fontaine": "Jardin Public",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417162.74,
+        "y": 4189383.21,
+        "adresse": "Jardin Public, cours de verdun, 33000 Bordeaux (jeux enfants, proche musée)",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5628872864840272,
+          44.82325943694051
+        ]
+      },
+      "properties": {
+        "id": 218.0,
+        "nom_fontaine": "109 rue Billaudel",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418328.8,
+        "y": 4186554.29,
+        "adresse": "109 rue Billaudel, 33000 Bortdeaux",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5513346069292266,
+          44.822024131970174
+        ]
+      },
+      "properties": {
+        "id": 219.0,
+        "nom_fontaine": "Jardin de la porcelaine (aire de jeux)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1419235.52,
+        "y": 4186377.06,
+        "adresse": "rue Raymond Auguste Monvoisin, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5747052129732302,
+          44.861754265114584
+        ]
+      },
+      "properties": {
+        "id": 221.0,
+        "nom_fontaine": "Parc de la grenouillère",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417583.77,
+        "y": 4190868.81,
+        "adresse": "163 avenue Emile Counord, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5667680422599005,
+          44.81344589119144
+        ]
+      },
+      "properties": {
+        "id": 223.0,
+        "nom_fontaine": "Jardin des Barrières, aire des chiens",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO \n(+ abreuvoir)",
+        "x": 1417974.21,
+        "y": 4185478.37,
+        "adresse": "13 impasse de la Fontaine de Guillot, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5852797581774178,
+          44.84287179634456
+        ]
+      },
+      "properties": {
+        "id": 224.0,
+        "nom_fontaine": "Place des Martyrs de la résisitence",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO \n(+ abreuvoir)",
+        "x": 1416656.07,
+        "y": 4188809.56,
+        "adresse": "Place des Martyrs de la Résistance, 60 rue Rodriguès-Peirere, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6145053449345214,
+          44.85509829304507
+        ]
+      },
+      "properties": {
+        "id": 225.0,
+        "nom_fontaine": "Square Honoré d'Etienne d'Orves",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1414408.49,
+        "y": 4190269.43,
+        "adresse": "190 avenue du Maréchal de Lattre de Tassigny, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5631139096976988,
+          44.822337123230014
+        ]
+      },
+      "properties": {
+        "id": 230.0,
+        "nom_fontaine": "Place Cardinal / Eglise Sacré Cœur",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418306.39,
+        "y": 4186452.69,
+        "adresse": "110 rue Pelleport, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5437610199053907,
+          44.822428186559655
+        ]
+      },
+      "properties": {
+        "id": 231.0,
+        "nom_fontaine": "Jardin de l'Ars",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1419835.86,
+        "y": 4186395.7,
+        "adresse": "10 Quai de Brienne, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5714381086870541,
+          44.8394563914169
+        ]
+      },
+      "properties": {
+        "id": 236.0,
+        "nom_fontaine": "Square Vinet",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "BAYARD",
+        "x": 1417732.54,
+        "y": 4188382.1,
+        "adresse": "Square Vinet, Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5454209043748312,
+          44.84355171444281
+        ]
+      },
+      "properties": {
+        "id": 242.0,
+        "nom_fontaine": "Parc Pincon, opposé de l'aire de jeux",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1419807.39,
+        "y": 4188746.43,
+        "adresse": "5 rue Ferdinad Palau, Bordeaux",
+        "date_dernier_controle": "2026-03-16",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6370966092287849,
+          44.8601861662304
+        ]
+      },
+      "properties": {
+        "id": 245.0,
+        "nom_fontaine": "Square des Jasmins",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1412650.06,
+        "y": 4190914.1,
+        "adresse": "48 rue des Violettes, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5886484991529938,
+          44.85378402008263
+        ]
+      },
+      "properties": {
+        "id": 247.0,
+        "nom_fontaine": "Placette Tivoli / Riviere",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416443.7,
+        "y": 4190032.72,
+        "adresse": "angle rue Tivoli et Rue Riviere, Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5693095561383722,
+          44.824380798756245
+        ]
+      },
+      "properties": {
+        "id": 248.0,
+        "nom_fontaine": "rue Cazemajor",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417826.89,
+        "y": 4186701.12,
+        "adresse": "52 rue Cazemajor, Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.560489751605236,
+          44.82027049886653
+        ]
+      },
+      "properties": {
+        "id": 257.0,
+        "nom_fontaine": "Restaurant \"le terroir\"",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418503.63,
+        "y": 4186214.15,
+        "adresse": "51 rue de la compagnie du midi, Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.580200803578982,
+          44.83008585165041
+        ]
+      },
+      "properties": {
+        "id": 260.0,
+        "nom_fontaine": "Impasse Bouscatier",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "BAYARD",
+        "x": 1416994.44,
+        "y": 4187372.43,
+        "adresse": "47 rue de Pessac, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-20",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5604500758839694,
+          44.85922678000497
+        ]
+      },
+      "properties": {
+        "id": 263.0,
+        "nom_fontaine": "jardin de ta sœur",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418696.92,
+        "y": 4190538.64,
+        "adresse": "rue Emile Peynaud, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5599625679011889,
+          44.86605953356528
+        ]
+      },
+      "properties": {
+        "id": 275.0,
+        "nom_fontaine": "Préau sportif P10",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418768.76,
+        "y": 4191295.47,
+        "adresse": "quai Lawton, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5543127340900923,
+          44.819605899805794
+        ]
+      },
+      "properties": {
+        "id": 276.0,
+        "nom_fontaine": "Parc du Pont Roulant",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418988.44,
+        "y": 4186118.93,
+        "adresse": "Rue du Tri Postal, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5762881489839912,
+          44.84300172678876
+        ]
+      },
+      "properties": {
+        "id": 278.0,
+        "nom_fontaine": "Eglise Notre Dame (Mably)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417366.85,
+        "y": 4188792.58,
+        "adresse": "2 rue Mably, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-18",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5838234558027886,
+          44.8595172651322
+        ]
+      },
+      "properties": {
+        "id": 280.0,
+        "nom_fontaine": "Square du Grand Parc n°4 - Aire Chiens",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416852.87,
+        "y": 4190652.3,
+        "adresse": "80 rue Pierre Trebod, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6083472666622323,
+          44.836501969276604
+        ]
+      },
+      "properties": {
+        "id": 2.0,
+        "nom_fontaine": "Place Emile Combes",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1414802.7402408,
+        "y": 4188183.3742759,
+        "adresse": "Square Emile Combes, 33000 Bordeaux",
+        "date_dernier_controle": "2025-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5771945162018686,
+          44.82292343589155
+        ]
+      },
+      "properties": {
+        "id": 6.0,
+        "nom_fontaine": "Place Simiot",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "BAYARD",
+        "x": 1417196.7989449,
+        "y": 4186566.8261904,
+        "adresse": "Place Simiot, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6112555216639495,
+          44.83311823761235
+        ]
+      },
+      "properties": {
+        "id": 12.0,
+        "nom_fontaine": "Place Flornoy (jardin de Lili)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1414556.276822,
+        "y": 4187817.9896375,
+        "adresse": "7 rue de Cantenac, 33000 Bordeaux (aire de Jeux du Jardin de Lili)",
+        "date_dernier_controle": "2025-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5574803650018081,
+          44.82623087927816
+        ]
+      },
+      "properties": {
+        "id": 14.0,
+        "nom_fontaine": "Gare Saint Jean (Place Casablanca)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418770.4723371,
+        "y": 4186865.3748353,
+        "adresse": "28 rue Saint Vincent de Paul, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5570660799948963,
+          44.826092192611895
+        ]
+      },
+      "properties": {
+        "id": 15.0,
+        "nom_fontaine": "Gare Saint Jean (arêt tram)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418802.5254507,
+        "y": 4186848.5410649,
+        "adresse": "28 rue Saint Vincent de Paul, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5691354216658818,
+          44.83559128593849
+        ]
+      },
+      "properties": {
+        "id": 17.0,
+        "nom_fontaine": "Cours Victor Hugo n°1",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417895.5018449,
+        "y": 4187945.0085647,
+        "adresse": "53 cours Victor Hugo, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5731999045710274,
+          44.83497269833371
+        ]
+      },
+      "properties": {
+        "id": 18.0,
+        "nom_fontaine": "Cours Victor Hugo n°2",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417571.4229579,
+        "y": 4187890.4973786,
+        "adresse": "119 cours Victor Hugo, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5679440966723421,
+          44.83962858760882
+        ]
+      },
+      "properties": {
+        "id": 29.0,
+        "nom_fontaine": "Quai Rive Gauche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418009.351816,
+        "y": 4188389.0498236,
+        "adresse": "Quai Richelieu, 33000 Bordeaux (proche maison Eco-Citoyenne)",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5700811433269877,
+          44.84518940927468
+        ]
+      },
+      "properties": {
+        "id": 30.0,
+        "nom_fontaine": "Quai Rive Gauche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417867.7778269,
+        "y": 4189013.8062718,
+        "adresse": "Quai Louis XVIII, 33000 Bordeaux (en face des Allées de Munich)",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5702324616616945,
+          44.84685797427872
+        ]
+      },
+      "properties": {
+        "id": 31.0,
+        "nom_fontaine": "Quai Rive Gauche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417863.994404,
+        "y": 4189199.563634,
+        "adresse": "Quai Louis XVIII, 33000 Bordeaux (en face des Allées de Bristol)",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5694370983278596,
+          44.84971446927699
+        ]
+      },
+      "properties": {
+        "id": 32.0,
+        "nom_fontaine": "Quai Rive Gauche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1417940.7854061,
+        "y": 4189513.8994369,
+        "adresse": "Quai des Chartrons, 33000 Bordeaux (proche IBAIA)",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5671963700030844,
+          44.85243448427429
+        ]
+      },
+      "properties": {
+        "id": 33.0,
+        "nom_fontaine": "Quai Rive Gauche",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418131.0369757,
+        "y": 4189808.0562576,
+        "adresse": "Quai des Chartrons, 33000 Bordeaux (proche aire de jeux enfants)",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5758067699970841,
+          44.85048595594505
+        ]
+      },
+      "properties": {
+        "id": 40.0,
+        "nom_fontaine": "Place Mitchell",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "WALLACE",
+        "x": 1417441.5584239,
+        "y": 4189621.7365431,
+        "adresse": "Place Mitchell, 33000 Bordeaux",
+        "date_dernier_controle": "2025-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5983831448302144,
+          44.834329364874314
+        ]
+      },
+      "properties": {
+        "id": 55.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°3",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415579.05,
+        "y": 4187907.17,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5973948476531483,
+          44.833647072235
+        ]
+      },
+      "properties": {
+        "id": 57.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°5",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415653.75,
+        "y": 4187827.96,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5960730236513451,
+          44.83374416111863
+        ]
+      },
+      "properties": {
+        "id": 65.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°13",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415758.64,
+        "y": 4187834.1,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5950632809082416,
+          44.83403433007666
+        ]
+      },
+      "properties": {
+        "id": 67.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°15",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415839.83,
+        "y": 4187862.77,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.595633341332854,
+          44.83503829814714
+        ]
+      },
+      "properties": {
+        "id": 69.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°17",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415799.75,
+        "y": 4187976.22,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5969203438566709,
+          44.83619589595879
+        ]
+      },
+      "properties": {
+        "id": 70.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°18",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415703.8,
+        "y": 4188109.24,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5965785861313505,
+          44.83659657181884
+        ]
+      },
+      "properties": {
+        "id": 71.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°19",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415732.77,
+        "y": 4188152.52,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5949662559807123,
+          44.835303675553526
+        ]
+      },
+      "properties": {
+        "id": 73.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°21",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415853.75,
+        "y": 4188003.34,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5933891518005409,
+          44.837420321150574
+        ]
+      },
+      "properties": {
+        "id": 76.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°24",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415988.75,
+        "y": 4188232.78,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5923176104782543,
+          44.83595510108699
+        ]
+      },
+      "properties": {
+        "id": 77.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°25",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416066.17,
+        "y": 4188066.37,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5921315062286799,
+          44.83602619475798
+        ]
+      },
+      "properties": {
+        "id": 82.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°30",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416081.22,
+        "y": 4188073.61,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.593084330137274,
+          44.837439314067154
+        ]
+      },
+      "properties": {
+        "id": 83.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°31",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416012.92,
+        "y": 4188233.82,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5920421134972614,
+          44.83764850455193
+        ]
+      },
+      "properties": {
+        "id": 84.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°32",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416096.27,
+        "y": 4188253.39,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5912067179684944,
+          44.83639859291937
+        ]
+      },
+      "properties": {
+        "id": 86.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°34",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416156.1,
+        "y": 4188111.71,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5905105760767088,
+          44.835243462419605
+        ]
+      },
+      "properties": {
+        "id": 88.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°36",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416205.4,
+        "y": 4187981.04,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5904121512300807,
+          44.83500893252614
+        ]
+      },
+      "properties": {
+        "id": 89.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°37",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416212.02,
+        "y": 4187954.66,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5893821808110149,
+          44.8355401153029
+        ]
+      },
+      "properties": {
+        "id": 90.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°38",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416295.99,
+        "y": 4188010.02,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5901262443161855,
+          44.836759589913946
+        ]
+      },
+      "properties": {
+        "id": 92.0,
+        "nom_fontaine": "Cimetière la Chartreuse n°40",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416243.22,
+        "y": 4188148.0,
+        "adresse": "9 rue de la Devèze, 33000 Bordeaux",
+        "date_dernier_controle": "2026-02-24",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6205700416685797,
+          44.85945594260547
+        ]
+      },
+      "properties": {
+        "id": 96.0,
+        "nom_fontaine": "Cimetière Pins Francs n°2",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1413951.2509077,
+        "y": 4190774.5621003,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6208757233309109,
+          44.85879891928022
+        ]
+      },
+      "properties": {
+        "id": 102.0,
+        "nom_fontaine": "Cimetière Pins Francs n°8",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "ROBINET PAPILLON",
+        "x": 1413923.8546382,
+        "y": 4190702.705837,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.621524193328581,
+          44.85895667760583
+        ]
+      },
+      "properties": {
+        "id": 103.0,
+        "nom_fontaine": "Cimetière Pins Francs n°9",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "ROBINET PAPILLON",
+        "x": 1413873.4380575,
+        "y": 4190722.5081508,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6219096583384481,
+          44.858475459277855
+        ]
+      },
+      "properties": {
+        "id": 105.0,
+        "nom_fontaine": "Cimetière Pins Francs n°11",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "ROBINET PAPILLON",
+        "x": 1413840.6143528,
+        "y": 4190670.4499063,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6221752933347867,
+          44.85925671594115
+        ]
+      },
+      "properties": {
+        "id": 106.0,
+        "nom_fontaine": "Cimetière Pins Francs n°12",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1413823.5206626,
+        "y": 4190758.1144935,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6210801083312605,
+          44.858493527613966
+        ]
+      },
+      "properties": {
+        "id": 107.0,
+        "nom_fontaine": "Cimetière Pins Francs n°13",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1413906.2013891,
+        "y": 4190669.5262722,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6210801083300511,
+          44.85849352761489
+        ]
+      },
+      "properties": {
+        "id": 108.0,
+        "nom_fontaine": "Cimetière Pins Francs n°14",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1413906.2013892,
+        "y": 4190669.5262723,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6210801083288449,
+          44.85849352761585
+        ]
+      },
+      "properties": {
+        "id": 109.0,
+        "nom_fontaine": "Cimetière Pins Francs n°15",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1413906.2013893,
+        "y": 4190669.5262724,
+        "adresse": "32 Rue Soubiras, 33200 Bordeaux",
+        "date_dernier_controle": "2026-02-25",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5911509250019906,
+          44.87454231261119
+        ]
+      },
+      "properties": {
+        "id": 111.0,
+        "nom_fontaine": "Cimetière Nord n°2",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416348.3006016,
+        "y": 4192345.8757874,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5928335899969451,
+          44.8753503909403
+        ]
+      },
+      "properties": {
+        "id": 113.0,
+        "nom_fontaine": "Cimetière Nord n°4",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416219.4605295,
+        "y": 4192441.4732417,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5923874666615541,
+          44.87424544761428
+        ]
+      },
+      "properties": {
+        "id": 119.0,
+        "nom_fontaine": "Cimetière Nord n°10",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416249.2326858,
+        "y": 4192317.2500941,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5922037233293772,
+          44.8731709042729
+        ]
+      },
+      "properties": {
+        "id": 122.0,
+        "nom_fontaine": "Cimetière Nord n°13",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416258.4445697,
+        "y": 4192197.3206119,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5930498616662863,
+          44.8736119859401
+        ]
+      },
+      "properties": {
+        "id": 123.0,
+        "nom_fontaine": "Cimetière Nord n°14",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "Borne Béton",
+        "x": 1416193.8262085,
+        "y": 4192249.2488656,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5960186766665776,
+          44.8756961276126
+        ]
+      },
+      "properties": {
+        "id": 124.0,
+        "nom_fontaine": "Cimetière Nord n°15",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415969.7555499,
+        "y": 4192491.0138926,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5928205083299223,
+          44.87744454261104
+        ]
+      },
+      "properties": {
+        "id": 128.0,
+        "nom_fontaine": "Cimetière Nord n°19",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "Borne Béton",
+        "x": 1416230.8081052,
+        "y": 4192673.9011184,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.593434136668271,
+          44.87678395594311
+        ]
+      },
+      "properties": {
+        "id": 130.0,
+        "nom_fontaine": "Cimetière Nord n°21",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "Borne Béton",
+        "x": 1416179.1197554,
+        "y": 4192602.7180342,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5959643216623421,
+          44.8764652942805
+        ]
+      },
+      "properties": {
+        "id": 134.0,
+        "nom_fontaine": "Cimetière Nord n°25",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "Borne Béton",
+        "x": 1415977.8378769,
+        "y": 4192576.2091019,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5943172249974437,
+          44.877498410941655
+        ]
+      },
+      "properties": {
+        "id": 137.0,
+        "nom_fontaine": "Cimetière Nord n°28",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416112.9369754,
+        "y": 4192685.1239701,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.594184688330373,
+          44.87664652927435
+        ]
+      },
+      "properties": {
+        "id": 140.0,
+        "nom_fontaine": "Cimetière Nord n°31",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416119.2005074,
+        "y": 4192590.0915153,
+        "adresse": "111 avenue Jean Jaurès, 33520 Bruges",
+        "date_dernier_controle": "2026-02-17",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6026108366651411,
+          44.850475180947484
+        ]
+      },
+      "properties": {
+        "id": 142.0,
+        "nom_fontaine": "Parc Bordelais (nouvele aire de jeux n°1)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415324.8521272,
+        "y": 4189714.3630272,
+        "adresse": "Parc Bordelais, 71 avenue Charles de Gaulle, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6031184283310606,
+          44.85044049094605
+        ]
+      },
+      "properties": {
+        "id": 143.0,
+        "nom_fontaine": "Parc Bordelais (proche piste education routière)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1415284.5977603,
+        "y": 4189712.2955789,
+        "adresse": "Parc Bordelais, 71 avenue Charles de Gaulle, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5629827099986493,
+          44.83504517594158
+        ]
+      },
+      "properties": {
+        "id": 147.0,
+        "nom_fontaine": "Quai des Salinières (Grave)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418378.8308812,
+        "y": 4187862.980607,
+        "adresse": "Quai de la Grave, 33800 Bordeaux (proche ring-hockey)",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5611627049964352,
+          44.83394650594045
+        ]
+      },
+      "properties": {
+        "id": 149.0,
+        "nom_fontaine": "Quai des Salinières (Grave)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418517.2290065,
+        "y": 4187734.690665,
+        "adresse": "Quai de la Monnaie, 33800 Bordeaux (entre ring-hockey et parc des sports)",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5610768216732865,
+          44.83389311427309
+        ]
+      },
+      "properties": {
+        "id": 152.0,
+        "nom_fontaine": "Quai des salinieres",
+        "nombre_robinets": 3.0,
+        "modele_fontaine": "FONTAINE EN RANGEE",
+        "x": 1418523.7523937,
+        "y": 4187728.4651847,
+        "adresse": "Quai de la Monnaie, 33800 Bordeaux (rangée côté ring-hockey)",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5543394366682637,
+          44.81507967760993
+        ]
+      },
+      "properties": {
+        "id": 162.0,
+        "nom_fontaine": "SQUARE BRASCASSAT",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418964.2745404,
+        "y": 4185616.5558357,
+        "adresse": "Parc de Brascassat, 10 rue Oscar et Jean Auriac, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5815924199940246,
+          44.8248448392748
+        ]
+      },
+      "properties": {
+        "id": 163.0,
+        "nom_fontaine": "JARDIN DES DAMES DE LA FOI",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1416858.7735358,
+        "y": 4186795.482102,
+        "adresse": "Jardin des Dames de la foi, 166 rue Saint Genès, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5935332316611434,
+          44.84158220927662
+        ]
+      },
+      "properties": {
+        "id": 164.0,
+        "nom_fontaine": "SQUARE MANDEL",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1415997.8736485,
+        "y": 4188695.2976099,
+        "adresse": "Square Georges Mandel, 123 rue Georges Mandel, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5619602233304161,
+          44.83081603927895
+        ]
+      },
+      "properties": {
+        "id": 167.0,
+        "nom_fontaine": "JARDIN PARTAGE NOVICIAT",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418438.9448266,
+        "y": 4187389.9417251,
+        "adresse": "Jardin Partagé du Noviciat, 11 rue Jacques Ellul, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5725663516718649,
+          44.876942535944664
+        ]
+      },
+      "properties": {
+        "id": 169.0,
+        "nom_fontaine": "GINKO",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417827.0292912,
+        "y": 4192547.4381045,
+        "adresse": "Promenade du poete Jasmin, 25 cours du Québec, 33300 Bordeaux (fontaine au bord du cours d'eau)",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5725659800031799,
+          44.87778749427615
+        ]
+      },
+      "properties": {
+        "id": 170.0,
+        "nom_fontaine": "JARDIN PARTAGE Petit nicolas (clown chocolat)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417831.1971243,
+        "y": 4192641.2374576,
+        "adresse": "Aire de Jeux du clown Chocolat, 15 avenue André Reinson, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5996663133291855,
+          44.82665247761082
+        ]
+      },
+      "properties": {
+        "id": 171.0,
+        "nom_fontaine": "Jardin Béchade (n°1, proche entrée)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1415439.8081868,
+        "y": 4187059.4650685,
+        "adresse": "Jardin de la Béchade, 100 rue Léo Saignat, 33000 Bordeaux (proche entrée)",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5773398316660326,
+          44.82466102594529
+        ]
+      },
+      "properties": {
+        "id": 182.0,
+        "nom_fontaine": "Square J lasserre",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417193.8399642,
+        "y": 4186760.2251665,
+        "adresse": "Square du professeur Jacques Lassere, 2 rue Colette, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-11",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5497396157990129,
+          44.87055960713242
+        ]
+      },
+      "properties": {
+        "id": 184.0,
+        "nom_fontaine": "Place buscaillet",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1419597.7390829,
+        "y": 4191759.6068103,
+        "adresse": "Place Adolphe Buscaillet, 100 rue Blanqui, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.574042218431736,
+          44.8176642511696
+        ]
+      },
+      "properties": {
+        "id": 192.0,
+        "nom_fontaine": "Jardin de la Croix du Sud",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "DELABIE",
+        "x": 1417420.08,
+        "y": 4185972.0,
+        "adresse": "30 rue Jean Mermoz, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5645769656007381,
+          44.845800283391064
+        ]
+      },
+      "properties": {
+        "id": 196.0,
+        "nom_fontaine": "aire de jeux des droits de l'enfants",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418305.46,
+        "y": 4189062.47,
+        "adresse": "1 rue nuyens, 33100 Bordeaux",
+        "date_dernier_controle": "2026-03-17",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5803260548359772,
+          44.8409292067966
+        ]
+      },
+      "properties": {
+        "id": 200.0,
+        "nom_fontaine": "Place Gambetta 1",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417037.77,
+        "y": 4188576.6,
+        "adresse": "Place Gambetta, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-02",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.580748155583772,
+          44.8411650916029
+        ]
+      },
+      "properties": {
+        "id": 201.0,
+        "nom_fontaine": "Place Gambetta 2",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417005.59,
+        "y": 4188604.26,
+        "adresse": "Place Gambetta, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-02",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5623086301065963,
+          44.82962389456522
+        ]
+      },
+      "properties": {
+        "id": 204.0,
+        "nom_fontaine": "Place André Meunier 2",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418405.6,
+        "y": 4187258.81,
+        "adresse": "Place André Meunier, 33800 Bordeaux (aire de jeux)",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.55911357464139,
+          44.83265066710774
+        ]
+      },
+      "properties": {
+        "id": 205.0,
+        "nom_fontaine": "Quai Sainte Croix - Fronton",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1418672.77,
+        "y": 4187583.72,
+        "adresse": "Quai Sainte Croix, 33800 Bordeaux (proche fronton)",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5581821479915884,
+          44.83780498767347
+        ]
+      },
+      "properties": {
+        "id": 207.0,
+        "nom_fontaine": "Parc des Berges, quai dechamps",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "DELABIE",
+        "x": 1418771.49,
+        "y": 4188152.68,
+        "adresse": "52 quai Deschamps, Bordeaux (proche pont st jean)",
+        "date_dernier_controle": "2026-03-16",
+        "etat": "fonctionnelle",
+        "hivernage": "non",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.587006676720491,
+          44.85466991795718
+        ]
+      },
+      "properties": {
+        "id": 209.0,
+        "nom_fontaine": "Parc Rivière n°3 (aire de jeux)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416577.7,
+        "y": 4190125.32,
+        "adresse": "Rue Camille Godard, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5696721954307475,
+          44.83670641528938
+        ]
+      },
+      "properties": {
+        "id": 211.0,
+        "nom_fontaine": "Square Jean Bureau",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417858.56,
+        "y": 4188070.67,
+        "adresse": "24 rue Neuve, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-02",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5919282240148154,
+          44.848186780667966
+        ]
+      },
+      "properties": {
+        "id": 214.0,
+        "nom_fontaine": "27 rue Ernest Renan",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416157.16,
+        "y": 4189422.85,
+        "adresse": "27 rue Ernest Renan, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5794961109598672,
+          44.86094615207212
+        ]
+      },
+      "properties": {
+        "id": 217.0,
+        "nom_fontaine": "Grand Parc (square) n°2",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417201.55,
+        "y": 4190795.81,
+        "adresse": "80 rue Pierre Trebod, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6222510026965117,
+          44.85589921840949
+        ]
+      },
+      "properties": {
+        "id": 220.0,
+        "nom_fontaine": "Parc stéhélin (complexe sportif stréhélin)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1413800.87,
+        "y": 4190385.67,
+        "adresse": "284 avenue de MAL de Lattre de Tassigny, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5771066023729815,
+          44.83352390653429
+        ]
+      },
+      "properties": {
+        "id": 222.0,
+        "nom_fontaine": "Place Sainte Eulalie",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1417255.73,
+        "y": 4187743.29,
+        "adresse": "84 rue du Commandant Arnould, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5674315426257039,
+          44.82277347664888
+        ]
+      },
+      "properties": {
+        "id": 226.0,
+        "nom_fontaine": "Rue Saint Macaire, placette",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417967.4,
+        "y": 4186516.15,
+        "adresse": "167 rue Malbec / 37 rue Saint Macaire, 33800 Bordeaux",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5504846607501624,
+          44.82132506596894
+        ]
+      },
+      "properties": {
+        "id": 232.0,
+        "nom_fontaine": "Place d'Armagnac",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1419299.27,
+        "y": 4186296.51,
+        "adresse": "angle rue Beck et rue d'armagnac, Bordeaux",
+        "date_dernier_controle": "2026-03-09",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5582137086103997,
+          44.82746974728837
+        ]
+      },
+      "properties": {
+        "id": 234.0,
+        "nom_fontaine": "Place Marie Curie",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418718.58,
+        "y": 4187005.45,
+        "adresse": "angle cours de la Marne / rue de Saget, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-03",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5633421956353106,
+          44.86368155129606
+        ]
+      },
+      "properties": {
+        "id": 241.0,
+        "nom_fontaine": "Parc Chantecrit - dans le parc",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1418490.33,
+        "y": 4191043.22,
+        "adresse": "12 Cité Chantecrit, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6150346797359149,
+          44.846296175148765
+        ]
+      },
+      "properties": {
+        "id": 243.0,
+        "nom_fontaine": "Place LEHU",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1414323.07,
+        "y": 4189294.18,
+        "adresse": "Place Lehu, Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5968346756558655,
+          44.82570396448148
+        ]
+      },
+      "properties": {
+        "id": 246.0,
+        "nom_fontaine": "Ecole Maternelle de la Bechade square Madagascar",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1415658.83,
+        "y": 4186944.23,
+        "adresse": "9 rue de Madagascar, Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5987884370148583,
+          44.85406349448411
+        ]
+      },
+      "properties": {
+        "id": 249.0,
+        "nom_fontaine": "Parc Bordelais (proche entrée Maison Brieix)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO",
+        "x": 1415644.4,
+        "y": 4190099.28,
+        "adresse": "Parc Bordelais, 71 avenue Charles de Gaulle, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-13",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6304364267876517,
+          44.85416317641637
+        ]
+      },
+      "properties": {
+        "id": 250.0,
+        "nom_fontaine": "Parc Monséjour",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "PRESTO \navec abreuvoir",
+        "x": 1413145.92,
+        "y": 4190221.9,
+        "adresse": "rue François Coppée, 33200 Bordeaux",
+        "date_dernier_controle": "2026-03-06",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5409957637512939,
+          44.82175716494282
+        ]
+      },
+      "properties": {
+        "id": 252.0,
+        "nom_fontaine": "Pont Simone Veil (rive gauche)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1420051.08,
+        "y": 4186311.65,
+        "adresse": "Angle Bd Freres Moge / Pont Simone Veil",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5561628980754929,
+          44.870062318001835
+        ]
+      },
+      "properties": {
+        "id": 253.0,
+        "nom_fontaine": "Aire du Jeux du Capitaine Némo",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1419088.25,
+        "y": 4191726.65,
+        "adresse": "cours Henri Brunet, Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5573287517340474,
+          44.84692198884403
+        ]
+      },
+      "properties": {
+        "id": 254.0,
+        "nom_fontaine": "Square Françoise Dolto",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418883.36,
+        "y": 4189161.82,
+        "adresse": "Square Françoise Dolto, Bordeaux",
+        "date_dernier_controle": "2026-03-16",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5598255551274911,
+          44.821516644839924
+        ]
+      },
+      "properties": {
+        "id": 256.0,
+        "nom_fontaine": "Atelier des citernes (proche Amédée Saint Germain)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418562.19,
+        "y": 4186350.18,
+        "adresse": "45 rue de la compagnie du midi, Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5552406630912143,
+          44.8205757139366
+        ]
+      },
+      "properties": {
+        "id": 258.0,
+        "nom_fontaine": "Pont de la Palombe",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418919.85,
+        "y": 4186229.81,
+        "adresse": "rue de la palombe, Bordeaux",
+        "date_dernier_controle": "2026-03-04",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5600289047862554,
+          44.85906402482394
+        ]
+      },
+      "properties": {
+        "id": 262.0,
+        "nom_fontaine": "jardin de ta soeur",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO\n+\nabreuvoir",
+        "x": 1418729.38,
+        "y": 4190519.11,
+        "adresse": "rue Emile Peynaud, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5448705897676716,
+          44.84911287247523
+        ]
+      },
+      "properties": {
+        "id": 266.0,
+        "nom_fontaine": "Thiers - Pujol",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "TANA",
+        "x": 1419877.88,
+        "y": 4189361.89,
+        "adresse": "angle Avenue Thiers - rue Josepj Pujol",
+        "date_dernier_controle": "2026-03-17",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5758263243270783,
+          44.87216866907109
+        ]
+      },
+      "properties": {
+        "id": 268.0,
+        "nom_fontaine": "GS Louise Michel",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417546.31,
+        "y": 4192028.84,
+        "adresse": "76 Allées de Boutaut, Bordeaux/Bruges",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5503957132739025,
+          44.82834973879579
+        ]
+      },
+      "properties": {
+        "id": 271.0,
+        "nom_fontaine": "Bd Freres Moga - côté Nouvelle Gare Routiere (face caisse d'épargne)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1419340.49,
+        "y": 4187076.03,
+        "adresse": "Boulevard Freres Moga, Bordeaux",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5477811464873489,
+          44.82687768542546
+        ]
+      },
+      "properties": {
+        "id": 272.0,
+        "nom_fontaine": "Bd freres Moga - Côté Pont Simone Veil (angle  Bd freres Moga et rue de la seigliere)",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1419539.88,
+        "y": 4186903.56,
+        "adresse": "Angle boulevard Freres Moga et rue de la seigliere, Bordeaux",
+        "date_dernier_controle": "2026-03-12",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5604483630717728,
+          44.86110022401307
+        ]
+      },
+      "properties": {
+        "id": 274.0,
+        "nom_fontaine": "Square Joséphine",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418706.2,
+        "y": 4190746.61,
+        "adresse": "97 rue Joséphine, Bordeaux",
+        "date_dernier_controle": "2026-03-05",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5848225755234362,
+          44.85912170190181
+        ]
+      },
+      "properties": {
+        "id": 279.0,
+        "nom_fontaine": "Square du Grand Parc n°3 - Aire Boulistes",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1416772.04,
+        "y": 4190611.88,
+        "adresse": "80 rue Pierre Trebod, 33300 Bordeaux",
+        "date_dernier_controle": "2026-03-10",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5700311458752897,
+          44.86363577909649
+        ]
+      },
+      "properties": {
+        "id": 282.0,
+        "nom_fontaine": "Ecvole Sousa-Mendes",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1417962.01,
+        "y": 4191061.4,
+        "adresse": "rue Samuel Kersz, 33000 Bordeaux",
+        "date_dernier_controle": "2026-03-19",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5578021312681495,
+          44.861817468827724
+        ]
+      },
+      "properties": {
+        "id": 284.0,
+        "nom_fontaine": "Jardin de la Faiencerie",
+        "nombre_robinets": 1.0,
+        "modele_fontaine": "METALCO",
+        "x": 1418918.63,
+        "y": 4190817.05,
+        "adresse": "55 rue de la Faiencerie, Bordeaux",
+        "date_dernier_controle": "2026-03-19",
+        "etat": "fonctionnelle",
+        "hivernage": "oui",
+        "complement_information": null,
+        "code_insee": "33063"
+      }
+    }
+  ]
+}

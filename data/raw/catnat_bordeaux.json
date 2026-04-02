@@ -1,0 +1,145 @@
+{
+  "total": 23,
+  "commune": "Bordeaux",
+  "code_insee": "33063",
+  "evenements": [
+    {
+      "date_debut": "18/03/1988",
+      "date_fin": "21/03/1988",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "10/06/1988"
+    },
+    {
+      "date_debut": "07/05/2000",
+      "date_fin": "08/05/2000",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "03/04/2001"
+    },
+    {
+      "date_debut": "26/07/2013",
+      "date_fin": "27/07/2013",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "10/09/2013"
+    },
+    {
+      "date_debut": "26/05/2018",
+      "date_fin": "26/05/2018",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "04/10/2018"
+    },
+    {
+      "date_debut": "09/05/2020",
+      "date_fin": "11/05/2020",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "23/11/2020"
+    },
+    {
+      "date_debut": "17/06/2021",
+      "date_fin": "19/06/2021",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "30/06/2021"
+    },
+    {
+      "date_debut": "01/09/1987",
+      "date_fin": "01/09/1987",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "03/11/1987"
+    },
+    {
+      "date_debut": "11/02/1990",
+      "date_fin": "15/02/1990",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "16/03/1990"
+    },
+    {
+      "date_debut": "08/08/1992",
+      "date_fin": "09/08/1992",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "19/03/1993"
+    },
+    {
+      "date_debut": "29/04/1998",
+      "date_fin": "29/04/1998",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "22/10/1998"
+    },
+    {
+      "date_debut": "25/12/1999",
+      "date_fin": "29/12/1999",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "29/12/1999"
+    },
+    {
+      "date_debut": "24/01/2009",
+      "date_fin": "27/01/2009",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "28/01/2009"
+    },
+    {
+      "date_debut": "28/02/2010",
+      "date_fin": "28/02/2010",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "10/05/2010"
+    },
+    {
+      "date_debut": "02/08/2011",
+      "date_fin": "02/08/2011",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "28/11/2011"
+    },
+    {
+      "date_debut": "17/06/2024",
+      "date_fin": "18/06/2024",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "21/07/2024"
+    },
+    {
+      "date_debut": "06/11/1982",
+      "date_fin": "10/11/1982",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "30/11/1982"
+    },
+    {
+      "date_debut": "24/06/1983",
+      "date_fin": "24/06/1983",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "05/10/1983"
+    },
+    {
+      "date_debut": "16/07/1983",
+      "date_fin": "24/07/1983",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "05/10/1983"
+    },
+    {
+      "date_debut": "09/08/1983",
+      "date_fin": "09/08/1983",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "05/10/1983"
+    },
+    {
+      "date_debut": "04/07/1983",
+      "date_fin": "04/07/1983",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "05/10/1983"
+    },
+    {
+      "date_debut": "31/05/1983",
+      "date_fin": "31/05/1983",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "15/11/1983"
+    },
+    {
+      "date_debut": "14/09/1986",
+      "date_fin": "15/09/1986",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "11/12/1986"
+    },
+    {
+      "date_debut": "23/09/1986",
+      "date_fin": "24/09/1986",
+      "libelle": "Inondations et/ou Coulées de Boue",
+      "arrete": "27/01/1987"
+    }
+  ]
+}

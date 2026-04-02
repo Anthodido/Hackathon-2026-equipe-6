@@ -139,7 +139,35 @@ def fetch_equipements():
         label="Équipements publics (métropole complète)"
     )
     if raw:
-        filter_bordeaux(raw, "equipements_publics_bordeaux.geojson")
+        # Filtrer par bbox Bordeaux (plus fiable que filtre sur champ commune)
+        # Bordeaux : lat 44.80-44.90, lon -0.65 à -0.52
+        BBOX = {"lat_min": 44.80, "lat_max": 44.90, "lon_min": -0.65, "lon_max": -0.52}
+        features = []
+        for f in raw.get("features", []):
+            try:
+                coords = f.get("geometry", {}).get("coordinates", [])
+                if not coords:
+                    # Essayer geo_point_2d dans properties
+                    geo = f.get("properties", {}).get("geo_point_2d", {})
+                    lon = float(geo.get("lon", 0))
+                    lat = float(geo.get("lat", 0))
+                else:
+                    lon, lat = float(coords[0]), float(coords[1])
+                if (BBOX["lat_min"] <= lat <= BBOX["lat_max"] and
+                    BBOX["lon_min"] <= lon <= BBOX["lon_max"]):
+                    features.append(f)
+            except (TypeError, ValueError, KeyError):
+                continue
+
+        result = {"type": "FeatureCollection", "features": features}
+        save_json(result, "equipements_publics_bordeaux.geojson")
+        print(f"    ℹ️  {len(features)}/{len(raw.get('features',[]))} features dans bbox Bordeaux")
+
+        # Afficher la distribution des thèmes
+        from collections import Counter
+        themes = Counter(f["properties"].get("theme","?") for f in features)
+        print(f"    ℹ️  Thèmes : {dict(themes)}")
+
         tmp = RAW_DIR / "_eqpub_all.geojson"
         if tmp.exists():
             tmp.unlink()
@@ -243,6 +271,8 @@ def print_summary():
         ("salles_capacites.json",                "Capacités salles"),
         ("zones_inondables.geojson",             "PPRI inondation"),
         ("ilots_chaleur.geojson",                "Îlots chaleur + fraîcheur"),
+        ("catnat_bordeaux.json",                 "CATNAT historique"),
+        ("azi_bordeaux.geojson",                 "AZI zones inondables"),
     ]
     print("\n" + "=" * 55)
     ok = 0
@@ -260,6 +290,126 @@ def print_summary():
         print("\n  → python fetch_climate.py")
         print("  → python stress_test.py")
     print("=" * 55)
+
+
+# ── 5. CATNAT (historique catastrophes naturelles) ────────────────────────────
+
+def fetch_catnat():
+    """
+    Récupère l'historique des catastrophes naturelles (inondations) 
+    pour Bordeaux via l'API Géorisques.
+    URL corrigée : code_insee au lieu de longitude/latitude/rayon
+    """
+    print("\n[5/6] CATNAT — Historique inondations Bordeaux...")
+
+    url = f"https://georisques.gouv.fr/api/v1/gaspar/catnat?code_insee={CODE_INSEE}&page_size=100"
+    print(f"  → API Géorisques CATNAT...")
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        r.raise_for_status()
+        data = r.json()
+        evenements = data.get("data", [])
+
+        # Filtrer les inondations
+        inondations = [
+            e for e in evenements
+            if "inond" in (e.get("libelle_risque_jo", "") or "").lower()
+            or "submersion" in (e.get("libelle_risque_jo", "") or "").lower()
+            or "coulée" in (e.get("libelle_risque_jo", "") or "").lower()
+        ]
+
+        # Sauvegarder en JSON simple (pas GeoJSON — pas de géométrie)
+        result = {
+            "total": len(inondations),
+            "commune": "Bordeaux",
+            "code_insee": CODE_INSEE,
+            "evenements": [
+                {
+                    "date_debut": e.get("date_debut_evt", ""),
+                    "date_fin":   e.get("date_fin_evt", ""),
+                    "libelle":    e.get("libelle_risque_jo", ""),
+                    "arrete":     e.get("date_publication_arrete", ""),
+                }
+                for e in inondations
+            ]
+        }
+
+        save_json(result, "catnat_bordeaux.json")
+        print(f"    ℹ️  {len(inondations)} inondations recensées depuis 1982")
+
+        # Afficher les années
+        annees = sorted(set(
+            e["date_debut"][-4:] for e in result["evenements"] 
+            if e["date_debut"] and len(e["date_debut"]) >= 4
+        ))
+        print(f"    ℹ️  Années : {', '.join(annees)}")
+        return result
+
+    except Exception as e:
+        print(f"    ⚠️  {e}")
+        print("    ❌ CATNAT non disponible")
+        return None
+
+
+# ── 6. AZI (Atlas Zones Inondables) ──────────────────────────────────────────
+
+def fetch_azi():
+    """
+    Récupère l'Atlas des Zones Inondables via Géorisques.
+    Complément au PPRI pour les zones non couvertes.
+    URL corrigée : code_insee au lieu de longitude/latitude/rayon
+    """
+    print("\n[6/6] AZI — Atlas Zones Inondables...")
+
+    # L'AZI n'a pas d'endpoint par code_insee — on utilise bbox Bordeaux
+    url = (
+        "https://georisques.gouv.fr/api/v1/azi"
+        "?latmin=44.80&latmax=44.90&lonmin=-0.65&lonmax=-0.52"
+        "&page=1&page_size=500"
+    )
+    print(f"  → API Géorisques AZI...")
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=15)
+        if r.status_code == 404:
+            print("    ⚠️  AZI endpoint non disponible (404)")
+            return None
+        r.raise_for_status()
+        data = r.json()
+        zones = data.get("data", [])
+
+        if not zones:
+            print("    ⚠️  Aucune zone AZI trouvée")
+            return None
+
+        # Convertir en GeoJSON
+        features = []
+        for z in zones:
+            geom = z.get("geom")
+            if not geom:
+                continue
+            alea = z.get("lib_alea", z.get("alea", "moyen")) or "moyen"
+            a = alea.lower()
+            statut = "critique" if ("fort" in a or "tres" in a) else ("menace" if "moyen" in a else "sur")
+            features.append({
+                "type": "Feature",
+                "properties": {
+                    "id":     z.get("id", ""),
+                    "alea":   alea,
+                    "statut": statut,
+                    "type_risque": "inondation_azi"
+                },
+                "geometry": geom
+            })
+
+        geojson = {"type": "FeatureCollection", "features": features}
+        save_json(geojson, "azi_bordeaux.geojson")
+        print(f"    ℹ️  {len(features)} zones AZI exportées")
+        return geojson
+
+    except Exception as e:
+        print(f"    ⚠️  {e}")
+        print("    ❌ AZI non disponible")
+        return None
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
@@ -293,6 +443,14 @@ if __name__ == "__main__":
 
     if not already_exists("ilots_chaleur.geojson"):
         fetch_ilots_chaleur()
+        time.sleep(1)
+
+    if not already_exists("catnat_bordeaux.json"):
+        fetch_catnat()
+        time.sleep(1)
+
+    if not already_exists("azi_bordeaux.geojson"):
+        fetch_azi()
         time.sleep(1)
 
     print_summary()
