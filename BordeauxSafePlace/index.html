@@ -1,86 +1,170 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>BordeauxSafePlace</title>
-        <meta name="description" content="Carte interactive des risques climatiques de Bordeaux Métropole
-        — visualisez, comparez et simulez l'exposition aux aléas de vos 28 communes à l'horizon 2100.">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-    </head>
+<head>
+    <title>BordeauxSafePlace — Risques climatiques Bordeaux Métropole</title>
+    <meta name="description" content="Carte interactive des risques climatiques de Bordeaux Métropole — visualisez, comparez et simulez l'exposition aux aléas de vos 28 communes à l'horizon 2100.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
 
-    <body>
-        <header>
-            <h1>BordeauxSafePlace</h1>
-        </header>
-    
-        <div class="layout">
-            <nav class="sidebar">
-                <a href="#home">Accueil</a>
-                <a href="map.html">Carte</a>
-                <a href="#contact.html">Contact</a>
-            </nav>
-    
-            <main>
-                <!-- HERO -->
-                <section class="hero">
-                    <div class="hero-text">
-                        <p class="hero-label">Hackathon Holberton × Bordeaux Métropole</p>
-                        <h2>Visualisez les risques climatiques de votre commune</h2>
-                        <p class="hero-desc">Carte interactive des 28 communes de Bordeaux Métropole — inondations, canicules, incendies, retrait-gonflement des argiles et risques industriels simulés jusqu'en 2100.</p>
-                        <a href="#map" class="btn-primary">Accéder à la carte</a>
-                    </div>
-                    <div class="hero-badge">
-                        <span>2025</span>
-                        <span>→</span>
-                        <span>2100</span>
-                    </div>
-                </section>
+<!-- ── HEADER ──────────────────────────────────────────────── -->
+<header>
+    <a href="index.html" class="header-brand" style="text-decoration:none;">
+        <svg class="shield-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <h1><span class="brand-p">Bordeaux</span><span class="brand-s">SafePlace</span></h1>
+        <span class="header-sub">DataHub Bordeaux Métropole</span>
+    </a>
 
-                <!-- STATS -->
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <span class="stat-number">28</span>
-                        <span class="stat-label">Communes analysées</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">5</span>
-                        <span class="stat-label">Types de risques</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">46%</span>
-                        <span class="stat-label">Habitants exposés à 3+ aléas</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Scénarios IPCC AR6</span>
-                    </div>
-                </div>
-
-                <!-- FEATURES -->
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🗺️</div>
-                        <h3>Carte interactive</h3>
-                        <p>Visualisez les niveaux de risque par commune en temps réel avec filtrage par type d'aléa.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>Profil détaillé</h3>
-                        <p>Cliquez sur une commune pour accéder à son radar de risques, ses données socio-économiques et ses faits clés.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔮</div>
-                        <h3>Simulation climatique</h3>
-                        <p>Projetez l'évolution des risques de 2025 à 2100 selon les scénarios SSP1-2.6, SSP2-4.5 et SSP5-8.5.</p>
-                    </div>
-                </div>
-            </main>
+    <div class="header-actions">
+        <div class="badges-group">
+            <span class="badge badge-critical">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                8 communes critiques
+            </span>
+            <span class="badge badge-neutral">760k habitants</span>
+            <span class="badge badge-primary">46% exposés 3+ aléas</span>
         </div>
-    
-        <footer>
-            <p>Sources : DataHub Bordeaux Métropole · IPCC AR6 (2021) · DRIAS 2020 / Météo-France · Géorisques / BRGM · INSEE</p>
-        </footer>
-        </footer>
-    </body>
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Basculer le thème">
+            <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg id="iconSun"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+    </div>
+</header>
+
+<!-- ── LAYOUT ───────────────────────────────────────────────── -->
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <div class="sidebar-nav">
+            <a href="index.html" class="nav-link active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Accueil
+            </a>
+            <a href="map.html" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                Carte interactive
+            </a>
+            <a href="contact.html" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Contact
+            </a>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <span class="sidebar-section-label">Niveaux de risque</span>
+        <div style="padding:0 16px 16px; display:flex; flex-direction:column; gap:6px;">
+            <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--foreground);">
+                <span style="width:10px;height:10px;border-radius:50%;background:var(--risk-critical);flex-shrink:0;"></span>
+                Critique (7–10)
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--foreground);">
+                <span style="width:10px;height:10px;border-radius:50%;background:var(--risk-high);flex-shrink:0;"></span>
+                Élevé (5–7)
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--foreground);">
+                <span style="width:10px;height:10px;border-radius:50%;background:var(--risk-moderate);flex-shrink:0;"></span>
+                Modéré (3–5)
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--foreground);">
+                <span style="width:10px;height:10px;border-radius:50%;background:var(--risk-low);flex-shrink:0;"></span>
+                Faible (0–3)
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-text">
+                <p class="hero-label">Hackathon Holberton × Bordeaux Métropole</p>
+                <h2>Visualisez les risques climatiques de votre commune</h2>
+                <p class="hero-desc">Carte interactive des 28 communes de Bordeaux Métropole — inondations, canicules, incendies, retrait-gonflement des argiles et risques industriels simulés jusqu'en 2100.</p>
+                <a href="map.html" class="btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                    Accéder à la carte
+                </a>
+            </div>
+            <div class="hero-badge">
+                <span>2025</span>
+                <span>→</span>
+                <span>2100</span>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">28</span>
+                <span class="stat-label">Communes analysées</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Types de risques</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">46%</span>
+                <span class="stat-label">Habitants exposés à 3+ aléas</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Scénarios IPCC AR6</span>
+            </div>
+        </div>
+
+        <!-- FEATURES -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">🗺️</span>
+                <h3>Carte interactive</h3>
+                <p>Visualisez les niveaux de risque par commune en temps réel avec filtrage par type d'aléa.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📊</span>
+                <h3>Profil détaillé</h3>
+                <p>Cliquez sur une commune pour accéder à son radar de risques, ses données socio-économiques et ses faits clés.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔮</span>
+                <h3>Simulation climatique</h3>
+                <p>Projetez l'évolution des risques de 2025 à 2100 selon les scénarios SSP1-2.6, SSP2-4.5 et SSP5-8.5.</p>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<footer>
+    <p>Sources : DataHub Bordeaux Métropole · IPCC AR6 (2021) · DRIAS 2020 / Météo-France · Géorisques / BRGM · INSEE</p>
+</footer>
+
+<script>
+// ── THÈME SOMBRE / CLAIR ──────────────────────────────────────
+function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.classList.toggle('dark');
+    document.getElementById('iconMoon').style.display = isDark ? 'none' : 'block';
+    document.getElementById('iconSun').style.display  = isDark ? 'block' : 'none';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+}
+
+// Restaurer le thème sauvegardé
+(function() {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') {
+        document.documentElement.classList.add('dark');
+        document.getElementById('iconMoon').style.display = 'none';
+        document.getElementById('iconSun').style.display  = 'block';
+    }
+})();
+</script>
+
+</body>
 </html>
