@@ -2,13 +2,14 @@
 <html lang="fr">
 <head>
     <title>BordeauxSafePlace — Risques climatiques Bordeaux Métropole</title>
-    <meta name="description" content="Stress-test des refuges climatiques de Bordeaux face aux risques d'inondation et de canicule à l'horizon 2050.">
+    <meta name="description" content="Carte interactive des risques climatiques de Bordeaux Métropole — visualisez, comparez et simulez l'exposition aux aléas de vos 28 communes à l'horizon 2100.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
+<!-- ── HEADER ──────────────────────────────────────────────── -->
 <header>
     <a href="index.html" class="header-brand" style="text-decoration:none;">
         <svg class="shield-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -17,14 +18,15 @@
         <h1><span class="brand-p">Bordeaux</span><span class="brand-s">SafePlace</span></h1>
         <span class="header-sub">DataHub Bordeaux Métropole</span>
     </a>
+
     <div class="header-actions">
         <div class="badges-group">
             <span class="badge badge-critical">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                169 refuges critiques en 2050
+                8 communes critiques
             </span>
-            <span class="badge badge-neutral">323 refuges analysés</span>
-            <span class="badge badge-primary">23 inondations depuis 1982</span>
+            <span class="badge badge-neutral">760k habitants</span>
+            <span class="badge badge-primary">46% exposés 3+ aléas</span>
         </div>
         <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Basculer le thème">
             <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -33,7 +35,10 @@
     </div>
 </header>
 
+<!-- ── LAYOUT ───────────────────────────────────────────────── -->
 <div class="layout">
+
+    <!-- SIDEBAR -->
     <nav class="sidebar">
         <div class="sidebar-nav">
             <a href="index.html" class="nav-link active">
@@ -44,7 +49,6 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
                 Carte interactive
             </a>
-
             <a href="contact.html" class="nav-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 Contact
@@ -57,69 +61,61 @@
         <div style="padding:0 16px 16px; display:flex; flex-direction:column; gap:6px;">
             <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--foreground);">
                 <span style="width:10px;height:10px;border-radius:50%;background:var(--risk-critical);flex-shrink:0;"></span>
-                Critique (&lt; 60)
+                Critique (7–10)
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--foreground);">
+                <span style="width:10px;height:10px;border-radius:50%;background:var(--risk-high);flex-shrink:0;"></span>
+                Élevé (5–7)
             </div>
             <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--foreground);">
                 <span style="width:10px;height:10px;border-radius:50%;background:var(--risk-moderate);flex-shrink:0;"></span>
-                Menacé (60–74)
+                Modéré (3–5)
             </div>
             <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--foreground);">
                 <span style="width:10px;height:10px;border-radius:50%;background:var(--risk-low);flex-shrink:0;"></span>
-                Sûr (≥ 75)
+                Faible (0–3)
             </div>
-        </div>
-
-        <div class="sidebar-divider"></div>
-
-        <span class="sidebar-section-label">Sources</span>
-        <div style="padding:0 16px 16px;font-size:11px;color:var(--muted-fg);line-height:1.7;">
-            PPRI Bordeaux 2023<br>
-            DataHub Bordeaux Métropole<br>
-            Météo-France · GIEC AR6<br>
-            Open-Meteo CMIP6<br>
-            Géorisques CATNAT
         </div>
     </nav>
 
+    <!-- MAIN CONTENT -->
     <main>
+
         <!-- HERO -->
         <section class="hero">
             <div class="hero-text">
-                <p class="hero-label">Hackathon Holberton × Bordeaux Métropole 2026</p>
-                <h2>Quels refuges climatiques survivront à 2050 ?</h2>
-                <p class="hero-desc">BordeauxSafePlace stress-teste les 110 refuges de Bordeaux face aux risques d'inondation et de canicule, avec des projections GIEC AR6 à l'horizon 2050.</p>
-                <div style="display:flex;gap:10px;flex-wrap:wrap;">
-
-                    <a href="map.html" class="btn-primary" style="background:var(--secondary);color:var(--foreground);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/></svg>
-                        Carte interactive — Communes & Refuges
-                    </a>
-                </div>
+                <p class="hero-label">Hackathon Holberton × Bordeaux Métropole</p>
+                <h2>Visualisez les risques climatiques de votre commune</h2>
+                <p class="hero-desc">BordeauxSafePlace stress-teste les 317 refuges climatiques de Bordeaux Métropole face aux risques d'inondation et de canicule, avec des projections basées sur le PPRI 2023 et le GIEC AR6 SSP2-4.5 à l'horizon 2050.</p>
+                <a href="map.html" class="btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                    Accéder à la carte
+                </a>
             </div>
             <div class="hero-badge">
-                <span>2026</span>
+                <span>2025</span>
                 <span>→</span>
-                <span>2050</span>
+                <span>2100</span>
             </div>
         </section>
 
         <!-- STATS -->
         <div class="stats-grid">
             <div class="stat-card">
-                <span class="stat-number">216</span>
-                <span class="stat-label">CARE officiels Bordeaux Métropole</span>
+                <span class="stat-number">28</span>
+                <span class="stat-label">Communes analysées</span>
             </div>
             <div class="stat-card">
-                <span class="stat-number">107</span>
-                <span class="stat-label">Refuges potentiels identifiés (équipements + parcs)</span>
+                <span class="stat-number">5</span>
+                <span class="stat-label">Types de risques</span>
             </div>
-            <div class="stat-card" style="border-top-color:var(--risk-critical)">
-                <span class="stat-number" style="color:var(--risk-critical)">169</span>
-                <span class="stat-label">Refuges critiques en 2050 (dont 123 CARE)</span>
+            <div class="stat-card">
+                <span class="stat-number">46%</span>
+                <span class="stat-label">Habitants exposés à 3+ aléas</span>
             </div>
-            <div class="stat-card" style="border-top-color:#f97316">
-                <span class="stat-number" style="color:#f97316">21</span>
-                <span class="stat-label">Refuges encore sûrs en 2050</span>
+            <div class="stat-card">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Scénarios IPCC AR6</span>
             </div>
         </div>
 
@@ -128,17 +124,22 @@
             <div class="feature-card">
                 <span class="feature-icon">💧</span>
                 <h3>PPRI 2023</h3>
-                <p>Croisement spatial avec le Plan de Prévention des Risques d'Inondation approuvé par l'État en décembre 2023 — précis à la parcelle.</p>
+                <p>Croisement spatial avec le Plan de Prévention des Risques d'Inondation approuvé en décembre 2023 — précis à la parcelle, complété par une simulation hydrographique par horizon.</p>
             </div>
             <div class="feature-card">
                 <span class="feature-icon">🌡️</span>
                 <h3>Îlots de chaleur</h3>
-                <p>Dataset ri_icu_ifu_s de Bordeaux Métropole — mesures de température de surface 2022 avec delta thermique réel par refuge.</p>
+                <p>Dataset ri_icu_ifu_s de Bordeaux Métropole — delta thermique réel en °C pour chaque refuge, avec bonus pour les îlots de fraîcheur.</p>
             </div>
             <div class="feature-card">
                 <span class="feature-icon">📈</span>
                 <h3>Projections GIEC AR6</h3>
-                <p>Nuits caniculaires à Bordeaux × 2.25 en 2050 selon Météo-France. Montée du niveau marin +35cm selon GIEC AR6 SSP2-4.5.</p>
+                <p>Coefficients d'aggravation par horizon 2030/2040/2050 basés sur Météo-France et le GIEC AR6 SSP2-4.5. Nuits caniculaires × 2.25 en 2050 à Bordeaux.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">⭐</span>
+                <h3>216 CARE officiels</h3>
+                <p>Centres d'accueil officiels de Bordeaux Métropole analysés — 123 d'entre eux seront critiques en 2050 selon nos projections.</p>
             </div>
             <div class="feature-card">
                 <span class="feature-icon">🌿</span>
@@ -147,23 +148,20 @@
             </div>
             <div class="feature-card">
                 <span class="feature-icon">🚰</span>
-                <h3>265 fontaines</h3>
-                <p>Points d'eau potable fonctionnels de Bordeaux — couche contextuelle pour la gestion des crises de canicule.</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">⭐</span>
-                <h3>3 CARE officiels</h3>
-                <p>Centres activés lors de la crise de février 2026 — dont un en zone inondable forte, identifié et alerté par BordeauxSafePlace.</p>
+                <h3>265 fontaines d'eau potable</h3>
+                <p>Points d'eau fonctionnels de Bordeaux — couche contextuelle essentielle pour la gestion des crises de canicule.</p>
             </div>
         </div>
+
     </main>
 </div>
 
 <footer>
-    <p>Sources : DataHub Bordeaux Métropole · PPRI DDTM33 2023 · GIEC AR6 (2021) · Météo-France · Géorisques CATNAT · Open-Meteo CMIP6</p>
+    <p>Sources : DataHub Bordeaux Métropole · IPCC AR6 (2021) · DRIAS 2020 / Météo-France · Géorisques / BRGM · INSEE</p>
 </footer>
 
 <script>
+// ── THÈME SOMBRE / CLAIR ──────────────────────────────────────
 function toggleTheme() {
     const html = document.documentElement;
     const isDark = html.classList.toggle('dark');
@@ -171,6 +169,8 @@ function toggleTheme() {
     document.getElementById('iconSun').style.display  = isDark ? 'block' : 'none';
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 }
+
+// Restaurer le thème sauvegardé
 (function() {
     const saved = localStorage.getItem('theme');
     if (saved === 'dark') {
@@ -180,5 +180,6 @@ function toggleTheme() {
     }
 })();
 </script>
+
 </body>
 </html>

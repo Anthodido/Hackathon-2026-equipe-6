@@ -513,7 +513,7 @@ function scoreToStatus(score) {
 // ── COMMUNES LAYER ────────────────────────────────────────────
 async function loadCommunes() {
     try {
-        const r = await fetch('../data/raw/communes_bm.geojson');
+        const r = await fetch('/api/communes');
         if (!r.ok) throw new Error('HTTP ' + r.status);
         const geojson = await r.json();
 
@@ -584,7 +584,7 @@ function updateCommunesStyle() {
 // ── REFUGES ───────────────────────────────────────────────────
 async function loadRefuges() {
     try {
-        const r = await fetch('../data/processed/refuges_diagnostiques.json');
+        const r = await fetch('/api/refuges');
         if (!r.ok) throw new Error('HTTP ' + r.status);
         const json = await r.json();
         REFUGES = Array.isArray(json) ? json : (json.refuges || []);
@@ -593,7 +593,7 @@ async function loadRefuges() {
     }
 
     try {
-        const rc = await fetch('../data/raw/catnat_bordeaux.json');
+        const rc = await fetch('/api/catnat');
         if (rc.ok) CATNAT = await rc.json();
     } catch(e) {}
 }
@@ -677,7 +677,7 @@ function renderRefuges() {
 // ── COUCHES RISQUE ────────────────────────────────────────────
 async function loadRiskLayers() {
     try {
-        const r = await fetch('../data/processed/zones_inondables_clipped.geojson');
+        const r = await fetch('/api/geo/zones_inondables');
         if (r.ok) {
             const data = await r.json();
             LAYER_FLOOD = L.geoJSON(data, {
@@ -688,7 +688,7 @@ async function loadRiskLayers() {
     } catch(e) {}
 
     try {
-        const r = await fetch('../data/raw/ilots_chaleur.geojson');
+        const r = await fetch('/api/geo/ilots_chaleur');
         if (r.ok) {
             const data = await r.json();
             LAYER_HEAT = L.geoJSON(data, {
@@ -702,7 +702,7 @@ async function loadRiskLayers() {
     } catch(e) {}
 
     try {
-        const r = await fetch('../data/raw/fontaines.geojson');
+        const r = await fetch('/api/geo/fontaines');
         if (r.ok) {
             const data = await r.json();
             const dropIcon = L.divIcon({
@@ -723,7 +723,7 @@ async function loadRiskLayers() {
     // CARE officiels affichés directement via REFUGES (care_officiel=true)
     // La couche séparée care_all.json n'est plus nécessaire
     if (false) try {
-        const r = await fetch('../data/processed/care_all.json');
+        const r = await fetch('/api/care');
         if (r.ok) {
             const data = await r.json();
             // Pour les CARE de care_all.json, pas de score — icône étoile dorée
@@ -791,7 +791,7 @@ async function loadRiskLayers() {
     };
     for (const h of [2030, 2040, 2050]) {
         try {
-            const r = await fetch(`../data/processed/zone_inondable_${h}.geojson`);
+            const r = await fetch(`/api/geo/zone_inondable_${h}`);
             if (r.ok) {
                 const data = await r.json();
                 const c = hydroColors[h];
