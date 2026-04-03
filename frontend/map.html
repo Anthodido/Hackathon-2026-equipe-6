@@ -191,111 +191,44 @@
 
         footer { height: 42px; display: flex; align-items: center; justify-content: center; }
 
+        /* Autocomplétion */
+        .autocomplete-wrap { position: relative; }
+        .autocomplete-list {
+            position: absolute;
+            top: 100%;
+            left: 0; right: 0;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-md);
+            z-index: 9999;
+            max-height: 200px;
+            overflow-y: auto;
+            display: none;
+        }
+        .autocomplete-list.visible { display: block; }
+        .autocomplete-item {
+            padding: 8px 12px;
+            font-size: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--foreground);
+            transition: background 0.1s;
+        }
+        .autocomplete-item:hover { background: var(--primary-bg); color: var(--primary); }
+        .autocomplete-item .ac-type {
+            font-size: 10px;
+            color: var(--muted-fg);
+            margin-left: auto;
+        }
+
         /* Boutons zones inondables futures */
         .hz-flood-btn { transition: all 0.15s; }
         #btn-hydro-2030.active { background: rgba(96,165,250,0.25); color: #60a5fa; border-color: #60a5fa !important; }
         #btn-hydro-2040.active { background: rgba(249,115,22,0.25); color: #f97316; border-color: #f97316 !important; }
         #btn-hydro-2050.active { background: rgba(239,68,68,0.25); color: #ef4444; border-color: #ef4444 !important; }
-
-        /* Panel liste refuges */
-        .refuges-panel {
-            width: 300px;
-            flex-shrink: 0;
-            background: var(--card);
-            border-left: 1px solid var(--border);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        .refuges-panel-header {
-            padding: 12px 14px;
-            border-bottom: 1px solid var(--border);
-            flex-shrink: 0;
-        }
-
-        .refuges-stats {
-            display: flex;
-            gap: 8px;
-            margin-top: 8px;
-        }
-
-        .rs-chip {
-            flex: 1;
-            text-align: center;
-            padding: 6px 4px;
-            border-radius: var(--radius-sm);
-            font-size: 11px;
-        }
-
-        .rs-num {
-            font-size: 18px;
-            font-weight: 700;
-            display: block;
-            font-variant-numeric: tabular-nums;
-        }
-
-        .refuges-list {
-            flex: 1;
-            overflow-y: auto;
-        }
-
-        .refuge-item {
-            padding: 10px 14px;
-            border-bottom: 1px solid var(--border);
-            cursor: pointer;
-            transition: background 0.15s;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .refuge-item:hover { background: var(--secondary); }
-        .refuge-item.selected { background: var(--primary-bg); }
-
-        .refuge-item-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            flex-shrink: 0;
-        }
-
-        .refuge-item-dot.parc {
-            border-radius: 2px;
-            transform: rotate(45deg);
-        }
-
-        .refuge-item-info { flex: 1; min-width: 0; }
-
-        .refuge-item-name {
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--foreground);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .refuge-item-type {
-            font-size: 10px;
-            color: var(--muted-fg);
-            margin-top: 1px;
-        }
-
-        .refuge-item-score {
-            font-size: 13px;
-            font-weight: 700;
-            font-variant-numeric: tabular-nums;
-            flex-shrink: 0;
-        }
-
-        .refuge-item-badge {
-            font-size: 9px;
-            font-weight: 600;
-            padding: 2px 6px;
-            border-radius: var(--radius-full);
-            flex-shrink: 0;
-        }
     </style>
 </head>
 <body>
@@ -310,7 +243,7 @@
     </a>
     <div class="header-actions">
         <div class="badges-group">
-            <span class="badge badge-critical">136 refuges critiques en 2050</span>
+            <span class="badge badge-critical">169 refuges critiques en 2050</span>
             <span class="badge badge-neutral">323 refuges analysés</span>
             <span class="badge badge-primary">28 communes</span>
         </div>
@@ -326,36 +259,16 @@
 
         <!-- Search -->
         <div class="sidebar-search">
-            <div class="search-wrap">
+            <div class="search-wrap autocomplete-wrap">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="text" class="search-input" id="searchInput" placeholder="Rechercher commune ou refuge…" oninput="filterMap(this.value)">
+                <input type="text" class="search-input" id="searchInput"
+                    placeholder="Rechercher commune ou refuge…"
+                    oninput="filterMap(this.value); showSuggestions(this.value)"
+                    onkeydown="handleSearchKey(event)"
+                    autocomplete="off">
+                <div class="autocomplete-list" id="autocompleteList"></div>
             </div>
         </div>
-
-        <!-- Filtres communes -->
-        <span class="sidebar-section-label">Risque communes</span>
-        <div class="filter-pills" id="commune-filters">
-            <button class="filter-pill active" data-risk="composite" onclick="setRisk('composite', this)">
-                <span class="dot" style="background:var(--primary)"></span>Global
-            </button>
-            <button class="filter-pill" data-risk="inondation" onclick="setRisk('inondation', this)">
-                <span class="dot" style="background:#3b82f6"></span>🌊
-            </button>
-            <button class="filter-pill" data-risk="chaleur" onclick="setRisk('chaleur', this)">
-                <span class="dot" style="background:#ef4444"></span>🌡️
-            </button>
-            <button class="filter-pill" data-risk="incendie" onclick="setRisk('incendie', this)">
-                <span class="dot" style="background:#f97316"></span>🔥
-            </button>
-            <button class="filter-pill" data-risk="rga" onclick="setRisk('rga', this)">
-                <span class="dot" style="background:#a855f7"></span>⛰️
-            </button>
-            <button class="filter-pill" data-risk="industriel" onclick="setRisk('industriel', this)">
-                <span class="dot" style="background:#78716c"></span>🏭
-            </button>
-        </div>
-
-        <div class="sidebar-divider"></div>
 
         <!-- Horizon refuges -->
         <span class="sidebar-section-label">Horizon climatique</span>
@@ -385,13 +298,12 @@
         <!-- Couches -->
         <span class="sidebar-section-label">Couches de risque</span>
         <div class="filter-pills">
-            <button class="filter-pill" onclick="toggleLayer('flood', this)">💧 PPRI actuel</button>
             <button class="filter-pill" onclick="toggleLayer('heat', this)">🌡️ Chaleur</button>
             <button class="filter-pill" onclick="toggleLayer('fontaines', this)">🚰 Fontaines</button>
-            <button class="filter-pill" onclick="toggleLayer('care', this)">⭐ CARE officiels</button>
         </div>
-        <span class="sidebar-section-label">Zones inondables futures</span>
+        <span class="sidebar-section-label">Zones inondables</span>
         <div class="filter-pills">
+            <button class="filter-pill" onclick="toggleLayer('flood', this)">💧 PPRI actuel</button>
             <button class="filter-pill hz-flood-btn" id="btn-hydro-2030" onclick="toggleHydroLayer(2030, this)" style="border-color:#60a5fa44">🌊 2030</button>
             <button class="filter-pill hz-flood-btn" id="btn-hydro-2040" onclick="toggleHydroLayer(2040, this)" style="border-color:#f9731644">🌊 2040</button>
             <button class="filter-pill hz-flood-btn" id="btn-hydro-2050" onclick="toggleHydroLayer(2050, this)" style="border-color:#ef444444">🌊 2050</button>
@@ -423,8 +335,16 @@
                 Parc / espace vert
             </div>
             <div class="legend-row">
-                <span style="width:10px;height:10px;background:#f59e0b;border-radius:50%;border:1.5px solid white;flex-shrink:0;display:inline-block;"></span>
-                CARE officiel métropole
+                <span style="width:14px;height:14px;border-radius:50%;background:rgba(34,197,94,0.2);border:2px solid #22c55e;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;font-size:8px;color:#22c55e;font-weight:700;">★</span>
+                CARE officiel (sûr)
+            </div>
+            <div class="legend-row">
+                <span style="width:14px;height:14px;border-radius:50%;background:rgba(249,115,22,0.2);border:2px solid #f97316;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;font-size:8px;color:#f97316;font-weight:700;">★</span>
+                CARE officiel (menacé)
+            </div>
+            <div class="legend-row">
+                <span style="width:14px;height:14px;border-radius:50%;background:rgba(239,68,68,0.2);border:2px solid #ef4444;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;font-size:8px;color:#ef4444;font-weight:700;">★</span>
+                CARE officiel (critique)
             </div>
             <div class="legend-row">
                 <span style="width:10px;height:10px;background:#60a5fa;border-radius:2px;opacity:0.7;flex-shrink:0;display:inline-block;"></span>
@@ -440,49 +360,12 @@
             </div>
         </div>
 
-        <div class="sidebar-divider"></div>
 
-        <!-- Nav -->
-        <div class="sidebar-nav">
-            <a href="index.html" class="nav-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-                Accueil
-            </a>
-            <a href="contact.html" class="nav-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>
-                Contact
-            </a>
-        </div>
 
     </nav>
 
     <div class="map-wrapper">
         <div id="map"></div>
-    </div>
-
-    <!-- Panel liste refuges -->
-    <div class="refuges-panel" id="refugesPanel">
-        <div class="refuges-panel-header">
-            <div style="font-size:13px;font-weight:700;color:var(--foreground);margin-bottom:6px;">
-                Refuges analysés
-                <span id="refugesCount" style="font-size:11px;color:var(--muted-fg);font-weight:400;margin-left:4px;"></span>
-            </div>
-            <div class="refuges-stats">
-                <div class="rs-chip" style="background:rgba(34,197,94,0.12);">
-                    <span class="rs-num" style="color:#22c55e" id="statSurs">—</span>
-                    <span style="color:var(--muted-fg)">Sûrs</span>
-                </div>
-                <div class="rs-chip" style="background:rgba(249,115,22,0.12);">
-                    <span class="rs-num" style="color:#f97316" id="statMenaces">—</span>
-                    <span style="color:var(--muted-fg)">Menacés</span>
-                </div>
-                <div class="rs-chip" style="background:rgba(239,68,68,0.12);">
-                    <span class="rs-num" style="color:#ef4444" id="statCritiques">—</span>
-                    <span style="color:var(--muted-fg)">Critiques</span>
-                </div>
-            </div>
-        </div>
-        <div class="refuges-list" id="refugesList"></div>
     </div>
 </div>
 
@@ -659,7 +542,7 @@ async function loadCommunes() {
                     `<strong>${p.nom}</strong>`,
                     { sticky: true, className: 'leaflet-tooltip-custom' }
                 );
-                layer.on('click', () => showCommunePanel(p));
+                // communes non cliquables
             }
         });
 
@@ -683,7 +566,7 @@ function renderCommuneMarkers() {
         });
         L.marker([c.lat, c.lng], { icon }).addTo(MAP)
             .bindTooltip(`<strong>${c.name}</strong><br>Score : ${score}/10`, { className: 'leaflet-tooltip-custom' })
-            .on('click', () => showCommunePanel(c));
+// communes non cliquables
     });
 }
 
@@ -720,46 +603,6 @@ function getRefugeScore(r) {
     return s ? s.score : (r.score || 0);
 }
 
-function renderList() {
-    if (!REFUGES.length) return;
-    const query = searchQuery.toLowerCase();
-    const filtered = REFUGES.filter(r => {
-        const score  = getRefugeScore(r);
-        const status = scoreToStatus(score);
-        if (!statusFilters[status]) return false;
-        if (query && !r.nom.toLowerCase().includes(query)) return false;
-        return true;
-    }).sort((a,b) => getRefugeScore(b) - getRefugeScore(a));
-
-    const surs     = filtered.filter(r => scoreToStatus(getRefugeScore(r)) === 'sur').length;
-    const menaces  = filtered.filter(r => scoreToStatus(getRefugeScore(r)) === 'menace').length;
-    const critiques= filtered.filter(r => scoreToStatus(getRefugeScore(r)) === 'critique').length;
-
-    document.getElementById('statSurs').textContent     = surs;
-    document.getElementById('statMenaces').textContent  = menaces;
-    document.getElementById('statCritiques').textContent= critiques;
-    document.getElementById('refugesCount').textContent = `${filtered.length} / ${REFUGES.length}`;
-
-    const statusLabel = { sur: 'Sûr', menace: 'Menacé', critique: 'Critique' };
-    const statusBg    = { sur: 'rgba(34,197,94,0.12)', menace: 'rgba(249,115,22,0.12)', critique: 'rgba(239,68,68,0.12)' };
-
-    document.getElementById('refugesList').innerHTML = filtered.map(r => {
-        const score  = getRefugeScore(r);
-        const status = scoreToStatus(score);
-        const color  = refugeColor(status);
-        const isParc = r.type === 'parc';
-        return `<div class="refuge-item" onclick="selectRefuge(${r.id})">
-            <div class="refuge-item-dot ${isParc ? 'parc' : ''}" style="background:${color}"></div>
-            <div class="refuge-item-info">
-                <div class="refuge-item-name">${r.nom}</div>
-                <div class="refuge-item-type">${isParc ? '🌿 Parc' : (r.adresse || r.type || '')}</div>
-            </div>
-            <span class="refuge-item-score" style="color:${color}">${score}</span>
-            <span class="refuge-item-badge" style="background:${statusBg[status]};color:${color}">${statusLabel[status]}</span>
-        </div>`;
-    }).join('');
-}
-
 let SELECTED_REFUGE = null;
 
 function selectRefuge(id) {
@@ -786,7 +629,12 @@ function renderRefuges() {
         const score  = getRefugeScore(r);
         const status = scoreToStatus(score);
         if (!statusFilters[status]) return;
-        if (query && !r.nom.toLowerCase().includes(query)) return;
+        if (query) {
+            const matchNom = r.nom.toLowerCase().includes(query);
+            const matchCommune = r.commune && r.commune.toLowerCase().includes(query);
+            const matchAdresse = r.adresse && r.adresse.toLowerCase().includes(query);
+            if (!matchNom && !matchCommune && !matchAdresse) return;
+        }
 
         const color = refugeColor(status);
         const isParc = r.type === 'parc';
@@ -795,9 +643,17 @@ function renderRefuges() {
         let html;
         if (isParc) {
             html = `<div style="width:11px;height:11px;background:${color};border:1.5px solid white;box-shadow:0 0 5px ${color}90;transform:rotate(45deg);border-radius:2px;"></div>`;
+        } else if (isCare) {
+            html = `<div style="
+                width:16px;height:16px;border-radius:50%;
+                background:${color}33;
+                border:2px solid ${color};
+                box-shadow:0 0 8px ${color}80;
+                display:flex;align-items:center;justify-content:center;
+                font-size:9px;color:${color};font-weight:700;line-height:1;
+            ">★</div>`;
         } else {
-            const size = isCare ? 14 : 10;
-            html = `<div style="width:${size}px;height:${size}px;border-radius:50%;background:${color};border:${isCare ? '2px solid white' : `1.5px solid ${color}`};box-shadow:0 0 ${isCare ? 8 : 4}px ${color}60;"></div>`;
+            html = `<div style="width:10px;height:10px;border-radius:50%;background:${color};border:1.5px solid ${color};box-shadow:0 0 4px ${color}60;"></div>`;
         }
 
         const icon = L.divIcon({
@@ -816,7 +672,6 @@ function renderRefuges() {
         marker.addTo(MAP);
         REFUGE_MARKERS[r.id] = marker;
     });
-    renderList();
 }
 
 // ── COUCHES RISQUE ────────────────────────────────────────────
@@ -865,27 +720,39 @@ async function loadRiskLayers() {
         }
     } catch(e) {}
 
-    // CARE officiels métropole
-    try {
+    // CARE officiels affichés directement via REFUGES (care_officiel=true)
+    // La couche séparée care_all.json n'est plus nécessaire
+    if (false) try {
         const r = await fetch('../data/processed/care_all.json');
         if (r.ok) {
             const data = await r.json();
-            const careIcon = L.divIcon({
-                className: '',
-                html: `<div style="
-                    width:14px;height:14px;
-                    background:#f59e0b;
-                    border:2px solid white;
-                    border-radius:50%;
-                    box-shadow:0 0 8px rgba(245,158,11,0.8);
-                    display:flex;align-items:center;justify-content:center;
-                    font-size:8px;line-height:1;
-                ">★</div>`,
-                iconSize: [14, 14],
-                iconAnchor: [7, 7],
-            });
-
+            // Pour les CARE de care_all.json, pas de score — icône étoile dorée
             const markers = data.cares.map(c => {
+                // Chercher si ce CARE est dans REFUGES pour avoir sa couleur de risque
+                const refugeMatch = REFUGES.find(r =>
+                    r.care_officiel &&
+                    (r.nom.toLowerCase().includes(c.nom.toLowerCase().substring(0,10)) ||
+                     Math.abs(r.lat - c.lat) < 0.001 && Math.abs(r.lng - c.lng) < 0.001)
+                );
+                const score = refugeMatch ? (refugeMatch.scores?.[String(currentHorizon)]?.score ?? null) : null;
+                const status = score !== null ? (score >= 75 ? 'sur' : score >= 60 ? 'menace' : 'critique') : null;
+                const bgColor = status ? { sur: '#22c55e', menace: '#f97316', critique: '#ef4444' }[status] : 'transparent';
+                const borderColor = status ? bgColor : '#f59e0b';
+
+                const careIcon = L.divIcon({
+                    className: '',
+                    html: `<div style="
+                        width:16px;height:16px;
+                        background:${bgColor === 'transparent' ? 'rgba(245,158,11,0.15)' : bgColor + '33'};
+                        border:2px solid ${borderColor};
+                        border-radius:50%;
+                        box-shadow:0 0 6px ${borderColor}80;
+                        display:flex;align-items:center;justify-content:center;
+                        font-size:9px;line-height:1;color:${borderColor};font-weight:700;
+                    ">★</div>`,
+                    iconSize: [16, 16],
+                    iconAnchor: [8, 8],
+                });
                 const m = L.marker([c.lat, c.lng], { icon: careIcon });
                 m.bindTooltip(
                     `<strong>⭐ ${c.nom}</strong><br>${c.adresse}<br>${c.commune}<br><em>${c.categorie}</em>`,
@@ -914,6 +781,7 @@ async function loadRiskLayers() {
             console.log('CARE : ' + data.total + ' centres chargés');
         }
     } catch(e) { console.warn('CARE non disponibles', e); }
+    // fin bloc CARE séparé désactivé
 
     // Zones inondables futures par horizon
     const hydroColors = {
@@ -1147,8 +1015,92 @@ function toggleLayer(type, btn) {
     else MAP.removeLayer(layer);
 }
 
+// ── Autocomplétion ────────────────────────────────────────────
+let acIndex = -1;
+
+function showSuggestions(query) {
+    const list = document.getElementById('autocompleteList');
+    const q = query.toLowerCase().trim();
+    if (q.length < 2) { list.classList.remove('visible'); return; }
+
+    // Suggestions communes
+    const communeSuggs = communes
+        .filter(c => c.name.toLowerCase().includes(q))
+        .slice(0, 5)
+        .map(c => ({ label: c.name, type: '🏙️ Commune', action: () => {
+            document.getElementById('searchInput').value = c.name;
+            filterMap(c.name);
+            list.classList.remove('visible');
+            MAP.setView([c.lat, c.lng], 13);
+        }}));
+
+    // Suggestions refuges
+    const refugeSuggs = REFUGES
+        .filter(r => r.nom.toLowerCase().includes(q))
+        .slice(0, 5)
+        .map(r => ({ label: r.nom, type: '🏠 Refuge', action: () => {
+            document.getElementById('searchInput').value = r.nom;
+            filterMap(r.nom);
+            list.classList.remove('visible');
+            MAP.setView([r.lat, r.lng], 16);
+            SELECTED_REFUGE = r.id;
+            showRefugePanel(r);
+        }}));
+
+    const all = [...communeSuggs, ...refugeSuggs].slice(0, 8);
+    acIndex = -1;
+
+    if (all.length === 0) { list.classList.remove('visible'); return; }
+
+    list.innerHTML = all.map((s, i) => `
+        <div class="autocomplete-item" onmousedown="acActions[${i}]()" id="ac-${i}">
+            ${s.label}
+            <span class="ac-type">${s.type}</span>
+        </div>`).join('');
+
+    window.acActions = all.map(s => s.action);
+    list.classList.add('visible');
+}
+
+function handleSearchKey(e) {
+    const list = document.getElementById('autocompleteList');
+    const items = list.querySelectorAll('.autocomplete-item');
+    if (e.key === 'ArrowDown') {
+        acIndex = Math.min(acIndex + 1, items.length - 1);
+        items.forEach((el, i) => el.classList.toggle('active', i === acIndex));
+        e.preventDefault();
+    } else if (e.key === 'ArrowUp') {
+        acIndex = Math.max(acIndex - 1, -1);
+        items.forEach((el, i) => el.classList.toggle('active', i === acIndex));
+        e.preventDefault();
+    } else if (e.key === 'Enter' && acIndex >= 0) {
+        window.acActions[acIndex]();
+        e.preventDefault();
+    } else if (e.key === 'Escape') {
+        list.classList.remove('visible');
+    }
+}
+
+// Fermer la liste si clic ailleurs
+document.addEventListener('click', e => {
+    if (!e.target.closest('.autocomplete-wrap')) {
+        document.getElementById('autocompleteList')?.classList.remove('visible');
+    }
+});
+
 function filterMap(query) {
-    searchQuery = query;
+    searchQuery = query.toLowerCase();
+
+    // Vérifier si la query correspond à une commune connue
+    const communeMatch = communes.find(c =>
+        c.name.toLowerCase().includes(searchQuery) && searchQuery.length >= 3
+    );
+
+    if (communeMatch && searchQuery.length >= 3) {
+        // Centrer la carte sur la commune
+        MAP.setView([communeMatch.lat, communeMatch.lng], 13);
+    }
+
     renderRefuges();
 }
 

@@ -637,26 +637,39 @@ def export_json(refuges, capacites, ppri_ref=None, chaleur_ref=None):
                 except (ValueError, TypeError):
                     heat = "moderate"
 
+        care_id = care.get("id")
         scores_care = {
             str(h): {
-                "score": compute_score(flood, heat, heat_intensite, h, refuge_id=care.get("id")),
-                "status": score_to_status(compute_score(flood, heat, heat_intensite, h, refuge_id=care.get("id")))
+                "score": compute_score(flood, heat, heat_intensite, h, refuge_id=care_id),
+                "status": score_to_status(compute_score(flood, heat, heat_intensite, h, refuge_id=care_id))
             }
             for h in HORIZONS.keys()
         }
         sc = scores_care["2026"]["score"]
-        if flood == "high":
+
+        # flood_by_horizon depuis les données hydro
+        hydro_care = FLOOD_HYDRO.get(care_id, {})
+        flood_by_horizon_care = {str(h): hydro_care.get(h, 'sur') for h in HORIZONS.keys()}
+
+        # flood_display depuis hydro 2026
+        hydro_2026_care = hydro_care.get(2026, 'sur')
+        flood_display_care = "high" if hydro_2026_care == "critique" else ("future" if hydro_2026_care == "menace" else flood)
+
+        if flood_display_care == "high" or hydro_2026_care == "critique":
             reco = "⚠️ CARE officiel en zone inondable — à réévaluer pour les crises futures."
-        elif flood == "future":
-            reco = "⚠️ CARE officiel en zone bleu clair — risque inondation croissant d'ici 2050."
+        elif flood_display_care == "future" or hydro_2026_care == "menace":
+            reco = "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
         else:
-            reco = "CARE officiel activé lors de la crise de février 2026."
+            reco = "CARE officiel hors zone à risque majeur en 2026."
 
         result.append({
             **{k: v for k, v in care.items() if k != "note"},
             "risks": {
-                "flood": flood, "flood_niveau": flood_niveau,
-                "heat": heat, "heat_intensite": heat_intensite,
+                "flood":            flood_display_care,
+                "flood_niveau":     flood_niveau,
+                "flood_by_horizon": flood_by_horizon_care,
+                "heat":             heat,
+                "heat_intensite":   heat_intensite,
             },
             "scores": scores_care, "score": sc,
             "status": score_to_status(sc), "reco": reco,

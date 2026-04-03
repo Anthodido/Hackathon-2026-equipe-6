@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-04-02T17:05:36.929427",
+    "generated_at": "2026-04-03T10:47:43.947929",
     "commune": "Bordeaux",
     "total_refuges": 323,
     "stats": {
-      "sur": 261,
-      "menace": 38,
+      "sur": 249,
+      "menace": 50,
       "critique": 24,
       "care_officiels": 216
     },
@@ -13,57 +13,11 @@
   },
   "refuges": [
     {
-      "id": 20,
-      "nom": "Centre hippique de Bordeaux Lac",
-      "type": "C",
-      "adresse": "155 avenue du Port du Roy",
-      "commune": "33056",
-      "quartier": "",
-      "lat": 44.912161,
-      "lng": -0.573773,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": false,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": "None",
-        "flood_by_horizon": {
-          "2026": "sur",
-          "2030": "critique",
-          "2040": "critique",
-          "2050": "critique"
-        },
-        "heat": "none",
-        "heat_intensite": 0.0
-      },
-      "scores": {
-        "2026": {
-          "score": 100,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 37,
-          "status": "critique"
-        },
-        "2040": {
-          "score": 12,
-          "status": "critique"
-        },
-        "2050": {
-          "score": 0,
-          "status": "critique"
-        }
-      },
-      "score": 100,
-      "status": "sur",
-      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
-    },
-    {
       "id": 30,
       "nom": "FC Girondins de Bordeaux",
       "type": "C",
       "adresse": "31 rue Joliot Curie",
-      "commune": "33200",
+      "commune": "Le Haillan",
       "quartier": "",
       "lat": 44.875618,
       "lng": -0.670364,
@@ -109,7 +63,7 @@
       "nom": "Les Girondins de Bordeaux Omnisports - Domaine de Rocquevielle",
       "type": "C",
       "adresse": "107 avenue Marcel Dassault",
-      "commune": "33281",
+      "commune": "Mérignac",
       "quartier": "",
       "lat": 44.848348,
       "lng": -0.713134,
@@ -155,7 +109,7 @@
       "nom": "Zoo de Bordeaux Pessac",
       "type": "C",
       "adresse": "nan",
-      "commune": "33318",
+      "commune": "Pessac",
       "quartier": "",
       "lat": 44.80238,
       "lng": -0.698979,
@@ -212,6 +166,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -235,7 +195,7 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9023,
@@ -253,6 +213,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -276,7 +242,7 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9037,
@@ -294,6 +260,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -317,7 +289,7 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9042,
@@ -335,6 +307,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -358,7 +336,7 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9059,
@@ -376,6 +354,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -399,7 +383,7 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9061,
@@ -417,6 +401,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -440,7 +430,7 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9062,
@@ -458,6 +448,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -481,7 +477,7 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9075,
@@ -499,6 +495,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -522,7 +524,7 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9077,
@@ -540,6 +542,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -563,14 +571,14 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9115,
       "nom": "Salle de tennis de table André Maginot",
       "type": "C",
       "adresse": "6 Rue André Maginot",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.843328,
       "lng": -0.625702,
@@ -581,6 +589,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -604,14 +618,14 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9130,
       "nom": "Complexe sportif Bel-Air",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Le Haillan",
       "quartier": "",
       "lat": 44.873577,
       "lng": -0.672705,
@@ -622,6 +636,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -645,55 +665,14 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
-    },
-    {
-      "id": 9148,
-      "nom": "Centre culturel François Mauriac",
-      "type": "C",
-      "adresse": null,
-      "commune": null,
-      "quartier": "",
-      "lat": 44.813662,
-      "lng": -0.504002,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": true,
-      "categorie": null,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "heat": "none",
-        "heat_intensite": 0.0
-      },
-      "scores": {
-        "2026": {
-          "score": 100,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 100,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 62,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 0,
-          "status": "critique"
-        }
-      },
-      "score": 100,
-      "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9155,
       "nom": "Complexe sportif de la Junca",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Villenave-d'Ornon",
       "quartier": "",
       "lat": 44.764106,
       "lng": -0.541524,
@@ -704,6 +683,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -727,14 +712,14 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9173,
       "nom": "Auditorium",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Le Bouscat",
       "quartier": "",
       "lat": 44.865642,
       "lng": -0.610751,
@@ -745,6 +730,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -768,14 +759,14 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9180,
       "nom": "Salle municipale Le Hangar",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Parempuyre",
       "quartier": "",
       "lat": 44.961613,
       "lng": -0.627033,
@@ -786,6 +777,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -795,7 +792,7 @@
           "status": "sur"
         },
         "2030": {
-          "score": 100,
+          "score": 77,
           "status": "sur"
         },
         "2040": {
@@ -809,7 +806,7 @@
       },
       "score": 100,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 8006,
@@ -1014,7 +1011,7 @@
           "2026": "sur",
           "2030": "sur",
           "2040": "sur",
-          "2050": "sur"
+          "2050": "menace"
         },
         "heat": "cool",
         "heat_intensite": -2.3
@@ -1033,8 +1030,8 @@
           "status": "sur"
         },
         "2050": {
-          "score": 100,
-          "status": "sur"
+          "score": 45,
+          "status": "critique"
         }
       },
       "score": 100,
@@ -1092,7 +1089,7 @@
       "nom": "Salle Château du Diable",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.852155,
       "lng": -0.531592,
@@ -1101,8 +1098,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "cool",
         "heat_intensite": -3.0
       },
@@ -1126,14 +1129,14 @@
       },
       "score": 90,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
     },
     {
       "id": 9168,
       "nom": "Espace Simone Signoret",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.857689,
       "lng": -0.529964,
@@ -1142,8 +1145,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "cool",
         "heat_intensite": -3.0
       },
@@ -1167,7 +1176,7 @@
       },
       "score": 90,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
     },
     {
       "id": 8002,
@@ -1220,7 +1229,7 @@
       "nom": "Bordeaux Lac",
       "type": "C",
       "adresse": "79 cours des Aubiers",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.872576,
       "lng": -0.572623,
@@ -1277,6 +1286,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1300,7 +1315,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9005,
@@ -1318,6 +1333,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1341,7 +1362,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9009,
@@ -1359,6 +1380,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1382,7 +1409,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9021,
@@ -1400,6 +1427,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1423,7 +1456,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9025,
@@ -1441,6 +1474,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1464,7 +1503,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9029,
@@ -1482,6 +1521,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1505,7 +1550,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9036,
@@ -1523,6 +1568,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1532,8 +1583,8 @@
           "status": "sur"
         },
         "2030": {
-          "score": 83,
-          "status": "sur"
+          "score": 60,
+          "status": "menace"
         },
         "2040": {
           "score": 41,
@@ -1546,7 +1597,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9038,
@@ -1564,6 +1615,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1587,7 +1644,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9048,
@@ -1605,6 +1662,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1628,7 +1691,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9049,
@@ -1646,6 +1709,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1669,7 +1738,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9054,
@@ -1687,6 +1756,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1710,7 +1785,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9057,
@@ -1728,6 +1803,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1751,7 +1832,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9065,
@@ -1769,6 +1850,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1792,7 +1879,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9066,
@@ -1810,6 +1897,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1833,7 +1926,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9076,
@@ -1851,6 +1944,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1874,7 +1973,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9080,
@@ -1892,6 +1991,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1915,14 +2020,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9097,
       "nom": "Athénée municipale",
       "type": "C",
       "adresse": "8 Place Saint-Christoly",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.839771,
       "lng": -0.577215,
@@ -1933,6 +2038,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1956,14 +2067,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9118,
       "nom": "Gymnase la Pergola",
       "type": "C",
       "adresse": "7 Rue Fernand Cazeres",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.851261,
       "lng": -0.61574,
@@ -1974,6 +2085,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -1997,14 +2114,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9119,
       "nom": "Gymnase Virginia",
       "type": "C",
       "adresse": "30 Rue Gondalma",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.85001,
       "lng": -0.625359,
@@ -2015,6 +2132,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2038,14 +2161,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9125,
       "nom": "Espace de la Sablière",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Le Haillan",
       "quartier": "",
       "lat": 44.885886,
       "lng": -0.674428,
@@ -2056,6 +2179,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2079,14 +2208,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9136,
       "nom": "Domaine du Grand Darnal",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bruges",
       "quartier": "",
       "lat": 44.884991,
       "lng": -0.604724,
@@ -2097,6 +2226,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2120,17 +2255,17 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
-      "id": 9149,
-      "nom": "Gymnase Rambaud",
+      "id": 9151,
+      "nom": "Salle des fêtes",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bouliac",
       "quartier": "",
-      "lat": 44.813693,
-      "lng": -0.503724,
+      "lat": 44.817115,
+      "lng": -0.504143,
       "superficie": null,
       "capacite": null,
       "care_officiel": true,
@@ -2138,6 +2273,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2155,61 +2296,20 @@
           "status": "critique"
         },
         "2050": {
-          "score": 0,
-          "status": "critique"
-        }
-      },
-      "score": 88,
-      "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
-    },
-    {
-      "id": 9151,
-      "nom": "Salle des fêtes",
-      "type": "C",
-      "adresse": null,
-      "commune": null,
-      "quartier": "",
-      "lat": 44.817115,
-      "lng": -0.504143,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": true,
-      "categorie": null,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "heat": "moderate",
-        "heat_intensite": 3.0
-      },
-      "scores": {
-        "2026": {
-          "score": 88,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 83,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 78,
-          "status": "sur"
-        },
-        "2050": {
           "score": 14,
           "status": "critique"
         }
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9152,
       "nom": "Gymnase du Bourg",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Villenave-d'Ornon",
       "quartier": "",
       "lat": 44.769013,
       "lng": -0.544126,
@@ -2220,6 +2320,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2243,14 +2349,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9165,
       "nom": "Centre de loisirs La Ré d'Eau",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.849256,
       "lng": -0.521396,
@@ -2261,6 +2367,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2284,14 +2396,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9171,
       "nom": "Maison des sports",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.860649,
       "lng": -0.523866,
@@ -2302,6 +2414,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2325,14 +2443,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9176,
       "nom": "Complexe sportif Les Ecus",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Le Bouscat",
       "quartier": "",
       "lat": 44.871757,
       "lng": -0.60307,
@@ -2343,6 +2461,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2366,14 +2490,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9186,
       "nom": "Salle de réception du Pinsan",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Eysines",
       "quartier": "",
       "lat": 44.868859,
       "lng": -0.654005,
@@ -2384,6 +2508,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2407,14 +2537,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9187,
       "nom": "Salle omnisports du Pinsan",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Eysines",
       "quartier": "",
       "lat": 44.86834,
       "lng": -0.652857,
@@ -2425,6 +2555,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2448,14 +2584,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9196,
       "nom": "Salle polyvalente de Fongravey",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Blanquefort",
       "quartier": "",
       "lat": 44.914895,
       "lng": -0.630924,
@@ -2466,6 +2602,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2489,14 +2631,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9199,
       "nom": "Gymnase Rosa Bonheur",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Ambarès-et-Lagrave",
       "quartier": "",
       "lat": 44.926077,
       "lng": -0.491733,
@@ -2507,6 +2649,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2530,14 +2678,14 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9206,
       "nom": "Espace citoyen Génicart",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Lormont",
       "quartier": "",
       "lat": 44.873508,
       "lng": -0.518019,
@@ -2548,6 +2696,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -2571,7 +2725,7 @@
       },
       "score": 88,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 8009,
@@ -2666,52 +2820,6 @@
       "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
     },
     {
-      "id": 8015,
-      "nom": "Square Vinet",
-      "type": "parc",
-      "adresse": "Parc, jardin et square",
-      "commune": "Bordeaux",
-      "quartier": "",
-      "lat": 44.839423,
-      "lng": -0.571468,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": false,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "flood_by_horizon": {
-          "2026": "sur",
-          "2030": "sur",
-          "2040": "menace",
-          "2050": "critique"
-        },
-        "heat": "moderate",
-        "heat_intensite": 3.0
-      },
-      "scores": {
-        "2026": {
-          "score": 88,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 83,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 41,
-          "status": "critique"
-        },
-        "2050": {
-          "score": 0,
-          "status": "critique"
-        }
-      },
-      "score": 88,
-      "status": "sur",
-      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
-    },
-    {
       "id": 8022,
       "nom": "Square Raymond Poincaré",
       "type": "parc",
@@ -2720,52 +2828,6 @@
       "quartier": "",
       "lat": 44.84433,
       "lng": -0.620532,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": false,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "flood_by_horizon": {
-          "2026": "sur",
-          "2030": "sur",
-          "2040": "sur",
-          "2050": "sur"
-        },
-        "heat": "moderate",
-        "heat_intensite": 3.0
-      },
-      "scores": {
-        "2026": {
-          "score": 88,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 83,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 78,
-          "status": "sur"
-        },
-        "2050": {
-          "score": 72,
-          "status": "menace"
-        }
-      },
-      "score": 88,
-      "status": "sur",
-      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
-    },
-    {
-      "id": 8031,
-      "nom": "Jardin du Clown Chocolat",
-      "type": "parc",
-      "adresse": "Parc, jardin et square",
-      "commune": "Bordeaux",
-      "quartier": "",
-      "lat": 44.877887,
-      "lng": -0.572529,
       "superficie": null,
       "capacite": null,
       "care_officiel": false,
@@ -3143,7 +3205,7 @@
         "flood_by_horizon": {
           "2026": "sur",
           "2030": "sur",
-          "2040": "sur",
+          "2040": "menace",
           "2050": "menace"
         },
         "heat": "moderate",
@@ -3159,8 +3221,8 @@
           "status": "sur"
         },
         "2040": {
-          "score": 76,
-          "status": "sur"
+          "score": 38,
+          "status": "critique"
         },
         "2050": {
           "score": 11,
@@ -3770,52 +3832,6 @@
       "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
     },
     {
-      "id": 8068,
-      "nom": "Square Honoré d'Estienne d'Orves",
-      "type": "parc",
-      "adresse": "Parc, jardin et square",
-      "commune": "Bordeaux",
-      "quartier": "",
-      "lat": 44.855112,
-      "lng": -0.614871,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": false,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "flood_by_horizon": {
-          "2026": "sur",
-          "2030": "sur",
-          "2040": "sur",
-          "2050": "sur"
-        },
-        "heat": "moderate",
-        "heat_intensite": 3.6
-      },
-      "scores": {
-        "2026": {
-          "score": 86,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 80,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 74,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 67,
-          "status": "menace"
-        }
-      },
-      "score": 86,
-      "status": "sur",
-      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
-    },
-    {
       "id": 8079,
       "nom": "Jardin de Lussy",
       "type": "parc",
@@ -3954,40 +3970,40 @@
       "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
     },
     {
-      "id": 8087,
-      "nom": "Square Jean Bureau_Aire de jeux",
-      "type": "parc",
-      "adresse": "Parc, jardin et square",
-      "commune": "Bordeaux",
+      "id": 20,
+      "nom": "Centre hippique de Bordeaux Lac",
+      "type": "C",
+      "adresse": "155 avenue du Port du Roy",
+      "commune": "Blanquefort",
       "quartier": "",
-      "lat": 44.836597,
-      "lng": -0.569567,
+      "lat": 44.912161,
+      "lng": -0.573773,
       "superficie": null,
       "capacite": null,
       "care_officiel": false,
       "risks": {
-        "flood": "none",
-        "flood_niveau": null,
+        "flood": "future",
+        "flood_niveau": "None",
         "flood_by_horizon": {
-          "2026": "sur",
-          "2030": "sur",
-          "2040": "menace",
+          "2026": "menace",
+          "2030": "critique",
+          "2040": "critique",
           "2050": "critique"
         },
-        "heat": "moderate",
-        "heat_intensite": 3.5
+        "heat": "none",
+        "heat_intensite": 0.0
       },
       "scores": {
         "2026": {
-          "score": 86,
+          "score": 85,
           "status": "sur"
         },
         "2030": {
-          "score": 80,
-          "status": "sur"
+          "score": 37,
+          "status": "critique"
         },
         "2040": {
-          "score": 37,
+          "score": 12,
           "status": "critique"
         },
         "2050": {
@@ -3995,9 +4011,9 @@
           "status": "critique"
         }
       },
-      "score": 86,
+      "score": 85,
       "status": "sur",
-      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
     },
     {
       "id": 9055,
@@ -4013,8 +4029,14 @@
       "care_officiel": true,
       "categorie": "Enseignement secondaire",
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -4038,14 +4060,61 @@
       },
       "score": 85,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
+    },
+    {
+      "id": 9148,
+      "nom": "Centre culturel François Mauriac",
+      "type": "C",
+      "adresse": null,
+      "commune": "Bouliac",
+      "quartier": "",
+      "lat": 44.813662,
+      "lng": -0.504002,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": true,
+      "categorie": null,
+      "risks": {
+        "flood": "future",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
+        "heat": "none",
+        "heat_intensite": 0.0
+      },
+      "scores": {
+        "2026": {
+          "score": 85,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 77,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 62,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 85,
+      "status": "sur",
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
     },
     {
       "id": 9208,
       "nom": "Salle de Lissandre",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Lormont",
       "quartier": "",
       "lat": 44.863591,
       "lng": -0.531092,
@@ -4054,8 +4123,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -4079,53 +4154,7 @@
       },
       "score": 85,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
-    },
-    {
-      "id": 8011,
-      "nom": "Jardin de Lili",
-      "type": "parc",
-      "adresse": "Parc, jardin et square",
-      "commune": "Bordeaux",
-      "quartier": "",
-      "lat": 44.833058,
-      "lng": -0.611246,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": false,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "flood_by_horizon": {
-          "2026": "sur",
-          "2030": "sur",
-          "2040": "sur",
-          "2050": "sur"
-        },
-        "heat": "moderate",
-        "heat_intensite": 3.7
-      },
-      "scores": {
-        "2026": {
-          "score": 85,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 79,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 73,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 66,
-          "status": "menace"
-        }
-      },
-      "score": 85,
-      "status": "sur",
-      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
     },
     {
       "id": 8084,
@@ -4220,57 +4249,11 @@
       "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
     },
     {
-      "id": 8092,
-      "nom": "place du Maucaillou_Aire de jeux",
-      "type": "parc",
-      "adresse": "Parc, jardin et square",
-      "commune": "Bordeaux",
-      "quartier": "",
-      "lat": 44.832407,
-      "lng": -0.566844,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": false,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "flood_by_horizon": {
-          "2026": "sur",
-          "2030": "sur",
-          "2040": "sur",
-          "2050": "menace"
-        },
-        "heat": "moderate",
-        "heat_intensite": 3.8
-      },
-      "scores": {
-        "2026": {
-          "score": 85,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 79,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 73,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 6,
-          "status": "critique"
-        }
-      },
-      "score": 85,
-      "status": "sur",
-      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
-    },
-    {
       "id": 2,
       "nom": "Bordeaux Athlé",
       "type": "C",
       "adresse": "290 avenue du Maréchal de Lattre de Tassigny",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.854834,
       "lng": -0.621821,
@@ -4316,7 +4299,7 @@
       "nom": "CMP Bordeaux Gare",
       "type": "B",
       "adresse": "116 rue Malbec",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.823897,
       "lng": -0.565057,
@@ -4362,7 +4345,7 @@
       "nom": "Le 4 de Bordeaux",
       "type": "B",
       "adresse": "118 rue Héron",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.830727,
       "lng": -0.589546,
@@ -4408,7 +4391,7 @@
       "nom": "CMP Bordeaux Centre",
       "type": "B",
       "adresse": "69 rue Commandant Arnould",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.83413,
       "lng": -0.577273,
@@ -4450,57 +4433,11 @@
       "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
     },
     {
-      "id": 33,
-      "nom": "Espace sportif La Flèche de Bordeaux",
-      "type": "C",
-      "adresse": "21 rue Ulysse Despaux",
-      "commune": "33063",
-      "quartier": "",
-      "lat": 44.833929,
-      "lng": -0.567233,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": false,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": "None",
-        "flood_by_horizon": {
-          "2026": "sur",
-          "2030": "sur",
-          "2040": "menace",
-          "2050": "critique"
-        },
-        "heat": "moderate",
-        "heat_intensite": 4.0
-      },
-      "scores": {
-        "2026": {
-          "score": 84,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 78,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 33,
-          "status": "critique"
-        },
-        "2050": {
-          "score": 0,
-          "status": "critique"
-        }
-      },
-      "score": 84,
-      "status": "sur",
-      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
-    },
-    {
       "id": 39,
       "nom": "MDSI Bordeaux Centre",
       "type": "B",
       "adresse": "14 rue Poitevin",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.845677,
       "lng": -0.583192,
@@ -4546,7 +4483,7 @@
       "nom": "Dojo Bordeaux Talence Métropole",
       "type": "C",
       "adresse": "84 cours Aristide Briand",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.831646,
       "lng": -0.575299,
@@ -4592,7 +4529,7 @@
       "nom": "Foyer d'hébergement Le Phare de Bordeaux",
       "type": "B",
       "adresse": "2 place des Cèdres",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.828885,
       "lng": -0.601325,
@@ -4638,7 +4575,7 @@
       "nom": "Foyer Adoma Bordeaux Rolland",
       "type": "B",
       "adresse": "7 rue Rolland",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.842874,
       "lng": -0.580018,
@@ -4684,7 +4621,7 @@
       "nom": "PMI - Maison des solidarités Bordeaux Centre",
       "type": "B",
       "adresse": "14 rue Poitevin",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.845616,
       "lng": -0.583234,
@@ -4730,7 +4667,7 @@
       "nom": "CMP Bordeaux Nord",
       "type": "B",
       "adresse": "2 rue Jean Artus",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.861313,
       "lng": -0.583324,
@@ -4772,57 +4709,11 @@
       "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
     },
     {
-      "id": 90,
-      "nom": "Foyer Adoma Bordeaux Clare",
-      "type": "B",
-      "adresse": "8 rue Clare",
-      "commune": "33063",
-      "quartier": "",
-      "lat": 44.831794,
-      "lng": -0.56703,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": false,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": "None",
-        "flood_by_horizon": {
-          "2026": "sur",
-          "2030": "sur",
-          "2040": "sur",
-          "2050": "menace"
-        },
-        "heat": "moderate",
-        "heat_intensite": 4.0
-      },
-      "scores": {
-        "2026": {
-          "score": 84,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 78,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 71,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 4,
-          "status": "critique"
-        }
-      },
-      "score": 84,
-      "status": "sur",
-      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
-    },
-    {
       "id": 91,
       "nom": "Foyer Adoma Bordeaux Kyrie",
       "type": "B",
       "adresse": "38 rue Kyrie",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.822633,
       "lng": -0.569909,
@@ -4879,6 +4770,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -4902,7 +4799,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9003,
@@ -4920,6 +4817,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -4943,7 +4846,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9006,
@@ -4961,6 +4864,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -4984,7 +4893,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9008,
@@ -5002,6 +4911,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5025,7 +4940,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9012,
@@ -5043,6 +4958,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5066,7 +4987,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9013,
@@ -5084,6 +5005,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5107,7 +5034,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9015,
@@ -5125,6 +5052,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5148,7 +5081,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9016,
@@ -5166,6 +5099,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5189,7 +5128,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9018,
@@ -5207,6 +5146,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5230,7 +5175,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9022,
@@ -5248,6 +5193,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5271,7 +5222,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9024,
@@ -5289,6 +5240,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5312,7 +5269,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9026,
@@ -5330,6 +5287,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5353,7 +5316,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9027,
@@ -5371,6 +5334,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5394,7 +5363,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9032,
@@ -5412,6 +5381,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5435,7 +5410,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9035,
@@ -5453,6 +5428,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5476,7 +5457,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9039,
@@ -5494,6 +5475,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5507,8 +5494,8 @@
           "status": "sur"
         },
         "2040": {
-          "score": 71,
-          "status": "menace"
+          "score": 33,
+          "status": "critique"
         },
         "2050": {
           "score": 4,
@@ -5517,7 +5504,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9044,
@@ -5535,6 +5522,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5558,7 +5551,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9052,
@@ -5576,6 +5569,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5599,7 +5598,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9058,
@@ -5617,6 +5616,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5640,7 +5645,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9060,
@@ -5658,6 +5663,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5681,7 +5692,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9063,
@@ -5699,6 +5710,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5722,7 +5739,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9067,
@@ -5740,6 +5757,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5753,8 +5776,8 @@
           "status": "sur"
         },
         "2040": {
-          "score": 71,
-          "status": "menace"
+          "score": 33,
+          "status": "critique"
         },
         "2050": {
           "score": 4,
@@ -5763,7 +5786,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9071,
@@ -5781,6 +5804,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5804,7 +5833,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9078,
@@ -5822,6 +5851,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5845,14 +5880,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9082,
       "nom": "Gymnase Ginko",
       "type": "C",
       "adresse": "6 Cours de Québec",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.875153,
       "lng": -0.571308,
@@ -5863,6 +5898,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5886,14 +5927,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9086,
       "nom": "Gymnase GP 2",
       "type": "C",
       "adresse": "6 Rue Jean Artus",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.861845,
       "lng": -0.582334,
@@ -5904,6 +5945,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5927,14 +5974,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9088,
       "nom": "Gymnase GP3",
       "type": "C",
       "adresse": "35 Rue Pierre Trebod",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.857227,
       "lng": -0.583132,
@@ -5945,6 +5992,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -5968,14 +6021,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9090,
       "nom": "Mairie de quartier",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.858797,
       "lng": -0.581717,
@@ -5986,6 +6039,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6009,14 +6068,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9093,
       "nom": "Palais des Sports",
       "type": "C",
       "adresse": "1 Place de la Ferme de Richemont",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.836229,
       "lng": -0.572563,
@@ -6027,6 +6086,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6050,14 +6115,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9095,
       "nom": "Gymnase Malleret",
       "type": "C",
       "adresse": "9 Rue Luflade",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.849131,
       "lng": -0.585762,
@@ -6068,6 +6133,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6091,14 +6162,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9096,
       "nom": "Gymnase Wustenberg",
       "type": "C",
       "adresse": "15 Rue Wustenberg",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.84749,
       "lng": -0.59098,
@@ -6109,6 +6180,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6132,14 +6209,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9098,
       "nom": "Espace Sportif Maître Jean",
       "type": "C",
       "adresse": "1 Rue de Maître Jean",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.82954,
       "lng": -0.612996,
@@ -6150,6 +6227,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6173,14 +6256,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9100,
       "nom": "Gymnase Albert Thomas",
       "type": "C",
       "adresse": "40 Rue Albert Thomas",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.827823,
       "lng": -0.59829,
@@ -6191,6 +6274,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6214,14 +6303,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9102,
       "nom": "Salle Amédée Larrieu",
       "type": "C",
       "adresse": "1 Place Amédée Larrieu",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.830427,
       "lng": -0.58155,
@@ -6232,6 +6321,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6255,14 +6350,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9104,
       "nom": "Salle Saint Augustin",
       "type": "C",
       "adresse": "10 Place de l'Eglise Saint Augustin",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.832849,
       "lng": -0.611557,
@@ -6273,6 +6368,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6296,14 +6397,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9105,
       "nom": "Gymnase Nelson Paillou",
       "type": "C",
       "adresse": "53 Rue Pauline Kergomard",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.823022,
       "lng": -0.573513,
@@ -6314,6 +6415,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6337,14 +6444,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9106,
       "nom": "Gymnase Brun",
       "type": "C",
       "adresse": "63 Rue Brun",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.817408,
       "lng": -0.575336,
@@ -6355,6 +6462,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6378,14 +6491,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9107,
       "nom": "Espace Malbec",
       "type": "C",
       "adresse": "250 Rue Malbec",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.820534,
       "lng": -0.571564,
@@ -6396,6 +6509,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6419,14 +6538,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9108,
       "nom": "Salle Saumenude",
       "type": "C",
       "adresse": "16 Rue Saumenude",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.831772,
       "lng": -0.566486,
@@ -6437,129 +6556,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
-        "heat": "moderate",
-        "heat_intensite": 4.0
-      },
-      "scores": {
-        "2026": {
-          "score": 84,
-          "status": "sur"
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "menace",
+          "2050": "menace"
         },
-        "2030": {
-          "score": 78,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 71,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 4,
-          "status": "critique"
-        }
-      },
-      "score": 84,
-      "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
-    },
-    {
-      "id": 9111,
-      "nom": "Gymnase Alice Milliat",
-      "type": "C",
-      "adresse": "117BIS Cours Victor Hugo",
-      "commune": null,
-      "quartier": "",
-      "lat": 44.835092,
-      "lng": -0.572318,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": true,
-      "categorie": null,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "heat": "moderate",
-        "heat_intensite": 4.0
-      },
-      "scores": {
-        "2026": {
-          "score": 84,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 78,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 71,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 4,
-          "status": "critique"
-        }
-      },
-      "score": 84,
-      "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
-    },
-    {
-      "id": 9120,
-      "nom": "Chartreuse Saint André",
-      "type": "C",
-      "adresse": "194 Avenue du Maréchal de Lattre de Tassigny",
-      "commune": null,
-      "quartier": "",
-      "lat": 44.855193,
-      "lng": -0.615173,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": true,
-      "categorie": null,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "heat": "moderate",
-        "heat_intensite": 4.0
-      },
-      "scores": {
-        "2026": {
-          "score": 84,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 78,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 71,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 63,
-          "status": "menace"
-        }
-      },
-      "score": 84,
-      "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
-    },
-    {
-      "id": 9126,
-      "nom": "Espace Sportif La Flèche",
-      "type": "C",
-      "adresse": "21 Rue Ulysse Despaux",
-      "commune": null,
-      "quartier": "",
-      "lat": 44.833879,
-      "lng": -0.567226,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": true,
-      "categorie": null,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6577,20 +6579,114 @@
           "status": "critique"
         },
         "2050": {
-          "score": 0,
+          "score": 4,
           "status": "critique"
         }
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
+    },
+    {
+      "id": 9111,
+      "nom": "Gymnase Alice Milliat",
+      "type": "C",
+      "adresse": "117BIS Cours Victor Hugo",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.835092,
+      "lng": -0.572318,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": true,
+      "categorie": null,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "menace"
+        },
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 71,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 4,
+          "status": "critique"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
+    },
+    {
+      "id": 9120,
+      "nom": "Chartreuse Saint André",
+      "type": "C",
+      "adresse": "194 Avenue du Maréchal de Lattre de Tassigny",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.855193,
+      "lng": -0.615173,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": true,
+      "categorie": null,
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 84,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 78,
+          "status": "sur"
+        },
+        "2040": {
+          "score": 71,
+          "status": "menace"
+        },
+        "2050": {
+          "score": 63,
+          "status": "menace"
+        }
+      },
+      "score": 84,
+      "status": "sur",
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9128,
       "nom": "Salle omnisports Le Palio",
       "type": "C",
       "adresse": "93 Avenue du Stade",
-      "commune": null,
+      "commune": "Le Taillan-Médoc",
       "quartier": "",
       "lat": 44.915916,
       "lng": -0.684237,
@@ -6601,6 +6697,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6624,14 +6726,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9134,
       "nom": "Salle Jacques Majau",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bruges",
       "quartier": "",
       "lat": 44.883901,
       "lng": -0.618314,
@@ -6642,6 +6744,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6665,14 +6773,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9138,
       "nom": "Salle du Tasta",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bruges",
       "quartier": "",
       "lat": 44.878621,
       "lng": -0.590315,
@@ -6683,6 +6791,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6706,14 +6820,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9139,
       "nom": "Complexe sportif Paul Langevin",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bègles",
       "quartier": "",
       "lat": 44.809223,
       "lng": -0.567961,
@@ -6724,6 +6838,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6747,55 +6867,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
-    },
-    {
-      "id": 9142,
-      "nom": "Centre social et culturel L'Estey",
-      "type": "C",
-      "adresse": null,
-      "commune": null,
-      "quartier": "",
-      "lat": 44.809052,
-      "lng": -0.554957,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": true,
-      "categorie": null,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "heat": "moderate",
-        "heat_intensite": 4.0
-      },
-      "scores": {
-        "2026": {
-          "score": 84,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 78,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 71,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 63,
-          "status": "menace"
-        }
-      },
-      "score": 84,
-      "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9145,
       "nom": "Stade André Moga",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bègles",
       "quartier": "",
       "lat": 44.805338,
       "lng": -0.55315,
@@ -6806,6 +6885,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6829,14 +6914,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9146,
       "nom": "Salle des fêtes",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bassens",
       "quartier": "",
       "lat": 44.899949,
       "lng": -0.517074,
@@ -6847,6 +6932,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6870,14 +6961,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9150,
       "nom": "Salle Serge Breuil",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bouliac",
       "quartier": "",
       "lat": 44.813285,
       "lng": -0.50132,
@@ -6888,6 +6979,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6901,8 +6998,8 @@
           "status": "sur"
         },
         "2040": {
-          "score": 71,
-          "status": "menace"
+          "score": 33,
+          "status": "critique"
         },
         "2050": {
           "score": 4,
@@ -6911,14 +7008,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9154,
       "nom": "Complexe sportif Pierre Brossolette",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Villenave-d'Ornon",
       "quartier": "",
       "lat": 44.761257,
       "lng": -0.584877,
@@ -6929,6 +7026,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6952,14 +7055,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9158,
       "nom": "Complexe sportif Espace d'Ornon",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Villenave-d'Ornon",
       "quartier": "",
       "lat": 44.754645,
       "lng": -0.587086,
@@ -6970,6 +7073,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -6993,14 +7102,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9164,
       "nom": "Le Rocher de Palmer",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.86234,
       "lng": -0.524303,
@@ -7011,6 +7120,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7034,14 +7149,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9167,
       "nom": "Boulodrome couvert",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.851514,
       "lng": -0.51777,
@@ -7052,6 +7167,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7075,14 +7196,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9174,
       "nom": "Complexe sportif Jean Martial",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Le Bouscat",
       "quartier": "",
       "lat": 44.865987,
       "lng": -0.597155,
@@ -7093,6 +7214,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7116,14 +7243,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9175,
       "nom": "Espace culturel L'Ermitage Compostelle",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Le Bouscat",
       "quartier": "",
       "lat": 44.865328,
       "lng": -0.597359,
@@ -7134,6 +7261,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7157,14 +7290,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9183,
       "nom": "Gymnase Robert Ralite",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Floirac",
       "quartier": "",
       "lat": 44.843996,
       "lng": -0.514686,
@@ -7175,6 +7308,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7198,14 +7337,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9185,
       "nom": "Dojo Claude Lozana",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Eysines",
       "quartier": "",
       "lat": 44.883816,
       "lng": -0.644552,
@@ -7216,6 +7355,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7239,14 +7384,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9188,
       "nom": "Dojo de Migron",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Eysines",
       "quartier": "",
       "lat": 44.868606,
       "lng": -0.633564,
@@ -7257,6 +7402,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7280,14 +7431,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9189,
       "nom": "Salle de gymnastique",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Eysines",
       "quartier": "",
       "lat": 44.87172,
       "lng": -0.636097,
@@ -7298,6 +7449,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7321,14 +7478,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9190,
       "nom": "Maison Guy Queyroi",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Eysines",
       "quartier": "",
       "lat": 44.860957,
       "lng": -0.655898,
@@ -7339,6 +7496,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7362,14 +7525,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9192,
       "nom": "Tennis",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Eysines",
       "quartier": "",
       "lat": 44.872395,
       "lng": -0.653864,
@@ -7380,6 +7543,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7403,14 +7572,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9195,
       "nom": "Gymnase Bechon",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Blanquefort",
       "quartier": "",
       "lat": 44.91602,
       "lng": -0.636951,
@@ -7421,6 +7590,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7444,14 +7619,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9197,
       "nom": "Gymnase Dupaty",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Blanquefort",
       "quartier": "",
       "lat": 44.907978,
       "lng": -0.627593,
@@ -7462,6 +7637,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7485,14 +7666,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9202,
       "nom": "Salle municipale Saint-Laurent",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Ambarès-et-Lagrave",
       "quartier": "",
       "lat": 44.947634,
       "lng": -0.488072,
@@ -7503,6 +7684,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7526,14 +7713,14 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9203,
       "nom": "Maison des sports Les Iris",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Lormont",
       "quartier": "",
       "lat": 44.866285,
       "lng": -0.524774,
@@ -7544,6 +7731,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7567,7 +7760,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9209,
@@ -7585,6 +7778,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -7608,48 +7807,7 @@
       },
       "score": 84,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
-    },
-    {
-      "id": 9212,
-      "nom": "Espace Saint-Rémi",
-      "type": "C",
-      "adresse": "4 Rue Jouannet",
-      "commune": null,
-      "quartier": "",
-      "lat": 44.841778,
-      "lng": -0.571939,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": true,
-      "categorie": null,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "heat": "moderate",
-        "heat_intensite": 4.0
-      },
-      "scores": {
-        "2026": {
-          "score": 84,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 55,
-          "status": "critique"
-        },
-        "2040": {
-          "score": 33,
-          "status": "critique"
-        },
-        "2050": {
-          "score": 0,
-          "status": "critique"
-        }
-      },
-      "score": 84,
-      "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 8014,
@@ -7828,52 +7986,6 @@
         },
         "2050": {
           "score": 63,
-          "status": "menace"
-        }
-      },
-      "score": 84,
-      "status": "sur",
-      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
-    },
-    {
-      "id": 8067,
-      "nom": "Square de l'Europe",
-      "type": "parc",
-      "adresse": "Parc, jardin et square",
-      "commune": "Bordeaux",
-      "quartier": "",
-      "lat": 44.859144,
-      "lng": -0.582046,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": false,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "flood_by_horizon": {
-          "2026": "sur",
-          "2030": "sur",
-          "2040": "sur",
-          "2050": "sur"
-        },
-        "heat": "moderate",
-        "heat_intensite": 4.1
-      },
-      "scores": {
-        "2026": {
-          "score": 84,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 77,
-          "status": "sur"
-        },
-        "2040": {
-          "score": 70,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 62,
           "status": "menace"
         }
       },
@@ -8208,7 +8320,7 @@
       "nom": "CMP ZADOS Bordeaux Saint-Jean",
       "type": "B",
       "adresse": "25 Rue Lajarte",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.825062,
       "lng": -0.571136,
@@ -8254,7 +8366,7 @@
       "nom": "Centre des Restos du Coeur Bordeaux Leydet",
       "type": "B",
       "adresse": "3 rue Leydet",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.822372,
       "lng": -0.573158,
@@ -8300,7 +8412,7 @@
       "nom": "CMS Bordeaux Sud",
       "type": "B",
       "adresse": "10 rue Vilaris",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.826168,
       "lng": -0.563814,
@@ -8342,57 +8454,11 @@
       "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
     },
     {
-      "id": 62,
-      "nom": "CMS Bordeaux Nord",
-      "type": "B",
-      "adresse": "9 rue Gouffrand",
-      "commune": "33063",
-      "quartier": "",
-      "lat": 44.855603,
-      "lng": -0.572733,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": false,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": "None",
-        "flood_by_horizon": {
-          "2026": "sur",
-          "2030": "sur",
-          "2040": "sur",
-          "2050": "menace"
-        },
-        "heat": "moderate",
-        "heat_intensite": 5.0
-      },
-      "scores": {
-        "2026": {
-          "score": 80,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 72,
-          "status": "menace"
-        },
-        "2040": {
-          "score": 64,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 0,
-          "status": "critique"
-        }
-      },
-      "score": 80,
-      "status": "sur",
-      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
-    },
-    {
       "id": 63,
       "nom": "Foyer Adoma Bordeaux Daney",
       "type": "B",
       "adresse": "33 boulevard Alfred Daney",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.867372,
       "lng": -0.574142,
@@ -8438,7 +8504,7 @@
       "nom": "Polyclinique Bordeaux Rive Droite",
       "type": "B",
       "adresse": "24 rue des Cavaillès",
-      "commune": "33249",
+      "commune": "Lormont",
       "quartier": "",
       "lat": 44.864692,
       "lng": -0.522029,
@@ -8484,7 +8550,7 @@
       "nom": "Polyclinique Bordeaux Nord",
       "type": "B",
       "adresse": "15 rue Claude Boucher",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.863771,
       "lng": -0.57889,
@@ -8530,7 +8596,7 @@
       "nom": "Accueil de jour des Restos du Coeur Bordeaux",
       "type": "B",
       "adresse": "77 rue Professeur Lannelongue",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.86779,
       "lng": -0.575504,
@@ -8587,6 +8653,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -8610,7 +8682,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9011,
@@ -8628,6 +8700,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -8651,7 +8729,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9014,
@@ -8669,6 +8747,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -8692,7 +8776,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9017,
@@ -8710,6 +8794,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -8733,7 +8823,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9019,
@@ -8751,6 +8841,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -8774,7 +8870,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9020,
@@ -8792,6 +8888,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -8815,7 +8917,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9028,
@@ -8833,6 +8935,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -8856,7 +8964,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9030,
@@ -8874,6 +8982,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -8897,7 +9011,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9031,
@@ -8915,6 +9029,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -8938,7 +9058,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9033,
@@ -8956,6 +9076,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -8979,7 +9105,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9034,
@@ -8997,6 +9123,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9020,7 +9152,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9040,
@@ -9038,6 +9170,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9061,7 +9199,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9045,
@@ -9079,6 +9217,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9102,7 +9246,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9046,
@@ -9120,6 +9264,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9143,7 +9293,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9050,
@@ -9161,6 +9311,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9184,7 +9340,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9051,
@@ -9202,6 +9358,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9225,7 +9387,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9064,
@@ -9243,6 +9405,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9266,7 +9434,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9070,
@@ -9284,6 +9452,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9307,7 +9481,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9072,
@@ -9325,6 +9499,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9348,7 +9528,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9074,
@@ -9366,6 +9546,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9389,7 +9575,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9079,
@@ -9407,6 +9593,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9430,7 +9622,7 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9081,
@@ -9448,6 +9640,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9471,55 +9669,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
-    },
-    {
-      "id": 9091,
-      "nom": "Salle Gouffrand",
-      "type": "C",
-      "adresse": "23 Rue Gouffrand",
-      "commune": null,
-      "quartier": "",
-      "lat": 44.855703,
-      "lng": -0.57229,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": true,
-      "categorie": null,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "heat": "moderate",
-        "heat_intensite": 5.0
-      },
-      "scores": {
-        "2026": {
-          "score": 80,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 72,
-          "status": "menace"
-        },
-        "2040": {
-          "score": 64,
-          "status": "menace"
-        },
-        "2050": {
-          "score": 0,
-          "status": "critique"
-        }
-      },
-      "score": 80,
-      "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9092,
       "nom": "Salle Simone Noailles",
       "type": "C",
       "adresse": "47 Rue Pierre Trébod",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.858521,
       "lng": -0.58477,
@@ -9530,6 +9687,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9553,14 +9716,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9094,
       "nom": "Espace sportif Chauffour",
       "type": "C",
       "adresse": "15 Rue Chauffour",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.839966,
       "lng": -0.590832,
@@ -9571,6 +9734,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9594,14 +9763,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9099,
       "nom": "Salle les Peupliers",
       "type": "C",
       "adresse": "10 Allée des Peupliers",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.831749,
       "lng": -0.610879,
@@ -9612,6 +9781,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9635,14 +9810,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9101,
       "nom": "Gymnase Johnston",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.828028,
       "lng": -0.600045,
@@ -9653,6 +9828,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9676,14 +9857,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9103,
       "nom": "Salle Quintin Loucheur",
       "type": "C",
       "adresse": "96 Rue de la Bechade",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.823697,
       "lng": -0.599859,
@@ -9694,6 +9875,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9717,14 +9904,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9109,
       "nom": "Marché des Douves",
       "type": "C",
       "adresse": "4BIS Rue des Douves",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.830687,
       "lng": -0.566241,
@@ -9735,6 +9922,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9758,14 +9951,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9112,
       "nom": "Gymnase Barbey",
       "type": "C",
       "adresse": "16 Cours Barbey",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.827179,
       "lng": -0.563072,
@@ -9776,6 +9969,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9799,14 +9998,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9116,
       "nom": "Gymnase Jules Ferry",
       "type": "C",
       "adresse": "101 Rue Jules Ferry",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.842565,
       "lng": -0.606491,
@@ -9817,6 +10016,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9840,14 +10045,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9121,
       "nom": "Cour Mably",
       "type": "C",
       "adresse": "1 Place des Grands Hommes",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.842868,
       "lng": -0.576792,
@@ -9858,6 +10063,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9881,14 +10092,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9122,
       "nom": "Marché de Lerme",
       "type": "C",
       "adresse": "10 Place de Lerme",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.847374,
       "lng": -0.585607,
@@ -9899,6 +10110,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -9922,55 +10139,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
-    },
-    {
-      "id": 9123,
-      "nom": "Halle des Chartrons",
-      "type": "C",
-      "adresse": "1 Place du Marche des Chartrons",
-      "commune": null,
-      "quartier": "",
-      "lat": 44.852289,
-      "lng": -0.572507,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": true,
-      "categorie": null,
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "heat": "moderate",
-        "heat_intensite": 5.0
-      },
-      "scores": {
-        "2026": {
-          "score": 80,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 72,
-          "status": "menace"
-        },
-        "2040": {
-          "score": 26,
-          "status": "critique"
-        },
-        "2050": {
-          "score": 0,
-          "status": "critique"
-        }
-      },
-      "score": 80,
-      "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9124,
       "nom": "Gymnase Jean Zay",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.855967,
       "lng": -0.512522,
@@ -9981,6 +10157,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -10004,14 +10186,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9147,
       "nom": "Gymnase Séguinaud",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bassens",
       "quartier": "",
       "lat": 44.890154,
       "lng": -0.520861,
@@ -10022,6 +10204,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -10045,14 +10233,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9159,
       "nom": "Centre social et culturel Les Etoiles",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Villenave-d'Ornon",
       "quartier": "",
       "lat": 44.776791,
       "lng": -0.53281,
@@ -10063,6 +10251,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -10086,14 +10280,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9166,
       "nom": "Gymnase Marègue",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.851564,
       "lng": -0.505909,
@@ -10104,6 +10298,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -10127,14 +10327,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9170,
       "nom": "Gymnase Jean Jaurès",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.862861,
       "lng": -0.514696,
@@ -10145,6 +10345,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -10168,14 +10374,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9172,
       "nom": "Complexe sportif Bernard de la Filolie",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Le Bouscat",
       "quartier": "",
       "lat": 44.864887,
       "lng": -0.613573,
@@ -10186,6 +10392,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -10209,14 +10421,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9178,
       "nom": "Foyer intergénérationnel",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Saint-Louis-de-Montferrand",
       "quartier": "",
       "lat": 44.951388,
       "lng": -0.531919,
@@ -10227,6 +10439,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -10236,8 +10454,8 @@
           "status": "sur"
         },
         "2030": {
-          "score": 72,
-          "status": "menace"
+          "score": 49,
+          "status": "critique"
         },
         "2040": {
           "score": 26,
@@ -10250,14 +10468,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9191,
       "nom": "Salle municipale Marcel Lachièze",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Eysines",
       "quartier": "",
       "lat": 44.88223,
       "lng": -0.63214,
@@ -10268,6 +10486,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -10291,14 +10515,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9193,
       "nom": "Gymnase Port du Roy",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Blanquefort",
       "quartier": "",
       "lat": 44.910888,
       "lng": -0.615075,
@@ -10309,6 +10533,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -10332,14 +10562,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9194,
       "nom": "Complexe sportif de Fongravey",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Blanquefort",
       "quartier": "",
       "lat": 44.917133,
       "lng": -0.628346,
@@ -10350,6 +10580,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -10373,14 +10609,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9210,
       "nom": "Salle de spectacle Evasion",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Ambarès-et-Lagrave",
       "quartier": "",
       "lat": 44.927025,
       "lng": -0.48768,
@@ -10391,6 +10627,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -10414,14 +10656,14 @@
       },
       "score": 80,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 84,
       "nom": "CMPEA Bordeaux Gare",
       "type": "B",
       "adresse": "137 cours de la Marne",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.828957,
       "lng": -0.565083,
@@ -10431,6 +10673,53 @@
       "risks": {
         "flood": "none",
         "flood_niveau": "None",
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "menace"
+        },
+        "heat": "high",
+        "heat_intensite": 6.0
+      },
+      "scores": {
+        "2026": {
+          "score": 76,
+          "status": "sur"
+        },
+        "2030": {
+          "score": 66,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 57,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 76,
+      "status": "sur",
+      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
+    },
+    {
+      "id": 9000,
+      "nom": "Complexe sportif Philippe Madrelle - Plaine Gaston Lacoste",
+      "type": "C",
+      "adresse": "26 rue Pasteur",
+      "commune": "Carbon-Blanc",
+      "quartier": "",
+      "lat": 44.891496,
+      "lng": -0.510697,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": true,
+      "categorie": "Gymnase, salle de sport et complexe sportif",
+      "risks": {
+        "flood": "none",
+        "flood_niveau": null,
         "flood_by_horizon": {
           "2026": "sur",
           "2030": "sur",
@@ -10460,48 +10749,7 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
-    },
-    {
-      "id": 9000,
-      "nom": "Complexe sportif Philippe Madrelle - Plaine Gaston Lacoste",
-      "type": "C",
-      "adresse": "26 rue Pasteur",
-      "commune": "Carbon-Blanc",
-      "quartier": "",
-      "lat": 44.891496,
-      "lng": -0.510697,
-      "superficie": null,
-      "capacite": null,
-      "care_officiel": true,
-      "categorie": "Gymnase, salle de sport et complexe sportif",
-      "risks": {
-        "flood": "none",
-        "flood_niveau": null,
-        "heat": "high",
-        "heat_intensite": 6.0
-      },
-      "scores": {
-        "2026": {
-          "score": 76,
-          "status": "sur"
-        },
-        "2030": {
-          "score": 66,
-          "status": "menace"
-        },
-        "2040": {
-          "score": 57,
-          "status": "critique"
-        },
-        "2050": {
-          "score": 45,
-          "status": "critique"
-        }
-      },
-      "score": 76,
-      "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9041,
@@ -10519,6 +10767,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10542,7 +10796,7 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9043,
@@ -10560,6 +10814,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10583,7 +10843,7 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9047,
@@ -10601,6 +10861,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10614,7 +10880,7 @@
           "status": "menace"
         },
         "2040": {
-          "score": 57,
+          "score": 19,
           "status": "critique"
         },
         "2050": {
@@ -10624,7 +10890,7 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9068,
@@ -10642,6 +10908,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10665,7 +10937,7 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9069,
@@ -10683,6 +10955,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10706,7 +10984,7 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9073,
@@ -10724,6 +11002,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10747,14 +11031,14 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9089,
       "nom": "Gymnase GP1",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.858509,
       "lng": -0.578932,
@@ -10765,6 +11049,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10788,14 +11078,14 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9129,
       "nom": "Gymnase Georges Ricart",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Le Haillan",
       "quartier": "",
       "lat": 44.864958,
       "lng": -0.67191,
@@ -10806,6 +11096,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10829,14 +11125,14 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9132,
       "nom": "Médiathèque",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Saint-Louis-de-Montferrand",
       "quartier": "",
       "lat": 44.952443,
       "lng": -0.534698,
@@ -10847,6 +11143,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10870,14 +11172,14 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9153,
       "nom": "Gymnase Nelson Paillou",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Villenave-d'Ornon",
       "quartier": "",
       "lat": 44.780005,
       "lng": -0.566951,
@@ -10888,6 +11190,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10911,14 +11219,14 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9169,
       "nom": "Gymnase Gilbert Lalanne",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.858072,
       "lng": -0.515924,
@@ -10929,6 +11237,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10952,14 +11266,14 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9177,
       "nom": "Salle Sainte-Barbe",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Saint-Louis-de-Montferrand",
       "quartier": "",
       "lat": 44.95269,
       "lng": -0.533826,
@@ -10970,6 +11284,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -10993,14 +11313,14 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9179,
       "nom": "Espace l'Art Y Show",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Parempuyre",
       "quartier": "",
       "lat": 44.946704,
       "lng": -0.606947,
@@ -11011,6 +11331,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -11034,14 +11360,14 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9198,
       "nom": "Complexe sportif Lachaze",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Ambarès-et-Lagrave",
       "quartier": "",
       "lat": 44.94108,
       "lng": -0.496082,
@@ -11052,6 +11378,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -11075,14 +11407,14 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9200,
       "nom": "Salle Gilbert Rance",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Ambarès-et-Lagrave",
       "quartier": "",
       "lat": 44.929167,
       "lng": -0.472401,
@@ -11093,6 +11425,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -11116,14 +11454,14 @@
       },
       "score": 76,
       "status": "sur",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 1,
       "nom": "Centre de loisirs Vieux Bordeaux",
       "type": "C",
       "adresse": "7 rue Dieu",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.841885,
       "lng": -0.571207,
@@ -11169,7 +11507,7 @@
       "nom": "Bordeaux Sud",
       "type": "C",
       "adresse": "13 rue du Professeur Devaux",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.817865,
       "lng": -0.550471,
@@ -11215,7 +11553,7 @@
       "nom": "Foyer Adoma Bordeaux Lombard",
       "type": "B",
       "adresse": "3 rue Lombard",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.857183,
       "lng": -0.561439,
@@ -11261,7 +11599,7 @@
       "nom": "Centre de loisirs de la SNCF",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bègles",
       "quartier": "",
       "lat": 44.798399,
       "lng": -0.546918,
@@ -11270,8 +11608,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -11295,7 +11639,146 @@
       },
       "score": 73,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
+    },
+    {
+      "id": 9149,
+      "nom": "Gymnase Rambaud",
+      "type": "C",
+      "adresse": null,
+      "commune": "Bouliac",
+      "quartier": "",
+      "lat": 44.813693,
+      "lng": -0.503724,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": true,
+      "categorie": null,
+      "risks": {
+        "flood": "future",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 60,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 41,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 73,
+      "status": "menace",
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
+    },
+    {
+      "id": 8015,
+      "nom": "Square Vinet",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.839423,
+      "lng": -0.571468,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "future",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 60,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 41,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 73,
+      "status": "menace",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8031,
+      "nom": "Jardin du Clown Chocolat",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.877887,
+      "lng": -0.572529,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "future",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
+        "heat": "moderate",
+        "heat_intensite": 3.0
+      },
+      "scores": {
+        "2026": {
+          "score": 73,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 60,
+          "status": "menace"
+        },
+        "2040": {
+          "score": 41,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 14,
+          "status": "critique"
+        }
+      },
+      "score": 73,
+      "status": "menace",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
     },
     {
       "id": 9010,
@@ -11313,6 +11796,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 7.0
       },
@@ -11336,7 +11825,7 @@
       },
       "score": 72,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9053,
@@ -11354,6 +11843,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 7.0
       },
@@ -11377,14 +11872,14 @@
       },
       "score": 72,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9133,
       "nom": "Salle de danse",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Ambès",
       "quartier": "",
       "lat": 45.012294,
       "lng": -0.532668,
@@ -11395,6 +11890,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "high",
         "heat_intensite": 7.0
       },
@@ -11404,8 +11905,8 @@
           "status": "menace"
         },
         "2030": {
-          "score": 61,
-          "status": "menace"
+          "score": 38,
+          "status": "critique"
         },
         "2040": {
           "score": 12,
@@ -11418,14 +11919,14 @@
       },
       "score": 72,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9160,
       "nom": "Gymnase",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Ambès",
       "quartier": "",
       "lat": 45.011313,
       "lng": -0.531549,
@@ -11436,6 +11937,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "high",
         "heat_intensite": 7.0
       },
@@ -11445,8 +11952,8 @@
           "status": "menace"
         },
         "2030": {
-          "score": 61,
-          "status": "menace"
+          "score": 38,
+          "status": "critique"
         },
         "2040": {
           "score": 12,
@@ -11459,14 +11966,14 @@
       },
       "score": 72,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9161,
       "nom": "Espace des Deux Rives",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Ambès",
       "quartier": "",
       "lat": 45.011179,
       "lng": -0.531125,
@@ -11477,6 +11984,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "high",
         "heat_intensite": 7.0
       },
@@ -11486,8 +11999,8 @@
           "status": "menace"
         },
         "2030": {
-          "score": 61,
-          "status": "menace"
+          "score": 38,
+          "status": "critique"
         },
         "2040": {
           "score": 12,
@@ -11500,14 +12013,14 @@
       },
       "score": 72,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9204,
       "nom": "Salle Léo Lagrange",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Lormont",
       "quartier": "",
       "lat": 44.876514,
       "lng": -0.523209,
@@ -11518,6 +12031,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 7.0
       },
@@ -11541,14 +12060,14 @@
       },
       "score": 72,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9207,
       "nom": "Pôle Brassens - Camus",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Lormont",
       "quartier": "",
       "lat": 44.872066,
       "lng": -0.517497,
@@ -11559,6 +12078,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 7.0
       },
@@ -11582,7 +12107,7 @@
       },
       "score": 72,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 8060,
@@ -11631,11 +12156,103 @@
       "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
     },
     {
+      "id": 8087,
+      "nom": "Square Jean Bureau_Aire de jeux",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.836597,
+      "lng": -0.569567,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "future",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
+        "heat": "moderate",
+        "heat_intensite": 3.5
+      },
+      "scores": {
+        "2026": {
+          "score": 71,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 57,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 37,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 71,
+      "status": "menace",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
+      "id": 8092,
+      "nom": "place du Maucaillou_Aire de jeux",
+      "type": "parc",
+      "adresse": "Parc, jardin et square",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.832407,
+      "lng": -0.566844,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": false,
+      "risks": {
+        "flood": "future",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
+        "heat": "moderate",
+        "heat_intensite": 3.8
+      },
+      "scores": {
+        "2026": {
+          "score": 70,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 56,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 35,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 6,
+          "status": "critique"
+        }
+      },
+      "score": 70,
+      "status": "menace",
+      "reco": "Espace vert en îlot de chaleur — fraîcheur limitée en canicule."
+    },
+    {
       "id": 4,
       "nom": "Foyer Adoma Bordeaux Monnaie",
       "type": "B",
       "adresse": "13 rue de la Porte de la Monnaie",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.832646,
       "lng": -0.56265,
@@ -11681,7 +12298,7 @@
       "nom": "Foyer Adoma Bordeaux Fours",
       "type": "B",
       "adresse": "13 rue des Fours",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.833886,
       "lng": -0.564418,
@@ -11727,7 +12344,7 @@
       "nom": "Gymnase Dupaty",
       "type": "C",
       "adresse": "62 Rue Chantecrit",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.860471,
       "lng": -0.560873,
@@ -11736,8 +12353,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -11761,24 +12384,77 @@
       },
       "score": 69,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
     },
     {
-      "id": 9144,
-      "nom": "Salle Saint-Maurice",
+      "id": 9126,
+      "nom": "Espace Sportif La Flèche",
       "type": "C",
-      "adresse": null,
-      "commune": null,
+      "adresse": "21 Rue Ulysse Despaux",
+      "commune": "Bordeaux",
       "quartier": "",
-      "lat": 44.816205,
-      "lng": -0.547962,
+      "lat": 44.833879,
+      "lng": -0.567226,
       "superficie": null,
       "capacite": null,
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 69,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 55,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 33,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 69,
+      "status": "menace",
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
+    },
+    {
+      "id": 9142,
+      "nom": "Centre social et culturel L'Estey",
+      "type": "C",
+      "adresse": null,
+      "commune": "Bègles",
+      "quartier": "",
+      "lat": 44.809052,
+      "lng": -0.554957,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": true,
+      "categorie": null,
+      "risks": {
+        "flood": "future",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -11802,7 +12478,101 @@
       },
       "score": 69,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
+    },
+    {
+      "id": 9144,
+      "nom": "Salle Saint-Maurice",
+      "type": "C",
+      "adresse": null,
+      "commune": "Bègles",
+      "quartier": "",
+      "lat": 44.816205,
+      "lng": -0.547962,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": true,
+      "categorie": null,
+      "risks": {
+        "flood": "future",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 69,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 55,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 33,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 4,
+          "status": "critique"
+        }
+      },
+      "score": 69,
+      "status": "menace",
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
+    },
+    {
+      "id": 9212,
+      "nom": "Espace Saint-Rémi",
+      "type": "C",
+      "adresse": "4 Rue Jouannet",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.841778,
+      "lng": -0.571939,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": true,
+      "categorie": null,
+      "risks": {
+        "flood": "future",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
+        "heat": "moderate",
+        "heat_intensite": 4.0
+      },
+      "scores": {
+        "2026": {
+          "score": 69,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 55,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 33,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 69,
+      "status": "menace",
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
     },
     {
       "id": 8048,
@@ -11958,6 +12728,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "high",
         "heat_intensite": 8.0
       },
@@ -11967,7 +12743,7 @@
           "status": "menace"
         },
         "2030": {
-          "score": 55,
+          "score": 32,
           "status": "critique"
         },
         "2040": {
@@ -11981,14 +12757,14 @@
       },
       "score": 68,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9117,
       "nom": "Gymnase Stéhélin",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.856502,
       "lng": -0.622556,
@@ -11999,6 +12775,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 8.0
       },
@@ -12022,14 +12804,14 @@
       },
       "score": 68,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9135,
       "nom": "Complexe sportif de l'Espace Arc-en-Ciel",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bruges",
       "quartier": "",
       "lat": 44.873764,
       "lng": -0.584607,
@@ -12040,6 +12822,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 8.0
       },
@@ -12063,14 +12851,14 @@
       },
       "score": 68,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9156,
       "nom": "Complexe sportif Elisabeth Riffiod",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Villenave-d'Ornon",
       "quartier": "",
       "lat": 44.797071,
       "lng": -0.577246,
@@ -12081,6 +12869,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 8.0
       },
@@ -12104,14 +12898,14 @@
       },
       "score": 68,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9157,
       "nom": "Complexe sportif du Bocage",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Villenave-d'Ornon",
       "quartier": "",
       "lat": 44.775718,
       "lng": -0.53066,
@@ -12122,6 +12916,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 8.0
       },
@@ -12145,14 +12945,14 @@
       },
       "score": 68,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 9201,
       "nom": "Gymnase Claude Masse",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Ambarès-et-Lagrave",
       "quartier": "",
       "lat": 44.9278,
       "lng": -0.484097,
@@ -12163,6 +12963,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "sur",
+          "2050": "sur"
+        },
         "heat": "high",
         "heat_intensite": 8.0
       },
@@ -12186,7 +12992,7 @@
       },
       "score": 68,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 8052,
@@ -12285,7 +13091,7 @@
       "nom": "MDSI Bordeaux Lac",
       "type": "B",
       "adresse": "4 rue du Professeur André Lavignolle",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.883901,
       "lng": -0.568343,
@@ -12331,7 +13137,7 @@
       "nom": "Centre social et familial Bordeaux Nord",
       "type": "B",
       "adresse": "58 rue Joséphine",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.860125,
       "lng": -0.562141,
@@ -12377,7 +13183,7 @@
       "nom": "Jeunes Science Bordeaux",
       "type": "C",
       "adresse": "208 rue Carle Vernet",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.816191,
       "lng": -0.554449,
@@ -12423,7 +13229,7 @@
       "nom": "Centre des Restos du Coeur Bordeaux Daney",
       "type": "B",
       "adresse": "357 boulevard Alfred Daney",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.87281,
       "lng": -0.560796,
@@ -12469,7 +13275,7 @@
       "nom": "PMI - Maison des solidarités Bordeaux Saint Jean",
       "type": "B",
       "adresse": "15 rue Belle Etoile",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.828696,
       "lng": -0.559316,
@@ -12511,11 +13317,105 @@
       "reco": "Cet équipement est en zone inondable — il ne peut pas servir de refuge en cas de crue."
     },
     {
+      "id": 9091,
+      "nom": "Salle Gouffrand",
+      "type": "C",
+      "adresse": "23 Rue Gouffrand",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.855703,
+      "lng": -0.57229,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": true,
+      "categorie": null,
+      "risks": {
+        "flood": "future",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 65,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 49,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 26,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 65,
+      "status": "menace",
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
+    },
+    {
+      "id": 9123,
+      "nom": "Halle des Chartrons",
+      "type": "C",
+      "adresse": "1 Place du Marche des Chartrons",
+      "commune": "Bordeaux",
+      "quartier": "",
+      "lat": 44.852289,
+      "lng": -0.572507,
+      "superficie": null,
+      "capacite": null,
+      "care_officiel": true,
+      "categorie": null,
+      "risks": {
+        "flood": "future",
+        "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
+        "heat": "moderate",
+        "heat_intensite": 5.0
+      },
+      "scores": {
+        "2026": {
+          "score": 65,
+          "status": "menace"
+        },
+        "2030": {
+          "score": 49,
+          "status": "critique"
+        },
+        "2040": {
+          "score": 26,
+          "status": "critique"
+        },
+        "2050": {
+          "score": 0,
+          "status": "critique"
+        }
+      },
+      "score": 65,
+      "status": "menace",
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
+    },
+    {
       "id": 9143,
       "nom": "Salle Albert Delteil",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bègles",
       "quartier": "",
       "lat": 44.806684,
       "lng": -0.550647,
@@ -12524,8 +13424,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -12549,14 +13455,14 @@
       },
       "score": 65,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
     },
     {
       "id": 9182,
       "nom": "Gymnase Yves du Manoir",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Floirac",
       "quartier": "",
       "lat": 44.841428,
       "lng": -0.53155,
@@ -12565,8 +13471,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -12590,14 +13502,14 @@
       },
       "score": 65,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
     },
     {
       "id": 9205,
       "nom": "Espace citoyen Colmet",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Lormont",
       "quartier": "",
       "lat": 44.885213,
       "lng": -0.527229,
@@ -12606,8 +13518,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -12631,14 +13549,14 @@
       },
       "score": 65,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
     },
     {
       "id": 9085,
       "nom": "Gymnase des Chartrons",
       "type": "C",
       "adresse": "17 Rue André Darbon",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.855948,
       "lng": -0.566475,
@@ -12647,8 +13565,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -12672,14 +13596,14 @@
       },
       "score": 61,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
     },
     {
       "id": 9110,
       "nom": "Salle Son Tay",
       "type": "C",
       "adresse": "47 Rue de Son Tay",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.824835,
       "lng": -0.551751,
@@ -12688,8 +13612,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "none",
+        "flood": "future",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "menace",
+          "2030": "menace",
+          "2040": "menace",
+          "2050": "critique"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -12713,14 +13643,14 @@
       },
       "score": 61,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "⚠️ CARE officiel proche d'une zone inondable — risque croissant d'ici 2050."
     },
     {
       "id": 9181,
       "nom": "Complexe sportif Léo Lagrange",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Parempuyre",
       "quartier": "",
       "lat": 44.944731,
       "lng": -0.597948,
@@ -12731,6 +13661,12 @@
       "risks": {
         "flood": "none",
         "flood_niveau": null,
+        "flood_by_horizon": {
+          "2026": "sur",
+          "2030": "sur",
+          "2040": "menace",
+          "2050": "menace"
+        },
         "heat": "high",
         "heat_intensite": 10.0
       },
@@ -12744,7 +13680,7 @@
           "status": "critique"
         },
         "2040": {
-          "score": 28,
+          "score": 0,
           "status": "critique"
         },
         "2050": {
@@ -12754,14 +13690,14 @@
       },
       "score": 60,
       "status": "menace",
-      "reco": "CARE officiel activé lors de la crise de février 2026."
+      "reco": "CARE officiel hors zone à risque majeur en 2026."
     },
     {
       "id": 50,
       "nom": "Stade Atlantique Bordeaux Métropole",
       "type": "C",
       "adresse": "Cours Charles Bricaud",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.897522,
       "lng": -0.56162,
@@ -12807,7 +13743,7 @@
       "nom": "Bois de Bordeaux",
       "type": "H",
       "adresse": "Allée du Bois",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.903952,
       "lng": -0.574924,
@@ -12853,7 +13789,7 @@
       "nom": "Golf de Bordeaux Lac",
       "type": "C",
       "adresse": "Avenue du Golf",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.909573,
       "lng": -0.566944,
@@ -12899,7 +13835,7 @@
       "nom": "Complexe sportif Daugère",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bruges",
       "quartier": "",
       "lat": 44.887666,
       "lng": -0.589829,
@@ -12908,8 +13844,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "future",
+        "flood": "high",
         "flood_niveau": "Bleu clair",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "none",
         "heat_intensite": 0.0
       },
@@ -12933,14 +13875,14 @@
       },
       "score": 50,
       "status": "critique",
-      "reco": "⚠️ CARE officiel en zone bleu clair — risque inondation croissant d'ici 2050."
+      "reco": "⚠️ CARE officiel en zone inondable — à réévaluer pour les crises futures."
     },
     {
       "id": 14,
       "nom": "CMS Bordeaux Maritime",
       "type": "B",
       "adresse": "71 boulevard Albert Stuttenberg",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.875828,
       "lng": -0.546855,
@@ -12986,7 +13928,7 @@
       "nom": "Salle du Point du Jour - Pierre Tachou",
       "type": "C",
       "adresse": "63 Rue Joseph Brunet",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.876329,
       "lng": -0.544447,
@@ -12997,6 +13939,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 3.0
       },
@@ -13027,7 +13975,7 @@
       "nom": "CMPEA Bordeaux Bastide",
       "type": "B",
       "adresse": "253 avenue Thiers",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.848004,
       "lng": -0.546617,
@@ -13073,7 +14021,7 @@
       "nom": "Médecins du Monde - CASO de Bordeaux",
       "type": "B",
       "adresse": "2 rue Carlevoix de Villers",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.870352,
       "lng": -0.547996,
@@ -13119,7 +14067,7 @@
       "nom": "PMI - Maison des Solidarités Bordeaux Bastide",
       "type": "B",
       "adresse": "253 avenue Thiers",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.848041,
       "lng": -0.54656,
@@ -13165,7 +14113,7 @@
       "nom": "CMP Bordeaux Bastide",
       "type": "B",
       "adresse": "4 rue Reinette",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.850821,
       "lng": -0.541603,
@@ -13211,7 +14159,7 @@
       "nom": "Gymnase Thiers",
       "type": "C",
       "adresse": "177 Avenue Thiers",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.846211,
       "lng": -0.550912,
@@ -13222,6 +14170,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -13252,7 +14206,7 @@
       "nom": "Maison cantonale",
       "type": "C",
       "adresse": "50 Rue de Nuits",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.841551,
       "lng": -0.55291,
@@ -13263,6 +14217,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -13293,7 +14253,7 @@
       "nom": "Espace Lucie Aubrac",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Floirac",
       "quartier": "",
       "lat": 44.832282,
       "lng": -0.53111,
@@ -13302,8 +14262,14 @@
       "care_officiel": true,
       "categorie": null,
       "risks": {
-        "flood": "future",
+        "flood": "high",
         "flood_niveau": "Bleu clair",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -13327,14 +14293,14 @@
       },
       "score": 34,
       "status": "critique",
-      "reco": "⚠️ CARE officiel en zone bleu clair — risque inondation croissant d'ici 2050."
+      "reco": "⚠️ CARE officiel en zone inondable — à réévaluer pour les crises futures."
     },
     {
       "id": 9213,
       "nom": "Plaine des sports Colette Besson (S2)",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.899094,
       "lng": -0.567452,
@@ -13345,6 +14311,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -13375,7 +14347,7 @@
       "nom": "Gymnase Promis",
       "type": "C",
       "adresse": "35 Rue de Cénac",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.838838,
       "lng": -0.551364,
@@ -13386,6 +14358,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -13416,7 +14394,7 @@
       "nom": "Gymnase Haku Michigami",
       "type": "C",
       "adresse": "47 Rue Achard",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.866389,
       "lng": -0.549162,
@@ -13427,6 +14405,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 4.0
       },
@@ -13457,7 +14441,7 @@
       "nom": "Foyer Adoma Bordeaux Médoc",
       "type": "B",
       "adresse": "151 cours du Médoc",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.863382,
       "lng": -0.571924,
@@ -13503,7 +14487,7 @@
       "nom": "Salle Henri Sellier",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.845039,
       "lng": -0.538156,
@@ -13514,6 +14498,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -13544,7 +14534,7 @@
       "nom": "Stade Léo Lagrange",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Cenon",
       "quartier": "",
       "lat": 44.847422,
       "lng": -0.537003,
@@ -13555,6 +14545,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -13585,7 +14581,7 @@
       "nom": "Gymnase Jean Dauguet",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.842637,
       "lng": -0.545124,
@@ -13596,6 +14592,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "moderate",
         "heat_intensite": 5.0
       },
@@ -13626,7 +14628,7 @@
       "nom": "Foyer Adoma Bordeaux Poyenne",
       "type": "B",
       "adresse": "18 rue Poyenne",
-      "commune": "33063",
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.856065,
       "lng": -0.56579,
@@ -13672,7 +14674,7 @@
       "nom": "Gymnase Robert Geneste",
       "type": "C",
       "adresse": "19 Rue Beck",
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.822038,
       "lng": -0.55077,
@@ -13683,6 +14685,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -13713,7 +14721,7 @@
       "nom": "Complexe sportif Serge Duhourquet",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bègles",
       "quartier": "",
       "lat": 44.814355,
       "lng": -0.547962,
@@ -13724,6 +14732,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "high",
         "heat_intensite": 6.0
       },
@@ -13754,7 +14768,7 @@
       "nom": "Stadium vélodrome de Bordeaux Lac",
       "type": "C",
       "adresse": null,
-      "commune": null,
+      "commune": "Bordeaux",
       "quartier": "",
       "lat": 44.899193,
       "lng": -0.565815,
@@ -13765,6 +14779,12 @@
       "risks": {
         "flood": "high",
         "flood_niveau": "Bleu",
+        "flood_by_horizon": {
+          "2026": "critique",
+          "2030": "critique",
+          "2040": "critique",
+          "2050": "critique"
+        },
         "heat": "high",
         "heat_intensite": 7.0
       },
