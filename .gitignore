@@ -3,3 +3,5 @@
 data/raw/salles_capacites.json
 data/raw/zones_inondables.geojson
 data/raw/ilots_chaleur.geojson
+data/processed/grande_echelle_pompiers.geojson
+data/raw/Grande_echelle_pompiers.gpkg
